@@ -44,6 +44,8 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 
 ## Deployment
 
+Right after finishing the Django setup, the app was deployed to Heroku for the first time to confirm all was working as expected.
+
 ## Database (ElephangSQL)
 
 1. Navitate to [ElephantSQL website](https://www.elephantsql.com/), log in to your account
@@ -57,6 +59,16 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 
 ```
 os.environ["DATABASE_URL"] = "postgres://yourdatabaseURL"
+```
+
+## Cloudinary
+
+1. Navigate to https://cloudinary.com/ and log in to your account.
+2. Navigate to dashboard/console https://console.cloudinary.com/console/ and copy API Enviroment variable starting with "cloudinary://".
+3. Paste copied url into env.py file as CLOUDINARY_URL value and save the file.
+
+```
+os.environ["CLOUDINARY_URL"] = "cloudinary://yourAPIEnviromentvariable"
 ```
 
 ### How to Fork the Github Repository
