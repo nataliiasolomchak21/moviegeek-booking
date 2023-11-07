@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['moviegeek-booking-1c00719de368.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['moviegeek-booking-1c00719de368.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
