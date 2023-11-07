@@ -1,1 +1,1 @@
-web: gunicorn moviegeek-booking.wsgi
+web: gunicorn moviegeek.wsgi
