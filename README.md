@@ -30,6 +30,20 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 
 ### Design
 
+### Colour Palette
+
+![Colour Palette](documentation/readme_files/colour-palette.png)
+
+For this project, I chose these colors to be presented in my colour palette as they have a positive affect on the user experince.
+
+![Colour Palette](documentation/readme_files/colour-palette-two.png)
+
+I also used black, white and green colours mostly for text or as a background colours. RGB colours such as rgba(0,0,0,0.65), rgba (255, 255, 255, .6), and rgba(0, 0, 0, .3) were used for an overlay.
+
+### Typography
+
+For this project I used Montserrat font family as I thought it was a readable font and would be beneficial to user experience.
+
 ## Features
 
 ### Existing Features
