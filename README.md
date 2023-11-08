@@ -71,6 +71,15 @@ os.environ["DATABASE_URL"] = "postgres://yourdatabaseURL"
 os.environ["CLOUDINARY_URL"] = "cloudinary://yourAPIEnviromentvariable"
 ```
 
+## Django secret key
+
+You need to include you Django secret key that you can generate using any of the Django secret keys generators online.
+In order to protect django app secret key it was set as an enviroment variable and stored in env.py.
+
+```
+os.environ["SECRET_KEY"] = "yourSecretKey"
+```
+
 ### How to Fork the Github Repository
 
 1. If you want to fork the repository log in to Github or create an account.
