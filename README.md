@@ -30,6 +30,14 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 
 ### Design
 
+After discussing wireframes with my mentor, we determined that visual mockups were not necessary for this project. Since my designs thoroughly document the website's functionality and features in detail, comprehensive wireframes would be redundant.
+
+#### Mobile (360x740)
+
+#### Tablet (768x1024)
+
+#### Desktop (1440x1024)
+
 ### Colour Palette
 
 ![Colour Palette](documentation/readme_files/colour-palette.png)
