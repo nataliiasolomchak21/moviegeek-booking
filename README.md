@@ -56,6 +56,21 @@ For this project I used Montserrat font family as I thought it was a readable fo
 
 ### Logic
 
+* [Figma](https://www.figma.com/) was used to create the final design of a website.
+* [Font Awesome](https://fontawesome.com/) was used for social media icons in the footer.
+* [Iconify](https://iconify.design/) was used for Question Marl icon in the header.
+* [Favicon](https://favicon.io/) was used for favicons.
+* [Google Fonts](https://fonts.google.com/) was used to add specific font family to the stylesheet.
+* [Adobe Color](https://color.adobe.com/create/color-wheel) was used to create a colour palette.
+* [VSCode](https://code.visualstudio.com/) was used to code the website.
+* [W3C validation](https://validator.w3.org/) was used to check the markup validity of html file.
+* [Jigsaw](https://jigsaw.w3.org/css-validator/) was used to check the validity of css file.
+* [JSHint](https://jshint.com/) was used to check the validity of css file.
+* [Am I Responsive](https://ui.dev/amiresponsive) was used to get a screenshot of a final look of the website on various devices.
+* [Github](https://github.com/) was used to store the code of the website.
+* Chrome DevTools was used to check the responsiveness of the website as well as to debug it.
+* Chrome's Developer Tool Lighthouse was used to check the performance of the website.
+
 ## Deployment
 
 Right after finishing the Django setup, the app was deployed to Heroku for the first time to confirm all was working as expected.
