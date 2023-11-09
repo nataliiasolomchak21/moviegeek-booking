@@ -98,17 +98,17 @@
     <div class="select-box">
         <label>Select Date</label>
         <select id="date">
-            <option value="24">Jan 24th</option>
-            <option value="26">Jan 26th</option>
-            <option value="30">Jan 30th</option>
+            {% for date in dates %}
+                <option value="{{date}}">{{date}}</option>  
+            {% endfor %}
         </select>
     </div>
     <div class="select-box">
         <label>Select Time</label>
         <select id="time">
-            <option value="12">12:00</option>
-            <option value="15">15:00</option>
-            <option value="19">19:00</option>
+            {% for time in times %}
+                <option value="{{time}}">{{time}}</option>
+            {% endfor %}
         </select>
     </div>
     </div>

@@ -5,7 +5,16 @@ def index(request):
     return render(request, 'index.html')
 
 def booking(request):
-    movies=Booking.objects.all
-    return render(request, 'booking.html', {
-        "movies": movies
-    })
+
+  movies = Booking.objects.all()
+
+  dates = ['2022-01-24', '2022-01-26', '2022-01-28']
+  times = ['12:00', '15:00', '18:00']
+
+  context = {
+    'movies': movies,
+    'dates': dates, 
+    'times': times
+  }
+
+  return render(request, 'booking.html', context)
