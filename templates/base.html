@@ -32,16 +32,16 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="{% url 'home' %}"><h1 id="logo">MovieGeek</h1></a>
+        <a href="{% url 'index' %}"><h1 id="logo">MovieGeek</h1></a>
         <nav>
           <ul id="menu">
-            <li><a href="{% url 'home' %}"><iconify-icon icon="ic:round-home" style="color: white;" width="20" height="20"></iconify-icon></a></li>
+            <li><a href="{% url 'index' %}"><iconify-icon icon="ic:round-home" style="color: white;" width="20" height="20"></iconify-icon></a></li>
             {% if user.is_authenticated %}
-            <li><a href="{% url 'profile' %}">Profile</a></li>
-            <li><a href="{% url 'account_logout' %}">Log Out</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Log Out</a></li>
             {% else %}
-            <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
-            <li><a href="{% url 'account_login' %}l">Log In</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
             {% endif %}
           </ul>
         </nav>
