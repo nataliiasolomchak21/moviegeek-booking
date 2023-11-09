@@ -4,10 +4,13 @@
 
 <div class="home-box">
     <div class="home-text-content">
-        <h1>Welcome, {{ username }}!</h1>
+        {% if user.is_authenticated %}
+        <h1>Welcome, {{ user.username }}!</h1>
         <button class="my-bookings-btn"><a href="{% url 'profile' %}">My bookings</a></button>
+        {% else %}
         <h1>Welcome to <br> Movie Geek Booking!</h1>
         <p class="intro">We make booking and discovering movies effortless for fellow cinephiles.</p>
+        {% endif %}
     </div>
 </div>
 <section class="home-section">
@@ -16,11 +19,11 @@
         <div class="movie-box">
             <div class="movie-info-box">
                 <div class="movie-content">
-                    <img src="assets/images/spiderman-movie.jpg" alt="Spider-Man: Across The Spiderverse movie poster">
+                    <img src="{% static 'images/spiderman-movie' %}" alt="Spider-Man: Across The Spiderverse movie poster">
                     <div class="movie-text-content">
                         <h2>Spider-Man: Across The Spiderverse</h2>
                         <h3>PG13 | Action | 2h 29m </h3>
-                        <button class="book-now-btn"><a href="booking.html">Book Now</a></button>
+                        <button class="book-now-btn"><a href="{% url 'booking' %}">Book Now</a></button>
                         <button class="watch-trailer-btn"><a href="https://www.youtube.com/watch?v=shW9i6k8cB0" target="_blank" rel="noopener" aria-label="Watch Spider-Man: Across The Spiderverse trailer (open in a new tab)">Watch Trailer</a></button>
                     </div>
                 </div>
@@ -29,45 +32,40 @@
             </div>
             <div class="movie-info-box">
                 <div class="movie-content">
-                    <img src="assets/images/barbie-movie.jpg" alt="Barbie movie poster">
+                    <img src="{% static 'images/barbie-movie' %}" alt="Barbie movie poster">
                     <div class="movie-text-content">
                         <h2>Barbie</h2>
                         <h3>PG13 | Comedy | 1h 45m</h3>
-                        <button class="book-now-btn"><a href="booking.html">Book Now</a></button>
+                        <button class="book-now-btn"><a href="{% url 'booking' %}">Book Now</a></button>
                         <button class="watch-trailer-btn"><a href="https://www.youtube.com/watch?v=pBk4NYhWNMM" target="_blank" aria-label="Watch Barbie trailer (open in a new tab)">Watch Trailer</a></button>
                     </div>
                 </div>
                 <p>Barbie suffers a crisis that leads her to question her world and her existence.</p>
-            </div>
-       
-       
+            </div>      
             <div class="movie-info-box">
                 <div class="movie-content">
-                    <img src="assets/images/mission-impossible-movie.jpg" alt="Mission: Impossible Dead Reckoning Part One movie poster">
+                    <img src="{% static 'images/mission-impossible-movie' %}" alt="Mission: Impossible Dead Reckoning Part One movie poster">
                     <div class="movie-text-content">
                         <h2>Mission: Impossible Dead Reckoning Part One</h2>
                         <h3>PG13 | Action | 2h 43m</h3>
-                        <button class="book-now-btn"><a href="booking.html">Book Now</a></button>
+                        <button class="book-now-btn"><a href="{% url 'booking' %}">Book Now</a></button>
                         <button class="watch-trailer-btn"><a href="https://www.youtube.com/watch?v=avz06PDqDbM" target="_blank" aria-label="Watch Mission: Impossible Dead Reckoning Part One trailer (open in a new tab)">Watch Trailer</a></button>
                     </div>
                 </div>
                 <p>Ethan Hunt and the IMF team must track down a terrifying new weapon that threatens all of humanity if it falls into the wrong hands.</p>
             </div>
-       
-        
             <div class="movie-info-box">
                 <div class="movie-content">
-                    <img src="assets/images/oppenheimer-movie.jpg" alt="Oppenheimer movie poster">
+                    <img src="{% static 'images/oppenheimer-movie' %}" alt="Oppenheimer movie poster">
                     <div class="movie-text-content">
                         <h2>Oppenheimer</h2>
                         <h3>R | Biography | 3h</h3>
-                        <button class="book-now-btn"><a href="booking.html">Book Now</a></button>
+                        <button class="book-now-btn"><a href="{% url 'booking' %}">Book Now</a></button>
                         <button class="watch-trailer-btn"><a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank" aria-label="Watch Oppenheimer trailer (open in a new tab)">Watch Trailer</a></button>
                     </div>
                 </div>
                 <p>The story of American scientist, J. Robert Oppenheimer, and his role in the development of the atomic bomb.</p>
-            </div>
-        
+            </div>   
     </div>
     </div>
 </section>
