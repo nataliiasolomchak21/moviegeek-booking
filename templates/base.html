@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +14,7 @@
         content="movie tickets, buy movie tickets, purchase movie tickets, movie showtimes, movie schedules, cinema showtimes">
     <meta name="author" content="Nataliia Solomchak">
     <!-- Title -->
-    <title>Home | MovieGeek Booking</title>
+    <title>MovieGeek Booking</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
@@ -30,12 +32,37 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="index.html"><h1 id="logo">MovieGeek</h1></a>
+        <a href="{% url 'home' %}"><h1 id="logo">MovieGeek</h1></a>
         <nav>
           <ul id="menu">
-            <li><a href="index.html"><iconify-icon icon="ic:round-home" style="color: white;" width="20" height="20"></iconify-icon></a></li>
-            <li><a href="accounts/signup.html">Sign Up</a></li>
-            <li><a href="accounts/login.html">Log In</a></li>
+            <li><a href="{% url 'home' %}"><iconify-icon icon="ic:round-home" style="color: white;" width="20" height="20"></iconify-icon></a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'profile' %}">Profile</a></li>
+            <li><a href="{% url 'account_logout' %}">Log Out</a></li>
+            {% else %}
+            <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'account_login' %}l">Log In</a></li>
+            {% endif %}
           </ul>
         </nav>
       </header>
+    <!-- Main content -->
+    <main>
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- The code for social media icons is taken from Code Institute's Love Running Project -->
+        <ul id="social-media">
+            <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page(open in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page(open in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page(open in a new tab)"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <button class="admin-only-btn"><a href="admin">Admin Only</a></button>
+        </ul>
+    </footer>
+    <!-- Iconify kit -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/c5425afe05.js" crossorigin="anonymous"></script>
+</body>
