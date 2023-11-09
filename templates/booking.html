@@ -4,5 +4,124 @@
 
 {% block content %}
 
-
+<section class="booking">
+    <div class="booking-container">
+        <div class="movie-container">
+        <label>Choose a movie:</label>
+        <select id="movie">
+            <option value="12">Spider-Man: Across The Spider-Verse ($12)</option>
+            <option value="12">Barbie ($12)</option>
+            <option value="12">Oppenheimer ($12)</option>
+            <option value="10">Mission Impossible: Dead Reckoning Part One ($10)</option>
+        </select>
+    </div>
+    <ul class="showcase">
+        <li>
+            <div class="seat unoccupied"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat reserved"></div>
+            <small>Reserved</small>
+        </li>
+    </ul>
+    <div class="container-one">
+    <div class="seats-container">
+        <h2>Screen</h2>
+        <div class="screen"></div>
+        <div class="row">
+            <div class="seat">A1</div> 
+            <div class="seat">A2</div>
+            <div class="seat">A3</div>
+            <div class="seat">A4</div>
+            <div class="seat">A5</div>
+            <div class="seat">A6</div>
+            <div class="seat">A7</div>
+            <div class="seat">A8</div>
+        </div>
+        <div class="row">
+            <div class="seat">B1</div>
+            <div class="seat">B2</div>
+            <div class="seat">B3</div>
+            <div class="seat">B4</div>
+            <div class="seat">B5</div>
+            <div class="seat">B6</div>
+            <div class="seat">B7</div>
+            <div class="seat">B8</div>
+        </div>
+        <div class="row">
+            <div class="seat">C1</div>
+            <div class="seat">C2</div>
+            <div class="seat">C3</div>
+            <div class="seat">C4</div>
+            <div class="seat">C5</div>
+            <div class="seat">C6</div>
+            <div class="seat">C7</div>
+            <div class="seat">C8</div>
+        </div>
+        <div class="row">
+            <div class="seat">D1</div>
+            <div class="seat">D2</div>
+            <div class="seat">D3</div>
+            <div class="seat">D4</div>
+            <div class="seat">D5</div>
+            <div class="seat">D6</div>
+            <div class="seat">D7</div>
+            <div class="seat">D8</div>
+        </div>
+        <div class="row">
+            <div class="seat">E1</div>
+            <div class="seat">E2</div>
+            <div class="seat">E3</div>
+            <div class="seat">E4</div>
+            <div class="seat">E5</div>
+            <div class="seat">E6</div>
+            <div class="seat">E7</div>
+            <div class="seat">E8</div>
+        </div>
+        <div class="row">
+            <div class="seat">F1</div>
+            <div class="seat">F2</div>
+            <div class="seat">F3</div>
+            <div class="seat">F4</div>
+            <div class="seat">F5</div>
+            <div class="seat">F6</div>
+            <div class="seat">F7</div>
+            <div class="seat">F8</div>
+        </div>
+    </div>
+    <div class="container-two">
+    <div class="container-three">
+    <div class="select-box">
+        <label>Select Date</label>
+        <select id="date">
+            <option value="24">Jan 24th</option>
+            <option value="26">Jan 26th</option>
+            <option value="30">Jan 30th</option>
+        </select>
+    </div>
+    <div class="select-box">
+        <label>Select Time</label>
+        <select id="time">
+            <option value="12">12:00</option>
+            <option value="15">15:00</option>
+            <option value="19">19:00</option>
+        </select>
+    </div>
+    </div>
+    <div class="total">
+        <div class="total-text">
+            <h2>$ <span id="total-price">0</span></h2>
+            <h2><span id="total-seats">0</span> seats</h2>
+        </div>
+        <button class="book-btn"><a href="#">Book</a></button>
+    </div>
+</div>
+</div>
+</div>
+</section>
 {%endblock%}
