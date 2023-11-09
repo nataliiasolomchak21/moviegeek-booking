@@ -8,7 +8,7 @@ def booking(request):
 
   movies = Booking.objects.all()
 
-  dates = ['2022-01-24', '2022-01-26', '2022-01-28']
+  dates = ['2024-01-24', '2024-01-26', '2024-01-28']
   times = ['12:00', '15:00', '18:00']
 
   context = {
