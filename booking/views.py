@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 from .models import Booking
+
+import json
 
 def index(request):
     return render(request, 'index.html')
@@ -18,3 +21,16 @@ def booking(request):
   }
 
   return render(request, 'booking.html', context)
+
+
+def occupiedSeats(request):
+  data=json.loads(request.body)
+
+  movie=Booking.object.get(title=data["movie_title"])
+  occupied=movie.booked_seats.all()
+  occupied_seats=list(map(lambda seat : seat.seat_num -1, occupied))
+
+  return JsonResponse({
+    "occupied_seats": occupied_seat,
+    "movie": str(movies)
+  })
