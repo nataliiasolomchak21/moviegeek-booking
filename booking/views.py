@@ -39,9 +39,12 @@ def make_booking(request):
             total_price=total_price
         )
 
-        return redirect('booking')  # Redirect to the booking page or any other page
+        return redirect('booking_confirmation')  # Redirect to the booking page or any other page
 
     return redirect('booking')  # Redirect to the booking page in case of a GET request
 
 def profile(request):
     return render(request, "profile.html")
+
+def booking_confirmation(request):
+    return render(request, 'booking_confirmation.html')
