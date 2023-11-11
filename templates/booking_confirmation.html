@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <section class="successful_booking">
+        <div class="booking-confirm">
+            <h1>Your tickets were booked <br> <span>successfully!</span></h1>
+            <button class="see-my-bookings-btn"><a href="{% url 'profile' %}">See in My bookings</a></button>
+            <button class="go-back-home-btn"><a href="{% url 'index' %}">Go Back to Home</a></button>
+        </div>
+    </section>
+{% endblock %}
