@@ -641,21 +641,21 @@ header {
 }
 
 [data-image="image1"]{
-    background: url('/assets/images/spiderman-booking.jpg') no-repeat center;
+    background: url('/static/images/spiderman-booking.jpg') no-repeat center;
     background-size: cover;
 }
 
 [data-image="image2"] {
-    background: url('/assets/images/barbie-booking.jpg') no-repeat center;
+    background: url('/static/images/barbie-movie.jpg') no-repeat center;
     background-size: cover;
 }
 
 [data-image="image3"] {
-    background: url('/assets/images/oppenheimer-booking.jpg') no-repeat center;
+    background: url('/static/images/oppenheimer-booking.jpg') no-repeat center;
     background-size: cover;
 }
 [data-image="image4"] {
-    background: url('/assets/images/mission-impossible-booking.jpg') no-repeat center;
+    background: url('/static/images/mission-impossible-booking.jpg') no-repeat center;
     background-size: cover;
 }
 
