@@ -6,7 +6,7 @@ class Movie(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2, default='12.00')
     
     def __str__(self):
-        return self.title
+        return f"{self.title} - {self.price}"
 
 class Booking(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
