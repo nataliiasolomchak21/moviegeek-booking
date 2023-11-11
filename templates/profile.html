@@ -14,7 +14,7 @@
     </div>
     <h2 class="bookings-heading">My bookings</h2>
     <div class="bookings-container">
-        {% if booking_info_list %}
+    {% if booking_info_list %}
     {% for booking_info in booking_info_list %}
         <div class="bookings-box">
             <h3>{{ booking_info.date }}, {{ booking_info.time }}</h3>
@@ -34,8 +34,10 @@
         </div>
     {% endfor %}
 {% else %}
-    <h4>No bookings yet.</h4>
-    <button class="book-movie-btn"><a href="{% url 'booking'%}">Book a movie</a></button>
+    <div class="no-bookings">
+        <h4>No bookings yet.</h4>
+        <button class="book-movie-btn"><a href="{% url 'booking'%}">Book a movie</a></button>
+    </div>
 {% endif %}
     </div>
 </section>

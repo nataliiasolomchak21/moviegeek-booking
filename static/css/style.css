@@ -621,6 +621,7 @@ header {
     margin-bottom: 3rem;
 }
 
+
 .bookings-box {
     padding: 1.4rem;
 }
@@ -667,7 +668,7 @@ header {
     width: 18.5rem;
     height: 10rem;
 }
-  
+
 .overlay h2 {
     color: #FFF;
     font-size: 1rem;
@@ -708,6 +709,44 @@ header {
     text-align: center;
     font-size: .75rem;
     font-weight: 700;
+}
+
+.no-bookings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.no-bookings h4 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.book-movie-btn {
+    width: 9rem;
+    height: 2.2rem;
+    color: #fff;
+    background-color: #4b49bd;
+    color: #fff;
+    transition: .3s ease-in-out;
+    font-weight: 600;
+}
+
+.book-movie-btn a {
+    color: #fff;
+    font-size: .8rem;
+    background-color: #4b49bd;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.book-movie-btn:hover,
+.book-movie-btn:hover > a  {
+    color: #4b49bd;
+    background-color: #fff;
 }
 
 /* Successful booking page */
