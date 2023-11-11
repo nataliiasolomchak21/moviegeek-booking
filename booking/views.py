@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from .models import Movie, Booking
 from datetime import date, time
+from django.contrib import messages
 
 
 def index(request):
