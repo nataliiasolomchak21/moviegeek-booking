@@ -69,3 +69,18 @@ def profile(request):
 
 def booking_confirmation(request):
     return render(request, 'booking_confirmation.html')
+
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(Booking, pk=booking_id)
+    movies = Movie.objects.all()
+    dates = ['2024-01-24', '2024-01-26', '2024-01-30']
+    times = ['12:00', '15:00', '19:00']
+
+    context = {
+        'booking': booking,
+        'movies': movies,
+        'dates': dates,
+        'times': times,
+    }
+
+    return render(request, 'edit_booking.html', context)

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Include this hidden field to store the selected movie ID -->
+<input type="hidden" name="selectedMovie" id="selected-movie">
+
+<section class="booking">
+    <div class="booking-container">
+        <form id="edit-booking-form" method="post" action="{% url 'edit_booking' booking.id %}">
+            {% csrf_token %}
+            <div class="movie-container">
+                <label for="movie">Choose a movie:</label>
+                <select id="movie" name="movie">
+                    {% for movie in movies %}
+                        <option value="{{ movie.id }}">{{ movie.title }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="seats">
+                <label for="seats">Choose a number of seats:</label>
+                <input type="number" name="seats" id="seats" min="1" max="8">
+                <p>You can choose up to 8 seats</p>
+            </div>
+            <div class="select-container">
+                <div class="select-box">
+                    <label for="date">Select Date</label>
+                    <select id="date" name="date">
+                        {% for date in dates %}
+                            <option value="{{ date }}">{{ date }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="select-box">
+                    <label for="time">Select Time</label>
+                    <select id="time" name="time">
+                        {% for time in times %}
+                            <option value="{{ time }}">{{ time }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="total-text">
+                <h2>$ <span id="total-price">0</span></h2>
+                <button class="edit-btn" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% block scripts %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
+{% endblock %}
