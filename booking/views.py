@@ -1,36 +1,43 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
-from .models import Booking
+from .models import Movie, Booking
+from datetime import date, time
 
-import json
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, "index.html")
 
 def booking(request):
+    movies = Movie.objects.all()
+    dates = ['2024-01-24', '2024-01-26', '2024-01-30']
+    times = ['12:00', '15:00', '19:00']
 
-  movies = Booking.objects.all()
+    context = {
+        'movies': movies,
+        'dates': dates,
+        'times': times,
+    }
 
-  dates = ['2024-01-24', '2024-01-26', '2024-01-28']
-  times = ['12:00', '15:00', '18:00']
+    return render(request, 'booking.html', context)
 
-  context = {
-    'movies': movies,
-    'dates': dates, 
-    'times': times
-  }
+def make_booking(request):
+    if request.method == 'POST':
+        movie_id = request.POST.get('movie')
+        num_seats = request.POST.get('seats')
+        date = request.POST.get('date')
+        time = request.POST.get('time')
 
-  return render(request, 'booking.html', context)
+        movie = Movie.objects.get(pk=movie_id)
+        total_price = int(num_seats) * movie.price
 
+        booking = Booking.objects.create(
+            movie=movie,
+            num_seats=num_seats,
+            date=date,
+            time=time,
+            total_price=total_price
+        )
 
-def occupiedSeats(request):
-  data=json.loads(request.body)
+        return redirect('booking')  # Redirect to the booking page or any other page
 
-  movie=Booking.object.get(title=data["movie_title"])
-  occupied=movie.booked_seats.all()
-  occupied_seats=list(map(lambda seat : seat.seat_num -1, occupied))
-
-  return JsonResponse({
-    "occupied_seats": occupied_seat,
-    "movie": str(movies)
-  })
+    return redirect('booking')  # Redirect to the booking page in case of a GET request
