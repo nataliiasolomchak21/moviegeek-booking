@@ -8,7 +8,7 @@
     <div class="home-text-content">
         <!-- {% if user.is_authenticated %} -->
         <h1>Welcome, {{ user.username }}!</h1>
-        <button class="my-bookings-btn"><a href="#">My bookings</a></button>
+        <button class="my-bookings-btn"><a href="{% url 'profile' %}">My bookings</a></button>
         {% else %}
         <h1>Welcome to <br> Movie Geek Booking!</h1>
         <p class="intro">We make booking and discovering movies effortless for fellow cinephiles.</p>

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="profile">
+    <div class="profile-container">
+        <img src="{% static 'images/user-icon.jpg' %}" alt="User picture">
+        <div class="user-info">
+            <h1>natsolomchak</h1>
+            <h2>natalia2001727@gmail.com</h2>
+        </div>                
+    </div>
+    <h2 class="bookings-heading">My bookings</h2>
+    <div class="bookings-container">
+            <div class="bookings-box">
+                <h3>Jan 26th, 19:00</h3>
+                <div class="booking-info" data-image="image1">
+                    <div class="overlay">
+                    <h2>Spider-Man: Across The Spiderman</h2>
+                    <h3>Seats: A1</h3>
+                    <div class="total-info">
+                        <h3>$12</h3>
+                        <div class="booking-btn-group">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+</section>
+{% endblock %}

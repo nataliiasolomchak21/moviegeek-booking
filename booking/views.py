@@ -42,3 +42,6 @@ def make_booking(request):
         return redirect('booking')  # Redirect to the booking page or any other page
 
     return redirect('booking')  # Redirect to the booking page in case of a GET request
+
+def profile(request):
+    return render(request, "profile.html")
