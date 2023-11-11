@@ -629,6 +629,7 @@ header {
     margin-bottom: 1rem;
     font-size: .9rem;
     font-weight: 600;
+    color: #fff;
 }
 
 .booking-info {
@@ -676,7 +677,8 @@ header {
 
 .overlay h3 {
     font-size: .9rem;
-    font-weight: 600; 
+    font-weight: 600;
+    color: #fff; 
 }
 
 .total-info {
@@ -685,14 +687,11 @@ header {
     justify-content: space-between;
 }
 
-.unique{
-    margin-top: 2.3rem;
-}
-
 .total-info h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-top: .6rem;
+    color: #fff;
 }
 
 .booking-btn-group {

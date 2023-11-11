@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 class Movie(models.Model):
     title = models.CharField(max_length=255)
-    price = models.DecimalField(max_digits=5, decimal_places=2, default='12.00')
+    price = models.DecimalField(max_digits=5, decimal_places=2, default='12')
     
     def __str__(self):
         return f"{self.title} - {self.price}"
