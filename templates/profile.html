@@ -14,10 +14,12 @@
     </div>
     <h2 class="bookings-heading">My bookings</h2>
     <div class="bookings-container">
-            <div class="bookings-box">
-                <h3>{{ booking_info.date }}, {{ booking_info.time }}</h3>
-                <div class="booking-info" data-image="image1">
-                    <div class="overlay">
+        {% if booking_info_list %}
+    {% for booking_info in booking_info_list %}
+        <div class="bookings-box">
+            <h3>{{ booking_info.date }}, {{ booking_info.time }}</h3>
+            <div class="booking-info" data-image="image1">
+                <div class="overlay">
                     <h2>{{ booking_info.movie_title }}</h2>
                     <h3>Seats: {{ booking_info.seats }}</h3>
                     <div class="total-info">
@@ -26,10 +28,15 @@
                             <button class="edit-btn">Edit</button>
                             <button class="delete-btn">Delete</button>
                         </div>
-                        </div>
                     </div>
                 </div>
-                </div>
             </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <h4>No bookings yet.</h4>
+    <button class="book-movie-btn"><a href="{% url 'booking'%}">Book a movie</a></button>
+{% endif %}
+    </div>
 </section>
 {% endblock %}

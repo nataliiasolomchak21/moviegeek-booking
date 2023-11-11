@@ -43,21 +43,29 @@ def make_booking(request):
 
     return redirect('booking')  # Redirect to the booking page in case of a GET request
 
+
 def profile(request):
-    # Retrieve the latest booking for the user (you may need to adjust this based on your actual user logic)
-    latest_booking = Booking.objects.latest('id')  # Assuming 'id' is the primary key
+    # Retrieve all bookings for the user (you may need to adjust this based on your actual user logic)
+    bookings = Booking.objects.all()  # Assuming you want to display all bookings
+
+    booking_info_list = []
+
+    for booking in bookings:
+        booking_info = {
+            'movie_title': booking.movie.title,
+            'date': booking.date,
+            'time': booking.time,
+            'seats': booking.num_seats,
+            'total_price': booking.total_price,
+        }
+        booking_info_list.append(booking_info)
 
     context = {
-        'booking_info': {
-            'movie_title': latest_booking.movie.title,
-            'date': latest_booking.date,
-            'time': latest_booking.time,
-            'seats': latest_booking.num_seats,
-            'total_price': latest_booking.total_price,
-        }
+        'booking_info_list': booking_info_list,
     }
 
     return render(request, "profile.html", context)
+
 
 def booking_confirmation(request):
     return render(request, 'booking_confirmation.html')
