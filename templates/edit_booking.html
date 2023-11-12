@@ -8,7 +8,7 @@
 
 <section class="booking">
     <div class="booking-container">
-        <form id="edit-booking-form" method="post" action="{% url 'edit_booking' booking.id %}">
+        <form id="edit-booking-form" method="post" action="{% url 'edit_booking' booking_id %}">
             {% csrf_token %}
             <div class="movie-container">
                 <label for="movie">Choose a movie:</label>
@@ -20,7 +20,7 @@
             </div>
             <div class="seats">
                 <label for="seats">Choose a number of seats:</label>
-                <input type="number" name="seats" id="seats" min="1" max="8">
+                <input type="number" name="num_seats" id="seats" min="1" max="8">
                 <p>You can choose up to 8 seats</p>
             </div>
             <div class="select-container">

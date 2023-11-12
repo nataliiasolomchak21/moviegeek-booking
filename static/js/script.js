@@ -17,3 +17,4 @@ function updateTotalPrice() {
     // Update the total price in the UI
     totalPriceElement.textContent = totalPrice.toFixed(2);
 }
+
