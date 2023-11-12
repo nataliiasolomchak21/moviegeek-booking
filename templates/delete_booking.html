@@ -8,7 +8,7 @@
     <div class="delete-container">
         <h2>Are you sure you want to delete your booking?</h2>
         <p>Warning: This action cannot be reversed</p>
-        <form method="post" action="{% url 'delete_booking' booking_id %}">
+        <form method="post" action="{% url 'delete_booking' booking_id %}" class="delete-container-form">
             {% csrf_token %}
             <button type="submit">Okay</button>
             <a href="{% url 'profile' %}">Cancel</a>
