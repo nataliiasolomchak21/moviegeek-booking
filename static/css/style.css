@@ -749,54 +749,6 @@ header {
     background-color: #fff;
 }
 
-.delete-container {
-    width: 19.75rem;
-    height: 12.6875rem;
-    flex-shrink: 0;
-    border-radius: 0.9375rem;
-    background: #343356;
-}
-
-.delete-container h2 {
-    color: #FFF;
-    font-size: 0.9375rem;
-    font-weight: 700;
-}
-
-.delete-container p {
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 500;
-}
-
-.delete-container-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.delete-container-form button, a {
-    width: 6.25rem;
-    height: 1.81006rem;
-    flex-shrink: 0;
-}
-
-.delete-container-form button {
-    border-radius: 2.5rem;
-    background: #C14848;
-    color: #fff;
-    font-size: 0.8125rem;
-}
-
-.delete-container-form a {
-    border-radius: 2.5rem;
-    background: #FFF;
-    color: #343356;
-    font-size: 0.8125rem;
-}
-
 /* Successful booking page */
 .successful_booking {
     background-color: #000;
