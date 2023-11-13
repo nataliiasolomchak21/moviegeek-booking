@@ -8,6 +8,37 @@ Screenshot
 
 ## Table of Contents
 
+- [UX](#ux)
+    - [Target Audience](#target-audience)
+    - [Key Project Goals](#key-project-goals)
+    - [User Stories](#user-stories)
+    - [Agile Methodology](#agile-methodology)
+- [UI](#ui)
+    - [Design](#design)
+        - [Mobile (360x740)](#mobile-360x740)
+        - [Tablet (768x1024)](#tablet-768x1024)
+        - [Desktop (1440x1024)](#desktop-1440x1024)
+    - [Colour Palette](#colour-palette)
+    - [Typography](#typography)
+- [Logic](#logic)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
+- [Error Handling](#error-handling)
+- [Technologies Used](#technologies-used)
+- [Deployment](#deployment)
+    - [Database (ElephangSQL)](#database-elephangsql)
+    - [Cloudinary](#cloudinary)
+    - [Django secret key](#django-secret-key)
+    - [Heroku](#heroku)
+    - [How to Fork the Github Repository](#how-to-fork-the-github-repository)
+    - [How to Clone the Github Repository](#how-to-clone-the-github-repository)
+- [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Code](#code)
+- [Acknowledgements](#acknowledgements)
+
 ## UX
 
 ### Target Audience
@@ -52,6 +83,8 @@ I also used black, white and green colours mostly for text or as a background co
 
 For this project I used Montserrat font family as I thought it was a readable font and would be beneficial to user experience.
 
+## Logic
+
 ## Features
 
 ### Existing Features
@@ -61,8 +94,6 @@ For this project I used Montserrat font family as I thought it was a readable fo
 ## Error Handling
 
 ## Technologies Used
-
-### Logic
 
 * [Figma](https://www.figma.com/) was used to create the final design of a website.
 * [Font Awesome](https://fontawesome.com/) was used for social media icons in the footer.
@@ -83,7 +114,7 @@ For this project I used Montserrat font family as I thought it was a readable fo
 
 Right after finishing the Django setup, the app was deployed to Heroku for the first time to confirm all was working as expected.
 
-## Database (ElephangSQL)
+### Database (ElephangSQL)
 
 1. Navitate to [ElephantSQL website](https://www.elephantsql.com/), log in to your account
 2. Click “Create New Instance”.
@@ -98,7 +129,7 @@ Right after finishing the Django setup, the app was deployed to Heroku for the f
 os.environ["DATABASE_URL"] = "postgres://yourdatabaseURL"
 ```
 
-## Cloudinary
+### Cloudinary
 
 1. Navigate to https://cloudinary.com/ and log in to your account.
 2. Navigate to dashboard/console https://console.cloudinary.com/console/ and copy API Enviroment variable starting with "cloudinary://".
@@ -108,7 +139,7 @@ os.environ["DATABASE_URL"] = "postgres://yourdatabaseURL"
 os.environ["CLOUDINARY_URL"] = "cloudinary://yourAPIEnviromentvariable"
 ```
 
-## Django secret key
+### Django secret key
 
 You need to include you Django secret key that you can generate using any of the Django secret keys generators online.
 In order to protect django app secret key it was set as an enviroment variable and stored in env.py.
