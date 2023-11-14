@@ -64,7 +64,8 @@ section {
 .watch-trailer-btn a,
 .go-back-home-btn,
 .go-back-home-btn a,
-.edit-btn {
+.edit-btn,
+.edit-btn a {
     color: #fff;
     background: #343356;
     transition: .3s ease-in-out;
@@ -90,7 +91,8 @@ section {
 .pw-rest-btn:hover > a,
 .reset-btn:hover > a,
 .watch-trailer-btn:hover > a,
-.go-back-home-btn:hover > a {
+.go-back-home-btn:hover > a,
+.edit-btn:hover > a {
     background-color: #fff;
     color: #343356;
 }
@@ -394,7 +396,9 @@ header {
 .book-now-btn,
 .book-now-btn a,
 .book-btn,
-.book-btn a {
+.book-btn a,
+.update-btn,
+.update-btn a{
     background-color: #4b49bd;
     color: #fff;
     margin-bottom: .5rem;
@@ -403,7 +407,9 @@ header {
 .book-now-btn:hover,
 .book-now-btn:hover > a,
 .book-btn:hover,
-.book-btn:hover > a {
+.book-btn:hover > a,
+.update-btn:hover,
+.update-btn:hover > a {
     color: #4b49bd;
     background-color: #fff;
     margin-bottom: .5rem;
@@ -572,7 +578,8 @@ header {
     margin-bottom: 1rem;
 }
 
-.book-btn {
+.book-btn,
+.update-btn {
     width: 8rem;
     height: 2.2rem;
     font-size: .8rem;
