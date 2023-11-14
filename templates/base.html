@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-    Bootstrap
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -30,18 +30,18 @@
     <header>
         <a href="{% url 'index' %}"><h1 id="logo">MovieGeek</h1></a>
         <nav>
-          <ul id="menu">
-            <li><a href="{% url 'index' %}"><iconify-icon icon="ic:round-home" style="color: white;" width="20" height="20"></iconify-icon></a></li>
-            {% if user.is_authenticated %}
+            <ul id="menu">
+                <li><a href="{% url 'index' %}"><iconify-icon icon="ic:round-home" style="color: white;" width="20" height="20"></iconify-icon></a></li>
+                {% if user.is_authenticated %}
                 <li><a href="{% url 'profile' %}">Profile</a></li>
                 <li><a href="#">Log Out</a></li>
-            {% else %}
+                {% else %}
                 <li><a href="#">Sign Up</a></li>
                 <li><a href="#">Log In</a></li>
-            {% endif %}
-          </ul>
+                {% endif %}
+            </ul>
         </nav>
-      </header>
+    </header>
     <!-- Main content -->
     <main>
         {% block content %}
