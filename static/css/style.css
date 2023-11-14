@@ -33,6 +33,10 @@ button {
     font-weight: 700;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Main content */
 main {
     /* Makes main element large enough to push the footer down */
@@ -251,7 +255,7 @@ header {
     background-color: #343356;
     display: flex;
     justify-content: space-between;
-    padding: .6rem;
+    padding: 1rem;
     z-index: 100;
 }
 
@@ -275,7 +279,7 @@ header {
 
 .home-box {
     position: relative;
-    top: 55px;
+    top: 50px;
     width: 100%;
     height: 13.5rem;
     background: url('/static/images/hero-image.jpg') no-repeat center;
@@ -327,6 +331,12 @@ header {
     font-size: 1.25rem;
     font-weight: 700;
     color: #fff;
+}
+
+.now-showing-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .movie-box,
@@ -832,6 +842,13 @@ header {
     .home-container h2 {
         font-size: 1.5rem;
     }
+
+    .book-now-btn,
+    .watch-trailer-btn {
+        width: 8rem;
+        font-size: .85rem;
+    }
+
     .movie-box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -859,12 +876,6 @@ header {
     
     .movie-info-box p {
         font-size: .9rem;
-    }
-    
-    .movie-btn-group{
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
     }
 
     .container-one {
@@ -896,10 +907,6 @@ header {
     .movie-container select {
         width: 20rem;
         margin-bottom: 1rem;
-    }
-
-    .screen {
-        width: 20.5rem;
     }
 }
 
