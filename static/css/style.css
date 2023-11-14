@@ -251,7 +251,7 @@ header {
     background-color: #343356;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .6rem;
     z-index: 100;
 }
 
@@ -408,7 +408,8 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    list-style-type: none;  
+    list-style-type: none;
+    margin-bottom: 0;  
 }
 
 #social-media i {
