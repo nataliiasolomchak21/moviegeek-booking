@@ -78,9 +78,19 @@ def edit_booking(request, booking_id):
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
-            form.save()
-            return redirect('profile')
+            # Calculate total price based on the form data
+            movie_price = form.cleaned_data['movie'].price
+            num_seats = form.cleaned_data['num_seats']
+            total_price = movie_price * num_seats
 
+            # Update total price in the form instance and save the form
+            form.instance.total_price = total_price
+            form.save()
+
+            messages.success(request, 'Booking updated successfully.')
+            return redirect('profile')
+        else:
+            messages.error(request, 'Error updating booking. Please check the form.')
     else:
         form = BookingForm(instance=booking)
 
