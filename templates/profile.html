@@ -6,13 +6,15 @@
 
 <section class="profile">
     <div class="profile-container">
+        <div class="profile-info">
         <img src="{% static 'images/user-icon.jpg' %}" alt="User picture">
         <div class="user-info">
             <h1>natsolomchak</h1>
             <h2>natalia2001727@gmail.com</h2>
-        </div>                
+        </div>
+    </div>          
+        <h2 class="bookings-heading">My bookings</h2>
     </div>
-    <h2 class="bookings-heading">My bookings</h2>
     <div class="bookings-container">
         {% if booking_info_list %}
         {% for booking_info in booking_info_list %}
