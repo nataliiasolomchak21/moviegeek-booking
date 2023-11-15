@@ -6,7 +6,7 @@
 
 <div class="home-box">
     <div class="home-text-content">
-        <!-- {% if user.is_authenticated %} -->
+        {% if user.is_authenticated %}
         <h1>Welcome, {{ user.username }}!</h1>
         <button class="my-bookings-btn"><a href="{% url 'profile' %}">My bookings</a></button>
         {% else %}
