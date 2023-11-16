@@ -25,9 +25,15 @@
                     <div class="movie-text-content">
                         <h2>Spider-Man: Across The Spiderverse</h2>
                         <h3>PG13 | Action | 2h 29m </h3>
+                        {% if user.is_authenticated %}
                         <button class="book-now-btn">
                             <a href="{% url 'booking' %}?movie_title={{ 'Spider-Man: Across The Spiderverse' }}">Book Now</a>
                         </button>
+                        {% else %}
+                        <button class="book-now-btn">
+                            <a href="{% url 'account_login' %}">Book Now</a>
+                        </button>
+                        {% endif %}
                         <button class="watch-trailer-btn"><a href="https://www.youtube.com/watch?v=shW9i6k8cB0" target="_blank" rel="noopener" aria-label="Watch Spider-Man: Across The Spiderverse trailer (open in a new tab)">Watch Trailer</a></button>
                     </div>
                 </div>
@@ -40,9 +46,15 @@
                     <div class="movie-text-content">
                         <h2>Barbie</h2>
                         <h3>PG13 | Comedy | 1h 45m</h3>
+                        {% if user.is_authenticated %}
                         <button class="book-now-btn">
                             <a href="{% url 'booking' %}?movie_title={{ 'Barbie' }}">Book Now</a>
                         </button>
+                        {% else %}
+                        <button class="book-now-btn">
+                            <a href="{% url 'account_login' %}">Book Now</a>
+                        </button>
+                        {% endif %} 
                         <button class="watch-trailer-btn"><a href="https://www.youtube.com/watch?v=pBk4NYhWNMM" target="_blank" aria-label="Watch Barbie trailer (open in a new tab)">Watch Trailer</a></button>
                     </div>
                 </div>
@@ -54,9 +66,15 @@
                     <div class="movie-text-content">
                         <h2>Mission Impossible: Dead Reckoning Part One</h2>
                         <h3>PG13 | Action | 2h 43m</h3>
+                        {% if user.is_authenticated %}
                         <button class="book-now-btn">
                             <a href="{% url 'booking' %}?movie_title={{ 'Mission Impossible: Dead Reckoning Part One' }}">Book Now</a>
                         </button>
+                        {% else %}
+                        <button class="book-now-btn">
+                            <a href="{% url 'account_login' %}">Book Now</a>
+                        </button>
+                        {% endif %} 
                         <button class="watch-trailer-btn"><a href="https://www.youtube.com/watch?v=avz06PDqDbM" target="_blank" aria-label="Watch Mission Impossible: Dead Reckoning Part One trailer (open in a new tab)">Watch Trailer</a></button>
                     </div>
                 </div>
@@ -68,9 +86,15 @@
                     <div class="movie-text-content">
                         <h2>Oppenheimer</h2>
                         <h3>R | Biography | 3h</h3>
+                        {% if user.is_authenticated %}
                         <button class="book-now-btn">
                             <a href="{% url 'booking' %}?movie_title={{ 'Oppenheimer' }}">Book Now</a>
                         </button>
+                        {% else %}
+                        <button class="book-now-btn">
+                            <a href="{% url 'account_login' %}">Book Now</a>
+                        </button>
+                        {% endif %} 
                         <button class="watch-trailer-btn"><a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank" aria-label="Watch Oppenheimer trailer (open in a new tab)">Watch Trailer</a></button>
                     </div>
                 </div>

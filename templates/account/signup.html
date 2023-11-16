@@ -17,25 +17,28 @@
         {% endif %}
         <label for="id_username"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
           Username</label>
-        {{ form.username }} 
-        <label for="id_email"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
+          {{ form.username }}
+          {{ form.username.errors }} 
+          <label for="id_email"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
             Email address</label>
-        {{ form.email }}
-        <label for="id_password1"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
-            Password</label>
-        {{ form.password1 }}
-        <ul class="password-rules" style="max-width: 20rem;">
-            <li>Your password can’t be too similar to your other personal information.</li>
-            <li>Your password must contain at least 8 characters.</li>
-            <li>Your password can’t be a commonly used password.</li>
-            <li>Your password can’t be entirely numeric.</li>
-        </ul>
-        <label for="id_password2"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
-            Confirm password</label>
-        {{ form.password2 }}
-          <button class="sign-up-btn" type="submit">{% trans "Sign Up" %} &raquo;</button>
+            {{ form.email }}
+            {{ form.email.errors }} 
+            <label for="id_password1"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
+              Password</label>
+              {{ form.password1 }}
+              {{ form.password1.errors }}
+              <ul class="password-rules" style="max-width: 20rem;">
+                <li>Your password can’t be too similar to your other personal information.</li>
+                <li>Your password must contain at least 8 characters.</li>
+                <li>Your password can’t be a commonly used password.</li>
+                <li>Your password can’t be entirely numeric.</li>
+              </ul>
+              <label for="id_password2"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
+                Confirm password</label>
+                {{ form.password2 }}
+                {{ form.password2.errors }}
+          <button class="btn sign-up-btn" type="submit">{% trans "Sign Up" %} &raquo;</button>
       </form>
     </div>
 </section>
-
 {% endblock %}
