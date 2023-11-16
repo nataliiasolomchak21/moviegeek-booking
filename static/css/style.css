@@ -159,6 +159,11 @@ nav {
     align-items: center;
 }
 
+.sign-up-container {
+    position: relative;
+    top: 35px;
+}
+
 .log-in-container,
 .verify-email-container,
 .confirm-email-container,
@@ -232,7 +237,7 @@ nav {
 .pw-reset-container input,
 .new-pw-form input {
     width: 17rem;
-    height: 2.75rem;
+    height: 2.1rem;
     border-radius: 0.5rem;
     border: 2px solid #343356;
     margin-bottom: 1.5rem;
