@@ -1,25 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import JsonResponse
 from .models import Movie, Booking
-from datetime import date, time
 from django.contrib import messages
-from .forms import BookingForm, MySignUpForm
+from .forms import BookingForm
 
 
 def index(request):
     return render(request, "index.html")
-
-def signup_view(request):
-    if request.method == 'POST':
-        form = MySignUpForm(request.POST)
-        if form.is_valid():
-            # Process the form data and create the user
-            # Redirect to a success page or login the user
-            return redirect('index')
-    else:
-        form = MySignUpForm()
-
-    return render(request, 'signup.html', {'form': form})
 
 def booking(request):
     movies = Movie.objects.all()
