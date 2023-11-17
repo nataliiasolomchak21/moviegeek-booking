@@ -36,13 +36,14 @@ a {
     text-decoration: none;
 }
 
+
 /* Main content */
 main {
     /* Makes main element large enough to push the footer down */
     flex: 1 0 auto;
     /* Enables child element to have flex properties */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Adjust the padding as needed based on the height of the messages container */
 }
 
 section {
@@ -51,7 +52,17 @@ section {
 
 nav {
     background-color: #343356;
+    z-index: 100;
 }
+
+.container.messages {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 .navbar-brand,
 .navbar-nav a {
     color: #fff;
@@ -295,12 +306,11 @@ nav {
 .home-text-content h1,
 .home-text-content .intro {
     padding-left: 1rem;
-    color: #FFF;
-    font-size: 1.2rem;
     font-weight: 700;
 }
 
 .home-text-content h1 {
+    color: #FFF;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -334,12 +344,6 @@ nav {
     font-size: 1.25rem;
     font-weight: 700;
     color: #fff;
-}
-
-.now-showing-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .movie-box,

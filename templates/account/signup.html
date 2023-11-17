@@ -27,17 +27,28 @@
               Password</label>
               {{ form.password1 }}
               {{ form.password1.errors }}
-              <ul class="password-rules" style="max-width: 20rem;">
-                <li>Your password can’t be too similar to your other personal information.</li>
-                <li>Your password must contain at least 8 characters.</li>
-                <li>Your password can’t be a commonly used password.</li>
-                <li>Your password can’t be entirely numeric.</li>
-              </ul>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Password Rules
+                    </button>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ul class="password-rules" style="max-width: 15rem;">
+                        <li>Your password can’t be too similar to your other personal information.</li>
+                        <li>Your password must contain at least 8 characters.</li>
+                        <li>Your password can’t be a commonly used password.</li>
+                        <li>Your password can’t be entirely numeric.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <label for="id_password2"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
                 Confirm password</label>
                 {{ form.password2 }}
                 {{ form.password2.errors }}
-          <button class="btn sign-up-btn" type="submit">{% trans "Sign Up" %} &raquo;</button>
+          <button class="sign-up-btn" type="submit">{% trans "Sign Up" %} &raquo;</button>
       </form>
     </div>
 </section>
