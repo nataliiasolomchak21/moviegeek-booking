@@ -14,10 +14,7 @@ Screenshot
     - [User Stories](#user-stories)
     - [Agile Methodology](#agile-methodology)
 - [UI](#ui)
-    - [Design](#design)
-        - [Mobile (360x740)](#mobile-360x740)
-        - [Tablet (768x1024)](#tablet-768x1024)
-        - [Desktop (1440x1024)](#desktop-1440x1024)
+    - [Initial Design](#design)
     - [Colour Palette](#colour-palette)
     - [Typography](#typography)
 - [Logic](#logic)
@@ -71,47 +68,135 @@ The sizes that were used for the design:
 
 #### Header (Authenticated User)
 
+<details><summary><b>Header (Authenticated User)</b></summary>
+
+![Header (Authenticated User)](documentation/readme_files/header-authenticated-user-design.png)
+</details>
+<br>
 Things I have changed:
 
 #### Header (Non-Authenticated User)
+<details><summary><b>Header (Non-Authenticated User)</b></summary>
 
+![Header (Non-Authenticated User)](documentation/readme_files/header-non-authenticated-user-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Footer
+<details><summary><b>Footer</b></summary>
 
+![Footer](documentation/readme_files/footer-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Sign Up page
+<details><summary><b>Sign Up page</b></summary>
 
+![Sign Up page](documentation/readme_files/sign-up-page-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Log In page
+<details><summary><b>Log In page</b></summary>
 
+![Log In page](documentation/readme_files/log-in-page-design.png)
+</details>
+<br>
 Things I have changed:
-#### Home page (Authenticated User)
 
+#### Home page (Authenticated User)
+<details><summary><b>Home page (Authenticated User)</b></summary>
+
+![Home page (Authenticated User)](documentation/readme_files/home-page-design.png)
+</details>
+<br>
 Things I have changed:
 
 #### Home page (Non-Authenticated User)
+<details><summary><b>Home page (Non-Authenticated User)</b></summary>
 
+![Home page (Non-Authenticated User)](documentation/readme_files/header-non-authenticated-user-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Booking page
+<details><summary><b>Booking page</b></summary>
 
+![Booking page](documentation/readme_files/header-non-authenticated-user-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Booking Confirmation page
+<details><summary><b>Booking Confirmation page</b></summary>
 
+![Booking Confirmation page)](documentation/readme_files/booking-confirmation-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Profile page (with bookings)
+<details><summary><b>Profile page (with bookings)</b></summary>
 
+![Profile page (with bookings)](documentation/readme_files/profile-with-bookings-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Profile page (without bookings)
+<details><summary><b>Profile page (without bookings)</b></summary>
 
+![Profile page (without bookings)](documentation/readme_files/profile-without-bookings-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Log Out page
+<details><summary><b>Log Out page</b></summary>
 
+![Log Out page](documentation/readme_files/header-non-authenticated-user-design.png)
+</details>
+<br>
 Things I have changed:
+
 #### Messages
+<details><summary><b>Sign Up</b></summary>
 
+![Messages](documentation/readme_files/successful-sign-up-message-design.png)
+</details>
+<br>
+<details><summary><b>Log In</b></summary>
+
+![Messages](documentation/readme_files/successful-log-in-message-design.png)
+</details>
+<br>
+<details><summary><b>Edit booking</b></summary>
+
+![Messages](documentation/readme_files/successful-edit-message-design.png)
+</details>
+<br>
+<details><summary><b>Delete booking</b></summary>
+
+![Messages](documentation/readme_files/successful-delete-message-design.png)
+</details>
+<br>
+<details><summary><b>Log Out</b></summary>
+
+![Messages](documentation/readme_files/successful-log-out-message-design.png)
+</details>
+<br>
 Things I have changed:
-#### Modals
 
+#### Modals
+<details><summary><b>Delete booking confirmation</b></summary>
+
+![Modals](documentation/readme_files/header-non-authenticated-user-design.png)
+</details>
+<br>
 
 ### Colour Palette
 
