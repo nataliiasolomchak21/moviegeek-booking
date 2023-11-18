@@ -63,6 +63,13 @@ nav {
     z-index: 1000;
 }
 
+.alert {
+    width: 30rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .navbar-brand,
 .navbar-nav a {
     color: #fff;
