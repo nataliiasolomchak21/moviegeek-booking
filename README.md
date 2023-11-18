@@ -59,15 +59,59 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 
 ## UI
 
-### Design
+### Initial Design
 
 After discussing wireframes with my mentor, we determined that visual mockups were not necessary for this project. Since my designs thoroughly document the website's functionality and features in detail, comprehensive wireframes would be redundant.
 
-#### Mobile (360x740)
+The sizes that were used for the design:
 
-#### Tablet (768x1024)
+* Mobile (360x740)
+* Tablet (768x1024)
+* Desktop (1440x1024)
 
-#### Desktop (1440x1024)
+#### Header (Authenticated User)
+
+Things I have changed:
+
+#### Header (Non-Authenticated User)
+
+Things I have changed:
+#### Footer
+
+Things I have changed:
+#### Sign Up page
+
+Things I have changed:
+#### Log In page
+
+Things I have changed:
+#### Home page (Authenticated User)
+
+Things I have changed:
+
+#### Home page (Non-Authenticated User)
+
+Things I have changed:
+#### Booking page
+
+Things I have changed:
+#### Booking Confirmation page
+
+Things I have changed:
+#### Profile page (with bookings)
+
+Things I have changed:
+#### Profile page (without bookings)
+
+Things I have changed:
+#### Log Out page
+
+Things I have changed:
+#### Messages
+
+Things I have changed:
+#### Modals
+
 
 ### Colour Palette
 
