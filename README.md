@@ -72,7 +72,7 @@ The sizes that were used for the design:
 
 ![Header (Authenticated User)](documentation/readme_files/header-authenticated-user-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Header (Non-Authenticated User)
@@ -80,7 +80,7 @@ Things I have changed:
 
 ![Header (Non-Authenticated User)](documentation/readme_files/header-non-authenticated-user-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Footer
@@ -88,7 +88,7 @@ Things I have changed:
 
 ![Footer](documentation/readme_files/footer-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Sign Up page
@@ -96,7 +96,7 @@ Things I have changed:
 
 ![Sign Up page](documentation/readme_files/sign-up-page-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Log In page
@@ -104,7 +104,7 @@ Things I have changed:
 
 ![Log In page](documentation/readme_files/log-in-page-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Home page (Authenticated User)
@@ -112,7 +112,7 @@ Things I have changed:
 
 ![Home page (Authenticated User)](documentation/readme_files/home-page-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Home page (Non-Authenticated User)
@@ -120,7 +120,7 @@ Things I have changed:
 
 ![Home page (Non-Authenticated User)](documentation/readme_files/home-page-no-authenticated-user-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Booking page
@@ -140,7 +140,7 @@ Things I have changed:
 
 ![Booking Confirmation page)](documentation/readme_files/booking-confirmation-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Profile page (with bookings)
@@ -148,7 +148,7 @@ Things I have changed:
 
 ![Profile page (with bookings)](documentation/readme_files/profile-with-bookings-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Profile page (without bookings)
@@ -156,7 +156,7 @@ Things I have changed:
 
 ![Profile page (without bookings)](documentation/readme_files/profile-without-bookings-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Log Out page
