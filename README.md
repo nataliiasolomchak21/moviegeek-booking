@@ -126,9 +126,13 @@ Things I have changed:
 #### Booking page
 <details><summary><b>Booking page</b></summary>
 
-![Booking page](documentation/readme_files/header-non-authenticated-user-design.png)
+![Booking page](documentation/readme_files/booking-one-design.png)
 </details>
-<br>
+<details><summary><b>Booking page</b></summary>
+
+![Booking page](documentation/readme_files/booking-two-design.png)
+</details>
+
 Things I have changed:
 
 #### Booking Confirmation page
@@ -158,7 +162,7 @@ Things I have changed:
 #### Log Out page
 <details><summary><b>Log Out page</b></summary>
 
-![Log Out page](documentation/readme_files/header-non-authenticated-user-design.png)
+![Log Out page](documentation/readme_files/log-out-design.png)
 </details>
 
 Things I have changed:
@@ -188,13 +192,13 @@ Things I have changed:
 
 ![Messages](documentation/readme_files/successful-log-out-message-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Modals
 <details><summary><b>Delete booking confirmation</b></summary>
 
-![Modals](documentation/readme_files/header-non-authenticated-user-design.png)
+![Modals](documentation/readme_files/delete-booking-modal-design.png)
 </details>
 <br>
 
