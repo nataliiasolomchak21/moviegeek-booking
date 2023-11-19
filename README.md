@@ -118,7 +118,7 @@ Things I have changed:
 #### Home page (Non-Authenticated User)
 <details><summary><b>Home page (Non-Authenticated User)</b></summary>
 
-![Home page (Non-Authenticated User)](documentation/readme_files/header-non-authenticated-user-design.png)
+![Home page (Non-Authenticated User)](documentation/readme_files/home-page-no-authenticated-user-design.png)
 </details>
 <br>
 Things I have changed:
@@ -160,7 +160,7 @@ Things I have changed:
 
 ![Log Out page](documentation/readme_files/header-non-authenticated-user-design.png)
 </details>
-<br>
+
 Things I have changed:
 
 #### Messages
