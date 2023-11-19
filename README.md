@@ -172,22 +172,22 @@ Things I have changed:
 
 ![Messages](documentation/readme_files/successful-sign-up-message-design.png)
 </details>
-<br>
+
 <details><summary><b>Log In</b></summary>
 
 ![Messages](documentation/readme_files/successful-log-in-message-design.png)
 </details>
-<br>
+
 <details><summary><b>Edit booking</b></summary>
 
 ![Messages](documentation/readme_files/successful-edit-message-design.png)
 </details>
-<br>
+
 <details><summary><b>Delete booking</b></summary>
 
 ![Messages](documentation/readme_files/successful-delete-message-design.png)
 </details>
-<br>
+
 <details><summary><b>Log Out</b></summary>
 
 ![Messages](documentation/readme_files/successful-log-out-message-design.png)
@@ -221,6 +221,156 @@ For this project I used Montserrat font family as I thought it was a readable fo
 ## Features
 
 ### Existing Features
+
+Header (Authenticated User)
+
+<details><summary><b>Header (Authenticated User)</b></summary>
+
+![Header (Authenticated User)](documentation/readme_files/header-authenticated-user-design.png)
+</details>
+
+#### Header (Non-Authenticated User)
+<details><summary><b>Header (Non-Authenticated User)</b></summary>
+
+![Header (Non-Authenticated User)](documentation/readme_files/header-non-authenticated-user-design.png)
+</details>
+
+#### Footer
+<details><summary><b>Footer</b></summary>
+
+![Footer](documentation/readme_files/footer-design.png)
+</details>
+
+Things I have changed:
+
+#### Sign Up page
+<details><summary><b>Sign Up page</b></summary>
+
+![Sign Up page](documentation/readme_files/sign-up-page-design.png)
+</details>
+
+Things I have changed:
+
+#### Log In page
+<details><summary><b>Log In page</b></summary>
+
+![Log In page](documentation/readme_files/log-in-page-design.png)
+</details>
+
+Things I have changed:
+
+#### Home page (Authenticated User)
+<details><summary><b>Home page (Authenticated User)</b></summary>
+
+![Home page (Authenticated User)](documentation/readme_files/home-page-design.png)
+</details>
+
+Things I have changed:
+
+#### Home page (Non-Authenticated User)
+<details><summary><b>Home page (Non-Authenticated User)</b></summary>
+
+![Home page (Non-Authenticated User)](documentation/readme_files/home-page-no-authenticated-user-design.png)
+</details>
+
+Things I have changed:
+
+#### Booking page (Create booking)
+<details><summary><b>Booking page</b></summary>
+
+![Booking page](documentation/readme_files/booking-one-design.png)
+</details>
+<details><summary><b>Booking page</b></summary>
+
+![Booking page](documentation/readme_files/booking-two-design.png)
+</details>
+
+Things I have changed:
+
+#### Booking Confirmation page
+<details><summary><b>Booking Confirmation page</b></summary>
+
+![Booking Confirmation page)](documentation/readme_files/booking-confirmation-design.png)
+</details>
+
+Things I have changed:
+
+#### Profile page (with bookings) (View booking)
+<details><summary><b>Profile page (with bookings)</b></summary>
+
+![Profile page (with bookings)](documentation/readme_files/profile-with-bookings-design.png)
+</details>
+
+Things I have changed:
+
+#### Profile page (without bookings)
+<details><summary><b>Profile page (without bookings)</b></summary>
+
+![Profile page (without bookings)](documentation/readme_files/profile-without-bookings-design.png)
+</details>
+
+Things I have changed:
+
+#### Edit booking
+<details><summary><b>Edit booking</b></summary>
+
+![Edit booking](documentation/readme_files/profile-without-bookings-design.png)
+</details>
+
+#### Delete booking
+<details><summary><b>Delete booking</b></summary>
+
+![Delete booking](documentation/readme_files/profile-without-bookings-design.png)
+</details>
+
+#### Admin panel
+<details><summary><b>Admin panel</b></summary>
+
+![Admin panel](documentation/readme_files/profile-without-bookings-design.png)
+</details>
+
+#### Log Out page
+<details><summary><b>Log Out page</b></summary>
+
+![Log Out page](documentation/readme_files/log-out-design.png)
+</details>
+
+Things I have changed:
+
+#### Messages
+<details><summary><b>Sign Up</b></summary>
+
+![Messages](documentation/readme_files/successful-sign-up-message-design.png)
+</details>
+
+<details><summary><b>Log In</b></summary>
+
+![Messages](documentation/readme_files/successful-log-in-message-design.png)
+</details>
+
+<details><summary><b>Edit booking</b></summary>
+
+![Messages](documentation/readme_files/successful-edit-message-design.png)
+</details>
+
+<details><summary><b>Delete booking</b></summary>
+
+![Messages](documentation/readme_files/successful-delete-message-design.png)
+</details>
+
+<details><summary><b>Log Out</b></summary>
+
+![Messages](documentation/readme_files/successful-log-out-message-design.png)
+</details>
+
+Things I have changed:
+
+#### Modals
+<details><summary><b>Delete booking confirmation</b></summary>
+
+![Modals](documentation/readme_files/delete-booking-modal-design.png)
+</details>
+<br>
 
 ### Features Left to Implement
 
