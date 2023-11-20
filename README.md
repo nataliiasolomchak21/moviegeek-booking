@@ -52,6 +52,28 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 
 ### User Stories
 
+### Site-visitor
+
+> *"As a user I can access main pages and features through the header and footer so that I can easily navigate the site"*
+>
+> *"As a new user, I can sign up with form validation so that I can create a new account to book movies."*
+>
+> *"As a user I can login so that I can access my account."*
+>
+> *"As a user I can select a movie, date, time, and up to 8 seats so that I can book tickets and see them in "My bookings."*
+>
+> *"As a user I can edit or delete my existing bookings on my profile so that I can manage my tickets."*
+>
+> *"As a user I can view information about movies so that I can choose movie to book tickets to."*
+>
+> *"As a user I can view my profile containing my details so that I can confirm my account information."*
+>
+> *"As a a logged in user I can log out so that I can securely end my session."*
+
+### Site-admin
+
+> *"As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content.*
+
 ### Agile Methodology
 
 ## UI
