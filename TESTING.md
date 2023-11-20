@@ -24,15 +24,80 @@
 
 ## User Story Tests
 
+| User Story | Screenshot |
+| --- | --- |
+| As a user I can access main pages and features through the header and footer so that I can easily navigate the site | ![screenshot](documentation/features/sitepages/home.png) |
+| As a new user, I can sign up with form validation so that I can create a new account to book movies. | ![screenshot](documentation/features/user/login-navbar-links.png) |
+| As a user I can login so that I can access my account. | ![screenshot](documentation/features/sitepages/profile.png) |
+| As a user I can select a movie, date, time, and up to 8 seats so that I can book tickets and see them in "My bookings. | ![screenshot](documentation/features/user/login-navbar-links.png) |
+| As a user I can edit or delete my existing bookings on my profile so that I can manage my tickets. | ![screenshot](documentation/features/sitepages/home.png) |
+| As a user I can view information about movies so that I can choose movie to book tickets to. | ![screenshot](documentation/features/user/login-navbar-links.png) |
+| As a user I can view my profile containing my details so that I can confirm my account information. | ![screenshot](documentation/features/sitepages/profile.png) |
+| As a a logged in user I can log out so that I can securely end my session. | ![screenshot](documentation/features/user/login-navbar-links.png) |
+| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. | ![screenshot](documentation/features/user/login-navbar-links.png) |
+
 ## Validator Testing
 
 ### HTML
 
+<details><summary><b>base.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+
+<details><summary><b>index.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+<details><summary><b>booking.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+<details><summary><b>booking_confirmation.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+<details><summary><b>edit_booking.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+<details><summary><b>profile.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+<details><summary><b>signup.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+<details><summary><b>login.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+<details><summary><b>logout.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+
 ### CSS
+
+<details><summary><b>style.css</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
 
 ### JavaScript
 
+<details><summary><b>script.js</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
+
 ### Python
+
+<details><summary><b>logout.html</b></summary>
+
+![Iteration One](documentation/readme_files/iteration-one.png)
+</details>
 
 ## Unit Testing
 
