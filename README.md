@@ -73,15 +73,13 @@ The sizes that were used for the design:
 ![Header (Authenticated User)](documentation/readme_files/header-authenticated-user-design.png)
 </details>
 
-Things I have changed:
-
 #### Header (Non-Authenticated User)
 <details><summary><b>Header (Non-Authenticated User)</b></summary>
 
 ![Header (Non-Authenticated User)](documentation/readme_files/header-non-authenticated-user-design.png)
 </details>
 
-Things I have changed:
+Things I have changed: The header looks a little bit different as for the mobile size I used a Bootstrap collapsed navbar instead of using my own.
 
 #### Footer
 <details><summary><b>Footer</b></summary>
@@ -89,7 +87,7 @@ Things I have changed:
 ![Footer](documentation/readme_files/footer-design.png)
 </details>
 
-Things I have changed:
+Things I have changed: I got rid of logo and added "Admin Only" button to the footer.
 
 #### Sign Up page
 <details><summary><b>Sign Up page</b></summary>
@@ -97,7 +95,7 @@ Things I have changed:
 ![Sign Up page](documentation/readme_files/sign-up-page-design.png)
 </details>
 
-Things I have changed:
+Things I have changed: I've added "Password Rules" for better UX as well as for the desktop size I got rid of the image.
 
 #### Log In page
 <details><summary><b>Log In page</b></summary>
@@ -105,7 +103,7 @@ Things I have changed:
 ![Log In page](documentation/readme_files/log-in-page-design.png)
 </details>
 
-Things I have changed:
+Things I have changed: I also got rid of the image for the desktop size and changed "Email address" field to "Username".
 
 #### Home page (Authenticated User)
 <details><summary><b>Home page (Authenticated User)</b></summary>
@@ -113,15 +111,13 @@ Things I have changed:
 ![Home page (Authenticated User)](documentation/readme_files/home-page-design.png)
 </details>
 
-Things I have changed:
-
 #### Home page (Non-Authenticated User)
 <details><summary><b>Home page (Non-Authenticated User)</b></summary>
 
 ![Home page (Non-Authenticated User)](documentation/readme_files/home-page-no-authenticated-user-design.png)
 </details>
 
-Things I have changed:
+Nothing was changed here.
 
 #### Booking page
 <details><summary><b>Booking page</b></summary>
@@ -133,7 +129,7 @@ Things I have changed:
 ![Booking page](documentation/readme_files/booking-two-design.png)
 </details>
 
-Things I have changed:
+Things I have changed: I wanted to created a real ciname experience by letting users choose the seats for the movie but because I wasn't able to implement that functionality, I stick to the number input (users can choose the number of seats they want to book). Also, for the date and time I did a dropdown menu.
 
 #### Booking Confirmation page
 <details><summary><b>Booking Confirmation page</b></summary>
@@ -141,7 +137,7 @@ Things I have changed:
 ![Booking Confirmation page)](documentation/readme_files/booking-confirmation-design.png)
 </details>
 
-Things I have changed:
+Nothing was changed here.
 
 #### Profile page (with bookings)
 <details><summary><b>Profile page (with bookings)</b></summary>
@@ -149,7 +145,7 @@ Things I have changed:
 ![Profile page (with bookings)](documentation/readme_files/profile-with-bookings-design.png)
 </details>
 
-Things I have changed:
+Things I have changed: The "My bookings" section looks the same the only thing is that the user can't edit or delete their profile.
 
 #### Profile page (without bookings)
 <details><summary><b>Profile page (without bookings)</b></summary>
@@ -157,7 +153,7 @@ Things I have changed:
 ![Profile page (without bookings)](documentation/readme_files/profile-without-bookings-design.png)
 </details>
 
-Things I have changed:
+Nothing was changed here.
 
 #### Log Out page
 <details><summary><b>Log Out page</b></summary>
@@ -165,7 +161,7 @@ Things I have changed:
 ![Log Out page](documentation/readme_files/log-out-design.png)
 </details>
 
-Things I have changed:
+Things I have changed: I wanted to make the log out modal first but then stick to the html template for that.
 
 #### Messages
 <details><summary><b>Sign Up</b></summary>
@@ -193,13 +189,15 @@ Things I have changed:
 ![Messages](documentation/readme_files/successful-log-out-message-design.png)
 </details>
 
-Things I have changed:
+Things I have changed: I wanted to create my own messages but to save some time I used Bootstrap alert messages.
 
 #### Modals
 <details><summary><b>Delete booking confirmation</b></summary>
 
 ![Modals](documentation/readme_files/delete-booking-modal-design.png)
 </details>
+
+Things I have changed: Although I wanted to create my own modal, I used Bootstrap modal as it (again) was less time-consuming.
 
 ### Colour Palette
 
