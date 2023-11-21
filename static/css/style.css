@@ -122,6 +122,16 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
+.forgot-password-btn {
+    width: 15.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    padding: .5rem;
+}
+
 .sign-up-btn:hover,
 .forgot-password-btn:hover,
 .confirm-email-btn:hover,
