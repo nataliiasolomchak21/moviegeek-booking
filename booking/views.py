@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseForbidden
 from .models import Movie, Booking
 from django.contrib import messages
 from .forms import BookingForm
@@ -20,6 +22,7 @@ def booking(request):
 
     return render(request, 'booking.html', context)
 
+@login_required
 def make_booking(request):
     if request.method == 'POST':
         movie_id = request.POST.get('movie')
@@ -30,7 +33,9 @@ def make_booking(request):
         movie = Movie.objects.get(pk=movie_id)
         total_price = int(num_seats) * movie.price
 
+        user = request.user
         booking = Booking.objects.create(
+            user=user,
             movie=movie,
             num_seats=num_seats,
             date=date,
@@ -73,6 +78,9 @@ def booking_confirmation(request):
 def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
     
+    if request.user != booking.user:
+        return HttpResponseForbidden("You don't have permission to edit this booking.")
+    
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
@@ -108,6 +116,10 @@ def edit_booking(request, booking_id):
 
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
+
+    if request.user != booking.user:
+        return HttpResponseForbidden("You don't have permission to delete this booking.")
+    
     booking.delete()
 
     messages.success(request, 'Booking deleled successfully.')
