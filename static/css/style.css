@@ -105,7 +105,9 @@ nav {
 .go-back-home-btn,
 .go-back-home-btn a,
 .edit-btn,
-.edit-btn a {
+.edit-btn a,
+.log-out-btn,
+.log-out-btn a {
     color: #fff;
     background: #343356;
     transition: .3s ease-in-out;
@@ -119,7 +121,8 @@ nav {
 .reset-btn:hover,
 .watch-trailer-btn:hover,
 .go-back-home-btn:hover,
-.edit-btn:hover {
+.edit-btn:hover,
+.log-out-btn:hover {
     background-color: #fff;
     color: #343356;
     border: 2px solid #343356;
@@ -132,7 +135,8 @@ nav {
 .reset-btn:hover > a,
 .watch-trailer-btn:hover > a,
 .go-back-home-btn:hover > a,
-.edit-btn:hover > a {
+.edit-btn:hover > a,
+.log-out-btn:hover > a {
     background-color: #fff;
     color: #343356;
 }
@@ -169,7 +173,8 @@ nav {
 .sign-up-container,
 .log-in-container,
 .verify-email-container,
-.confirm-email-container{
+.confirm-email-container,
+.log-out-container{
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -187,7 +192,8 @@ nav {
 .confirm-email-container,
 .pw-reset-container,
 .pw-reset-confirm-container,
-.new-pw-container {
+.new-pw-container,
+.log-out-container {
     position: relative;
     top: 100px;
 }
@@ -288,10 +294,22 @@ nav {
 }
 
 .pw-reset-container p,
-.pw-reset-confirm-container p  {
+.pw-reset-confirm-container p {
     font-size: .9rem;
     font-weight: 500;
     margin-bottom: 1.7rem;
+}
+
+.log-out-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343356;
+    margin-bottom: 1.5rem;
+}
+
+.log-out-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 .home-box {
