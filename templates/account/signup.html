@@ -27,22 +27,15 @@
               Password</label>
               {{ form.password1 }}
               {{ form.password1.errors }}
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Password Rules
-                    </button>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <ul class="password-rules" style="max-width: 15rem;">
-                        <li>Your password can’t be too similar to your other personal information.</li>
-                        <li>Your password must contain at least 8 characters.</li>
-                        <li>Your password can’t be a commonly used password.</li>
-                        <li>Your password can’t be entirely numeric.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu password-rules">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </div>
               <label for="id_password2"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
                 Confirm password</label>
@@ -52,4 +45,12 @@
       </form>
     </div>
 </section>
+{% block scripts %}
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("dropdownContent");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+</script>
+{% endblock %}
 {% endblock %}

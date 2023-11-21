@@ -288,12 +288,43 @@ nav a:hover {
     font-size: .85rem;
 }
 
-.password-rules {
-    font-size: 0.8rem;
-    font-weight: 530;
-    margin-bottom: 1.2rem;
-    line-height: 20px;
-}
+.password-button {
+    padding: .8rem;
+    color: #343356;
+    border: 2px solid #343356;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #toggleCheckbox {
+    display: none;
+  }
+  
+  .password-rules {
+    display: none;
+    left: 0;
+    width: 17rem;
+    border-radius: 0.5rem;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid #343356;
+    margin-top: 5px;
+  }
+  
+  .password-rules li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .password-rules li:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  #toggleCheckbox:checked + .password-button + .password-rules {
+    display: block;
+  }
 
 .verify-email-container p {
     font-size: .9rem;
