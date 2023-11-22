@@ -319,6 +319,17 @@ For this project I used Montserrat font family as I thought it was a readable fo
 
 ## Logic
 
+ERD (Entity-Relationship Diagram)
+
+I've used Entity-Relationship Diagram(ERD) Entity-Relationship Diagram represent the relationships between entities, more specifically the relationships between my "Movie" and "Booking" models as well as Django built-in User model.
+
+This ERD conveys that:
+
+- Each Movie can have multiple Booking entries (one-to-many).
+- Each User can have multiple Booking entries (one-to-many).
+
+![ERD](documentation/readme_files/er-diagram.png)
+
 ## Features
 
 ### Existing Features
@@ -484,6 +495,7 @@ Each of the alert messages being displayed when the various actions such as Sign
 * [Font Awesome](https://fontawesome.com/) was used for social media icons in the footer.
 * [Iconify](https://iconify.design/) was used for Question Marl icon in the header.
 * [Favicon](https://favicon.io/) was used for favicons.
+* [LucidChart](https://favicon.io/) was used for favicons.
 * [Google Fonts](https://fonts.google.com/) was used to add specific font family to the stylesheet.
 * [Adobe Color](https://color.adobe.com/create/color-wheel) was used to create a colour palette.
 * [VSCode](https://code.visualstudio.com/) was used to code the website.
