@@ -323,11 +323,13 @@ For this project I used Montserrat font family as I thought it was a readable fo
 
 ### Existing Features
 
+The features that are presented are for desktop size.
+
 #### Header (Authenticated User)
 
 <details><summary><b>Header (Authenticated User)</b></summary>
 
-![Header (Authenticated User)](documentation/readme_files/header-authenticated-user-design.png)
+![Header (Authenticated User)](documentation/readme_files/header-authenticated-user-feature.png)
 </details>
 
 If the user is authenticated, they will see Home, Profile and Log Out links in the navigation menu which gives them ability to go through the available movies and book them, go to their Profile page and see the bookings they have there or make a new one. They also can log out from their account and will be redirected to the Home page.
@@ -335,15 +337,15 @@ If the user is authenticated, they will see Home, Profile and Log Out links in t
 #### Header (Non-Authenticated User)
 <details><summary><b>Header (Non-Authenticated User)</b></summary>
 
-![Header (Non-Authenticated User)](documentation/readme_files/header-non-authenticated-user-design.png)
+![Header (Non-Authenticated User)](documentation/readme_files/header-non-authenticated-user-feature.png)
 </details>
 
-If the user is not authenticated, they will see Home, Sign Up and Log In links in the navigation menu which gives them ability to go through the availbale movies and watch trailers, sign up as a new user or log in as an existing one.
+If the user is not authenticated, they will see Home, Sign Up and Log In links in the navigation menu which gives them ability to go through the available movies and watch trailers, sign up as a new user or log in as an existing one.
 
 #### Footer
 <details><summary><b>Footer</b></summary>
 
-![Footer](documentation/readme_files/footer-design.png)
+![Footer](documentation/readme_files/footer-feature.png)
 </details>
 
 The footer includes links to the social media that each opens in a new tab and "Admin Only" button which is available only to the superuser/admin of the website.
@@ -351,7 +353,7 @@ The footer includes links to the social media that each opens in a new tab and "
 #### Sign Up page
 <details><summary><b>Sign Up page</b></summary>
 
-![Sign Up page](documentation/readme_files/sign-up-page-design.png)
+![Sign Up page](documentation/readme_files/sign-up-feature.png)
 </details>
 
 The sign up page gives user ability to enter their information(username, email address, password and confirm password) in order to authorise them as a website user and give them ability to create, view, edit and delete their bookings.
@@ -359,7 +361,7 @@ The sign up page gives user ability to enter their information(username, email a
 #### Log In page
 <details><summary><b>Log In page</b></summary>
 
-![Log In page](documentation/readme_files/log-in-page-design.png)
+![Log In page](documentation/readme_files/log-in-feature.png)
 </details>
 
 The log in page gives user ability to enter their information(username and password) in order to get access to their existing profile and give them ability to create, view, edit and delete their bookings.
@@ -367,7 +369,7 @@ The log in page gives user ability to enter their information(username and passw
 #### Home page (Authenticated User)
 <details><summary><b>Home page (Authenticated User)</b></summary>
 
-![Home page (Authenticated User)](documentation/readme_files/home-page-design.png)
+![Home page (Authenticated User)](documentation/readme_files/home-page-authenticated-user-feature.png)
 </details>
 
 If the user is authenticated, they will see the welcome message with their username and "My bookings" button that will redirect them to their Profile page where they can manage their bookings. They have an ability to go through the available movies and book them as well as watch trailers.
@@ -375,7 +377,7 @@ If the user is authenticated, they will see the welcome message with their usern
 #### Home page (Non-Authenticated User)
 <details><summary><b>Home page (Non-Authenticated User)</b></summary>
 
-![Home page (Non-Authenticated User)](documentation/readme_files/home-page-no-authenticated-user-design.png)
+![Home page (Non-Authenticated User)](documentation/readme_files/home-page-non-authenticated-user-feature.png)
 </details>
 
 If the user is not authenticated, they will see the general welcome message and information about the website. They can watch trailers but don't have an ability to book movies and if they click on "Book Now" button will redicted to Log In page.
@@ -383,11 +385,7 @@ If the user is not authenticated, they will see the general welcome message and 
 #### Booking page (Create booking)
 <details><summary><b>Booking page</b></summary>
 
-![Booking page](documentation/readme_files/booking-one-design.png)
-</details>
-<details><summary><b>Booking page</b></summary>
-
-![Booking page](documentation/readme_files/booking-two-design.png)
+![Booking page](documentation/readme_files/booking-feature.png)
 </details>
 
 The booking page includes a dropdown with four movies to choose from, the numbers of seats you can select, date and time, and price which populates depending on how many tickets the user will choose with "Book" button.
@@ -395,7 +393,7 @@ The booking page includes a dropdown with four movies to choose from, the number
 #### Booking Confirmation page
 <details><summary><b>Booking Confirmation page</b></summary>
 
-![Booking Confirmation page)](documentation/readme_files/booking-confirmation-design.png)
+![Booking Confirmation page)](documentation/readme_files/booking-confirmation-feature.png)
 </details>
 
 After the user did their booking, they will be redirected to the "Booking confirmation" page that confirm that their booking was successful. They also have an option to either see their newly creayed booking in their Profile page or go back to the Home page.
@@ -403,7 +401,7 @@ After the user did their booking, they will be redirected to the "Booking confir
 #### Profile page (with bookings) (View booking)
 <details><summary><b>Profile page (with bookings)</b></summary>
 
-![Profile page (with bookings)](documentation/readme_files/profile-with-bookings-design.png)
+![Profile page (with bookings)](documentation/readme_files/profile-with-bookings-feature.png)
 </details>
 
 The Profile page with existing bookings includes information about the user (username and email address) as well as information about their bookings. Each booking has the date and time of movie being screened, movie title, an amount of seats, price as well as "Edit" and "Delete" buttons so that the user can change their booking or delete it completely.
@@ -411,7 +409,7 @@ The Profile page with existing bookings includes information about the user (use
 #### Profile page (without bookings)
 <details><summary><b>Profile page (without bookings)</b></summary>
 
-![Profile page (without bookings)](documentation/readme_files/profile-without-bookings-design.png)
+![Profile page (without bookings)](documentation/readme_files/profile-without-bookings-feature.png)
 </details>
 
 The Profile page without bookings includes the text with "No bookings yet" and "Book a Movie" button that gives the user an ability to book a movie.
@@ -419,7 +417,7 @@ The Profile page without bookings includes the text with "No bookings yet" and "
 #### Edit booking
 <details><summary><b>Edit booking</b></summary>
 
-![Edit booking](documentation/readme_files/profile-without-bookings-design.png)
+![Edit booking](documentation/readme_files/edit-booking-feature.png)
 </details>
 
 User can edit their booking and will be presented with a page identical to the Booking page but with functionality to change their booking and "Update" button to save their changes. The message about their booking being changed is displayed.
@@ -427,23 +425,23 @@ User can edit their booking and will be presented with a page identical to the B
 #### Delete booking
 <details><summary><b>Delete booking</b></summary>
 
-![Delete booking](documentation/readme_files/profile-without-bookings-design.png)
+![Delete booking](documentation/readme_files/delete-booking-feature.png)
 </details>
 
-User can delet their booking and will be presented with a modal to confirm the delete process. The message about their booking being changed is displayed.
+User can delet their booking and will be presented with a modal to confirm the delete process. The message about their booking being deleted is displayed.
 
 #### Admin panel
 <details><summary><b>Admin panel</b></summary>
 
-![Admin panel](documentation/readme_files/profile-without-bookings-design.png)
+![Admin panel](documentation/readme_files/admin-panel.png)
 </details>
 
-Although, the Django admin panel is not created by me, it's still plays the most important part for the website. In my admin panel, I have two models: Booking and Movie and I also use the default User model.
+Although, the Django admin panel is not created by me, it's still plays the most important part for the website. In my admin panel, I have two models: Booking and Movie and I also use the default User model. I customize the admin title and header.
 
 #### Log Out page
 <details><summary><b>Log Out page</b></summary>
 
-![Log Out page](documentation/readme_files/log-out-design.png)
+![Log Out page](documentation/readme_files/log-out-feature.png)
 </details>
 
 The Log Out page gives the user the ability to log out from their account. After logging out they will be redirected to the Home page.
@@ -451,38 +449,30 @@ The Log Out page gives the user the ability to log out from their account. After
 #### Messages
 <details><summary><b>Sign Up</b></summary>
 
-![Messages](documentation/readme_files/successful-sign-up-message-design.png)
+![Messages](documentation/readme_files/signed-up-message.png)
 </details>
 
-<details><summary><b>Log In</b></summary>
+<details><summary><b>Sign In (Log In)</b></summary>
 
-![Messages](documentation/readme_files/successful-log-in-message-design.png)
+![Messages](documentation/readme_files/logged-in-message.png)
 </details>
 
-<details><summary><b>Edit booking</b></summary>
+<details><summary><b>Updated booking</b></summary>
 
-![Messages](documentation/readme_files/successful-edit-message-design.png)
+![Messages](documentation/readme_files/updated-booking-message.png)
 </details>
 
-<details><summary><b>Delete booking</b></summary>
+<details><summary><b>Deleted booking</b></summary>
 
-![Messages](documentation/readme_files/successful-delete-message-design.png)
+![Messages](documentation/readme_files/deleted-booking-message.png)
 </details>
 
-<details><summary><b>Log Out</b></summary>
+<details><summary><b>Sign Out (Log Out)</b></summary>
 
-![Messages](documentation/readme_files/successful-log-out-message-design.png)
+![Messages](documentation/readme_files/signed-out-message.png)
 </details>
 
 Each of the alert messages being displayed when the various actions such as Sign In, Log In, Log Out, Create, Edit or Delete a booking is being done to give a visual feedback to the user. The user can close the message or it will dissapear in a few seconds.
-
-#### Modals
-<details><summary><b>Delete booking confirmation</b></summary>
-
-![Modals](documentation/readme_files/delete-booking-modal-design.png)
-</details>
-
-I used a Bootstrap modal for the delete booking confirmation as it is essential for good UX. When the user clicks on "Delete" button, their booking is deleted from the database.
 
 ### Features Left to Implement
 
@@ -504,6 +494,10 @@ I used a Bootstrap modal for the delete booking confirmation as it is essential 
 * [Github](https://github.com/) was used to store the code of the website.
 * Chrome DevTools was used to check the responsiveness of the website as well as to debug it.
 * Chrome's Developer Tool Lighthouse was used to check the performance of the website.
+
+## Testing
+
+All the information on testing is in [TESTING.md](TESTING.md)
 
 ## Deployment
 

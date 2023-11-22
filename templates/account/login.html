@@ -14,8 +14,10 @@
         {% csrf_token %}
         <label for="id_username">{% trans "Username" %}</label>
         {{ form.login }}
+        {{ form.login.errors }}
         <label for="id_password">{% trans "Password" %}</label>
         {{ form.password }}
+        {{ form.errors.password }}
         {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
         {% endif %}
