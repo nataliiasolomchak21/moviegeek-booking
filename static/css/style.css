@@ -356,7 +356,7 @@ nav a:hover {
     position: relative;
     width: 100%;
     height: 15rem;
-    background: url('/static/images/hero-image.jpg') no-repeat center;
+    background: url('https://res.cloudinary.com/du7wcneib/image/upload/v1700690121/static/images/hero-image.3a4bda363228.jpg') no-repeat center;
     background-size: cover;
 }
 
