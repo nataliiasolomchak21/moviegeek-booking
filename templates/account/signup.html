@@ -27,14 +27,16 @@
               Password</label>
               {{ form.password1 }}
               {{ form.password1.errors }}
+              <!-- Password rules toggle -->
               <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown button
+                <button type="button" class="password-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>Password Rules</span>
                 </button>
                 <ul class="dropdown-menu password-rules">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>Your password can’t be too similar to your other personal information</li>
+                  <li>Your password must contain at least 8 characters.</li>
+                  <li>Your password can’t be a commonly used password.</li>
+                  <li>Your password can’t be entirely numeric.</li>
                 </ul>
               </div>
               <label for="id_password2"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
@@ -45,12 +47,4 @@
       </form>
     </div>
 </section>
-{% block scripts %}
-<script>
-  function toggleDropdown() {
-    var dropdown = document.getElementById("dropdownContent");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-  }
-</script>
-{% endblock %}
 {% endblock %}
