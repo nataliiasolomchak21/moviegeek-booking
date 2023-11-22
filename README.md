@@ -17,7 +17,7 @@ Screenshot
     - [Initial Design](#design)
     - [Colour Palette](#colour-palette)
     - [Typography](#typography)
-- [Logic](#logic)
+- [ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
@@ -317,9 +317,7 @@ I also used black, white and green colours mostly for text or as a background co
 
 For this project I used Montserrat font family as I thought it was a readable font and would be beneficial to user experience.
 
-## Logic
-
-ERD (Entity-Relationship Diagram)
+## ERD (Entity-Relationship Diagram)
 
 I've used Entity-Relationship Diagram(ERD) Entity-Relationship Diagram represent the relationships between entities, more specifically the relationships between my "Movie" and "Booking" models as well as Django built-in User model.
 

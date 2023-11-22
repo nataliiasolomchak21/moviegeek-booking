@@ -104,8 +104,6 @@ nav a:hover {
 .forgot-password-btn a,
 .confirm-email-btn,
 .confirm-email-btn a,
-.pw-rest-btn,
-.pw-rest-btn a,
 .reset-btn,
 .reset-btn a ,
 .watch-trailer-btn,
@@ -115,7 +113,8 @@ nav a:hover {
 .edit-btn,
 .edit-btn a,
 .log-out-btn,
-.log-out-btn a {
+.log-out-btn a,
+.pw-reset-input {
     color: #fff;
     background: #343356;
     transition: .3s ease-in-out;
@@ -132,10 +131,14 @@ nav a:hover {
     padding: .5rem;
 }
 
+.pw-reset-input {
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
 .sign-up-btn:hover,
 .forgot-password-btn:hover,
 .confirm-email-btn:hover,
-.pw-rest-btn:hover,
 .reset-btn:hover,
 .watch-trailer-btn:hover,
 .go-back-home-btn:hover,
@@ -149,7 +152,6 @@ nav a:hover {
 .sign-up-btn:hover > a,
 .forgot-password-btn:hover > a,
 .confirm-email-btn:hover > a,
-.pw-rest-btn:hover > a,
 .reset-btn:hover > a,
 .watch-trailer-btn:hover > a,
 .go-back-home-btn:hover > a,
