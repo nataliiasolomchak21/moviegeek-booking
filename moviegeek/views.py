@@ -8,6 +8,3 @@ def custom_500(request):
 
 def custom_403(request, exception):
     return render(request, '403.html', status=403)
-
-def custom_400(request, exception):
-    return render(request, '400.html', status=400)

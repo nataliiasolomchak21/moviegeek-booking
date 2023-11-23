@@ -17,9 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from booking.views import index, profile
 from django.conf.urls import handler400, handler403, handler404, handler500
-from .views import custom_400, custom_403, custom_404, custom_500
+from .views import custom_403, custom_404, custom_500
 
-handler400 = custom_400
 handler403 = custom_403
 handler404 = custom_404
 handler500 = custom_500
