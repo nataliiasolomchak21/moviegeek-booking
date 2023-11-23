@@ -102,8 +102,6 @@ nav a:hover {
 .sign-up-btn a,
 .forgot-password-btn,
 .forgot-password-btn a,
-.confirm-email-btn,
-.confirm-email-btn a,
 .reset-btn,
 .reset-btn a ,
 .watch-trailer-btn,
@@ -138,7 +136,6 @@ nav a:hover {
 
 .sign-up-btn:hover,
 .forgot-password-btn:hover,
-.confirm-email-btn:hover,
 .reset-btn:hover,
 .watch-trailer-btn:hover,
 .go-back-home-btn:hover,
@@ -151,7 +148,6 @@ nav a:hover {
 
 .sign-up-btn:hover > a,
 .forgot-password-btn:hover > a,
-.confirm-email-btn:hover > a,
 .reset-btn:hover > a,
 .watch-trailer-btn:hover > a,
 .go-back-home-btn:hover > a,
@@ -192,8 +188,6 @@ nav a:hover {
 /* Authorization pages */
 .sign-up-container,
 .log-in-container,
-.verify-email-container,
-.confirm-email-container,
 .log-out-container{
     padding: 3rem;
     display: flex;
@@ -208,8 +202,6 @@ nav a:hover {
 }
 
 .log-in-container,
-.verify-email-container,
-.confirm-email-container,
 .pw-reset-container,
 .pw-reset-confirm-container,
 .new-pw-container,
@@ -230,8 +222,6 @@ nav a:hover {
 
 .sign-up-container h1,
 .log-in-container h1,
-.verify-email-container h1,
-.confirm-email-container h1,
 .pw-reset-container h1,
 .pw-reset-confirm-container h1,
 .new-pw-container h1 {
@@ -241,7 +231,6 @@ nav a:hover {
 
 .sign-up-container h3,
 .log-in-container h3,
-.verify-email-container h3,
 .pw-reset-container h3,
 .pw-reset-confirm-container h3 {
     font-size: .9rem;
@@ -313,24 +302,6 @@ nav a:hover {
 .password-rules li {
     font-size: .9rem;
     padding: .5rem;
-}
-  
-  
-
-.verify-email-container p {
-    font-size: .9rem;
-    font-weight: 500;
-}
-
-.confirm-email-container p {
-    color: #343356;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1.7rem;
-}
-
-.confirm-email-container span {
-    color: #472B96;
 }
 
 .pw-reset-container p,
@@ -732,25 +703,6 @@ nav a:hover {
     flex-direction: column;
 }
 
-[data-image="image1"]{
-    background: url('/static/images/spiderman-booking.jpg') no-repeat center;
-    background-size: cover;
-}
-
-[data-image="image2"] {
-    background: url('/static/images/barbie-movie.jpg') no-repeat center;
-    background-size: cover;
-}
-
-[data-image="image3"] {
-    background: url('/static/images/oppenheimer-booking.jpg') no-repeat center;
-    background-size: cover;
-}
-[data-image="image4"] {
-    background: url('/static/images/mission-impossible-booking.jpg') no-repeat center;
-    background-size: cover;
-}
-
 .overlay {
     position: absolute;
     background: rgba(0,0,0,0.65); /* overlay */
@@ -867,7 +819,7 @@ nav a:hover {
 }
 
 /* Media queries */
-@media screen and (min-width: 420px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .movie-info-box {
         font-size: .8rem;
         color: #fff;
@@ -958,12 +910,6 @@ nav a:hover {
     
     .movie-info-box p {
         font-size: .9rem;
-    }
-
-    .container-one {
-        display: flex;
-        flex-direction: row;
-        gap: 4rem;
     }
     
     .profile-container {

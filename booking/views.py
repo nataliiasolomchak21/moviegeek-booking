@@ -87,7 +87,7 @@ def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
     
     if request.user != booking.user:
-        return HttpResponseForbidden("You don't have permission to edit this booking.")
+        return HttpResponseForbidden(render(request, '403.html'))
     
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=booking)
