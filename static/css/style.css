@@ -188,7 +188,8 @@ nav a:hover {
 /* Authorization pages */
 .sign-up-container,
 .log-in-container,
-.log-out-container{
+.log-out-container,
+.error-page {
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -205,7 +206,8 @@ nav a:hover {
 .pw-reset-container,
 .pw-reset-confirm-container,
 .new-pw-container,
-.log-out-container {
+.log-out-container,
+.error-page {
     position: relative;
     top: 100px;
 }
@@ -911,7 +913,7 @@ nav a:hover {
     .movie-info-box p {
         font-size: .9rem;
     }
-    
+
     .profile-container {
         padding: 2rem;
     }
