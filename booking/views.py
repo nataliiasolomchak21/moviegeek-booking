@@ -90,6 +90,7 @@ def edit_booking(request, booking_id):
         return HttpResponseForbidden(render(request, '403.html'))
     
     if request.method == 'POST':
+        error_simulation = booking.nonexistent_attribute
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             # Calculate total price based on the form data
@@ -126,7 +127,7 @@ def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
 
     if request.user != booking.user:
-        return HttpResponseForbidden("You don't have permission to delete this booking.")
+        return HttpResponseForbidden(render(request, '403.html'))
     
     booking.delete()
 
