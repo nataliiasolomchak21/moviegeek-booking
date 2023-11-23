@@ -90,7 +90,6 @@ def edit_booking(request, booking_id):
         return HttpResponseForbidden(render(request, '403.html'))
     
     if request.method == 'POST':
-        error_simulation = booking.nonexistent_attribute
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             # Calculate total price based on the form data
