@@ -69,7 +69,7 @@ def profile(request):
             'time': booking.time,
             'seats': booking.num_seats,
             'total_price': booking.total_price,
-            'movie_image': movie_images_dict.get(booking.movie.title, 'images/spiderman-booking.jpg'),  # Use a default image if the movie title is not in the dictionary
+            'movie_image': movie_images_dict.get(booking.movie.title, 'images/spiderman-booking.jpg'),
         }
         booking_info_list.append(booking_info)
 
