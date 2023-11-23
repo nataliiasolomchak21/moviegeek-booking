@@ -12,6 +12,7 @@
     - [Python](#python)
 - [Unit Testing](#unit-testing)
     - [Coverage](#coverage)
+- [Error Handling](#error-handling)
 - [Manual Testing](#manual-testing)
     - [SEO](#seo)
     - [Accessibility](#accessibility)
@@ -102,6 +103,8 @@
 ## Unit Testing
 
 ### Coverage
+
+## Error Handling
 
 ## Manual Testing
 

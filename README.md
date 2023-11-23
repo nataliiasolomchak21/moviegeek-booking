@@ -21,7 +21,6 @@ Screenshot
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
-- [Error Handling](#error-handling)
 - [Technologies Used](#technologies-used)
 - [Deployment](#deployment)
     - [Database (ElephangSQL)](#database-elephangsql)
@@ -483,9 +482,23 @@ The Log Out page gives the user the ability to log out from their account. After
 
 Each of the alert messages being displayed when the various actions such as Sign In, Log In, Log Out, Create, Edit or Delete a booking is being done to give a visual feedback to the user. The user can close the message or it will dissapear in a few seconds.
 
-### Features Left to Implement
+#### Error pages
+<details><summary><b>403 Forbidden</b></summary>
 
-## Error Handling
+![Error page](documentation/readme_files/403-error-page.png)
+</details>
+
+<details><summary><b>500 Internal Server Error</b></summary>
+
+![Error page](documentation/readme_files/500-error-page.png)
+</details>
+
+<details><summary><b>404 Page Not Found</b></summary>
+
+![Error page](documentation/readme_files/404-error-page.png)
+</details>
+
+### Features Left to Implement
 
 ## Technologies Used
 
