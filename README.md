@@ -480,7 +480,7 @@ The Log Out page gives the user the ability to log out from their account. After
 ![Messages](documentation/readme_files/signed-out-message.png)
 </details>
 
-Each of the alert messages being displayed when the various actions such as Sign In, Log In, Log Out, Create, Edit or Delete a booking is being done to give a visual feedback to the user. The user can close the message or it will dissapear in a few seconds.
+Each of the alert messages being displayed when the various actions such as Sign Up, Log In, Log Out, Create, Edit or Delete a booking is being done to give a visual feedback to the user. The user can close the message or it will dissapear in a few seconds.
 
 #### Error pages
 <details><summary><b>403 Forbidden</b></summary>
@@ -488,15 +488,21 @@ Each of the alert messages being displayed when the various actions such as Sign
 ![Error page](documentation/readme_files/403-error-page.png)
 </details>
 
+Th error page for when a user tries to access a resource or perform an action for which they don't have permissions.
+
 <details><summary><b>500 Internal Server Error</b></summary>
 
 ![Error page](documentation/readme_files/500-error-page.png)
 </details>
 
+Th error page for when a user tries to access a resource or pageon a website that cannot be found.
+
 <details><summary><b>404 Page Not Found</b></summary>
 
 ![Error page](documentation/readme_files/404-error-page.png)
 </details>
+
+The error page for when there is a problem on the server's side.
 
 ### Features Left to Implement
 
