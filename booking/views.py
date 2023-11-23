@@ -54,6 +54,13 @@ def profile(request):
 
     booking_info_list = []
 
+    movie_images_dict = {
+        'Barbie': 'images/barbie-booking.jpg',
+        'Oppenheimer': 'images/oppenheimer-booking.jpg',
+        'Mission Impossible: Dead Reckoning Part One': 'images/mission-impossible-booking.jpg',
+        'Spider-Man: Across The Spiderverse': 'images/spiderman-booking.jpg',
+    }
+
     for booking in bookings:
         booking_info = {
             'id': booking.id, 
@@ -62,6 +69,7 @@ def profile(request):
             'time': booking.time,
             'seats': booking.num_seats,
             'total_price': booking.total_price,
+            'movie_image': movie_images_dict.get(booking.movie.title, 'images/spiderman-booking.jpg'),  # Use a default image if the movie title is not in the dictionary
         }
         booking_info_list.append(booking_info)
 
