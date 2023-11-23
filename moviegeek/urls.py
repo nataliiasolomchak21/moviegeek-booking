@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from booking.views import index, profile
-from django.conf.urls import handler400, handler403, handler404, handler500
+from django.conf.urls import handler403, handler404, handler500
 from .views import custom_403, custom_404, custom_500
 
 handler403 = custom_403
