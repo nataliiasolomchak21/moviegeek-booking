@@ -477,27 +477,6 @@ nav a:hover {
     margin-left: 1rem;
 }
 
-.admin-only-btn,
-.admin-only-btn a {
-   background-color: #fff;
-   color: #343356;
-   width: 7.5rem;
-   height: 2rem;
-   font-size: .8rem;
-   margin-left: auto;
-   transition: .3s ease-in-out;
-}
-
-.admin-only-btn:hover {
-    background: #343356;
-    border: 2px solid #fff;
-}
-
-.admin-only-btn:hover > a {
-    color: #fff;
-    background-color: #343356;
-}
-
 /* Booking page */
 .booking {
     background-color: #000;
@@ -528,14 +507,14 @@ nav a:hover {
 }
 
 .movie-container select {
-    width: 14rem;
+    max-width: 15rem;
+    flex-wrap: wrap;
     height: 3rem;
     font-size: 1rem;
-    max-width: 20rem;
     background-color: #000;
     border-radius: 0.625rem;
     color: #fff;
-    padding: .6rem;
+    padding: .7rem;
 }
 
 .seats {
@@ -935,7 +914,7 @@ nav a:hover {
     }
 
     .movie-container select {
-        width: 20rem;
+        width: 40rem;
         margin-bottom: 1rem;
     }
 }
