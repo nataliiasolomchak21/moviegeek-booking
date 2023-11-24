@@ -22,8 +22,18 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     num_seats = models.IntegerField()
-    date = models.DateField()
-    time = models.TimeField()
+    TIME_CHOICES = [
+        ('12:00', '12:00 PM'),
+        ('15:00', '3:00 PM'),
+        ('19:00', '7:00 PM'),
+    ]
+    DATE_CHOICES = [
+        ('2024-01-24', 'January 24, 2024'),
+        ('2024-01-26', 'January 26, 2024'),
+        ('2024-01-30', 'January 30, 2024'),
+    ]
+    time = models.TimeField(choices=TIME_CHOICES)
+    date = models.DateField(choices=DATE_CHOICES)
     total_price = models.DecimalField(max_digits=8, decimal_places=2)
 
     def __str__(self):

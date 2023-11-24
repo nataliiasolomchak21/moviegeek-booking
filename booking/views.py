@@ -12,13 +12,13 @@ def index(request):
 
 def booking(request):
     movies = Movie.objects.all()
-    dates = ['2024-01-24', '2024-01-26', '2024-01-30']
-    times = ['12:00', '15:00', '19:00']
+    date_choices = Booking.DATE_CHOICES
+    time_choices = Booking.TIME_CHOICES
 
     context = {
         'movies': movies,
-        'dates': dates,
-        'times': times,
+        'date_choices': date_choices,
+        'time_choices': time_choices,
     }
 
     return render(request, 'booking.html', context)

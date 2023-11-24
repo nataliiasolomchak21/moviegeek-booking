@@ -26,22 +26,22 @@
                 <div class="select-box">
                     <label for="date">Select Date</label>
                     <select id="date" name="date">
-                        {% for date in dates %}
-                            <option value="{{ date }}">{{ date }}</option>
+                        {% for date_value, date_display in date_choices %}
+                            <option value="{{ date_value }}">{{ date_display }}</option>
                         {% endfor %}
                     </select>
                 </div>
                 <div class="select-box">
                     <label for="time">Select Time</label>
                     <select id="time" name="time">
-                        {% for time in times %}
-                            <option value="{{ time }}">{{ time }}</option>
+                        {% for time_value, time_display in time_choices %}
+                            <option value="{{ time_value }}">{{ time_display }}</option>
                         {% endfor %}
                     </select>
                 </div>
             </div>
             <div class="total-text">
-                <h2>$ <span id="total-price">0</span></h2>
+                <h2>$ <span id="total-price">{{ total_price }}</span></h2>
                 <button class="book-btn" type="submit">Book</button>
             </div>
         </form>
