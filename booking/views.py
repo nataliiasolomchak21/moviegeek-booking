@@ -7,7 +7,8 @@ from .forms import BookingForm
 
 
 def index(request):
-    return render(request, "index.html")
+    movies = Movie.objects.all()
+    return render(request, "index.html", {'movies': movies})
 
 def booking(request):
     movies = Movie.objects.all()
@@ -84,7 +85,7 @@ def booking_confirmation(request):
     return render(request, 'booking_confirmation.html')
 
 def edit_booking(request, booking_id):
-    booking = get_object_or_404(Booking, id=booking_id)
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
     
     if request.user != booking.user:
         return HttpResponseForbidden(render(request, '403.html'))

@@ -1,14 +1,21 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 
 class Movie(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=255)
-    price = models.DecimalField(max_digits=5, decimal_places=2, default='12')
+    price = models.DecimalField(max_digits=5, decimal_places=2, default=0.00)
+    rating = models.CharField(max_length=5, default='PG')
+    genre = models.CharField(max_length=50, default='Default genre')
+    year = models.PositiveIntegerField(default=2023)
+    trailer_url = models.URLField(default='https://www.example.com/default_trailer')
+    image = CloudinaryField('image', default='placeholder')
+    description = models.TextField(default='Some default description')
     
     def __str__(self):
-        return f"{self.title} - {self.price}"
+        return f"{self.title}"
 
 class Booking(models.Model):
     id = models.AutoField(primary_key=True)
