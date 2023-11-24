@@ -1,28 +1,34 @@
-const movieSelect = document.getElementById("movie");
-const seatsInput = document.getElementById("seats");
-const totalPriceElement = document.getElementById("total-price");
+document.addEventListener("DOMContentLoaded", function() {
+  const movieSelect = document.getElementById('movie');
+  const seatsInput = document.getElementById('seats');
+  const totalPriceSpan = document.getElementById('total-price');
 
-// Set the default price
-const defaultPrice = 12;
+  // Update total price when movie or seats are changed
+  function updateTotalPrice() {
+      const selectedMovie = movieSelect.options[movieSelect.selectedIndex];
+      const moviePrice = selectedMovie.getAttribute('data-price');
+      const numSeats = seatsInput.value;
+      const totalPrice = (moviePrice * numSeats).toFixed(2);
+      totalPriceSpan.textContent = totalPrice;
+  }
 
-// Set default value for seats input
-seatsInput.value = 1;
+  // Attach event listeners
+  movieSelect.addEventListener('change', updateTotalPrice);
+  seatsInput.addEventListener('input', updateTotalPrice);
 
-// Event listeners for changes in movie selection and seats input
-movieSelect.addEventListener("change", updateTotalPrice);
-seatsInput.addEventListener("input", updateTotalPrice);
+  // Get the query parameter from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const selectedMovieTitle = urlParams.get('movie_title');
 
-// Initial update for default values
-updateTotalPrice();
+  // Set the selected option in the dropdown
+  if (selectedMovieTitle) {
+      const option = [...movieSelect.options].find(option => option.text === selectedMovieTitle);
 
-function updateTotalPrice() {
-  const selectedSeats = parseFloat(seatsInput.value);
+      if (option) {
+          option.selected = true;
+      }
+  }
 
-  // Calculate total price based on selected seats and movie price
-  const totalPrice = selectedSeats * defaultPrice;
-
-  // Update the total price in the UI
-  totalPriceElement.textContent = totalPrice.toFixed(2);
-}
-
-
+  // Initial update of total price
+  updateTotalPrice();
+});

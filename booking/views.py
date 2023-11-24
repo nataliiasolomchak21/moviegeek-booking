@@ -12,13 +12,13 @@ def index(request):
 
 def booking(request):
     movies = Movie.objects.all()
-    date_choices = Booking.DATE_CHOICES
-    time_choices = Booking.TIME_CHOICES
+    dates = ['2024-01-24', '2024-01-26', '2024-01-30']
+    times = ['12:00', '15:00', '19:00']
 
     context = {
         'movies': movies,
-        'date_choices': date_choices,
-        'time_choices': time_choices,
+        'dates': dates,
+        'times': times,
     }
 
     return render(request, 'booking.html', context)
@@ -43,11 +43,10 @@ def make_booking(request):
             time=time,
             total_price=total_price
         )
-        # Redirect to the booking page or any other page
-        return redirect('booking_confirmation')  
-    # Redirect to the booking page in case of a GET request
-    return redirect('booking')  
 
+        return redirect('booking_confirmation')  # Redirect to the booking page or any other page
+
+    return redirect('booking')  # Redirect to the booking page in case of a GET request
 
 def profile(request):
     # Retrieve all bookings for the user 
@@ -112,7 +111,7 @@ def edit_booking(request, booking_id):
     movies = Movie.objects.all()
     dates = ['2024-01-24', '2024-01-26', '2024-01-30']
     times = ['12:00', '15:00', '19:00']
-
+    
     context = {
         'form': form,
         'booking_id': booking_id,
