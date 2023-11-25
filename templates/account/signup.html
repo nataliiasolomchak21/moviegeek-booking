@@ -18,31 +18,39 @@
         <label for="id_username"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
           Username</label>
           {{ form.username }}
-          {{ form.username.errors }} 
+          <div class="error-container">
+            {{ form.username.errors }} 
+          </div>
           <label for="id_email"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
             Email address</label>
             {{ form.email }}
-            {{ form.email.errors }} 
+            <div class="error-container">
+              {{ form.email.errors }} 
+            </div>
             <label for="id_password1"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
               Password</label>
               {{ form.password1 }}
-              {{ form.password1.errors }}
-              <!-- Password rules toggle -->
+              <div class="error-container">
+                {{ form.password1.errors }}
+              </div>
+              <!-- Password rules button -->
               <div class="dropdown">
                 <button type="button" class="password-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <span>Password Rules</span>
                 </button>
                 <ul class="dropdown-menu password-rules">
-                  <li>Your password can’t be too similar to your other personal information</li>
+                  <li>Your password can&#44;t be too similar to your other personal information</li>
                   <li>Your password must contain at least 8 characters.</li>
-                  <li>Your password can’t be a commonly used password.</li>
-                  <li>Your password can’t be entirely numeric.</li>
+                  <li>Your password can&#44;t be a commonly used password.</li>
+                  <li>Your password can&#44;t be entirely numeric.</li>
                 </ul>
               </div>
               <label for="id_password2"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
                 Confirm password</label>
                 {{ form.password2 }}
-                {{ form.password2.errors }}
+                <div class="error-container">
+                  {{ form.password2.errors }}
+                </div>
           <button class="sign-up-btn" type="submit">{% trans "Sign Up" %} &raquo;</button>
       </form>
     </div>

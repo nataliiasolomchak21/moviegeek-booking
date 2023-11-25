@@ -189,6 +189,9 @@ nav a:hover {
 .sign-up-container,
 .log-in-container,
 .log-out-container,
+.pw-reset-container,
+.pw-reset-confirm-container,
+.new-pw-container,
 .error-page {
     padding: 3rem;
     display: flex;
@@ -212,14 +215,16 @@ nav a:hover {
     top: 100px;
 }
 
-.pw-reset-container,
-.pw-reset-confirm-container,
-.new-pw-container {
-    padding: 2.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.error-container {
+    max-width: 18rem;
+    font-size: .8rem;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+}
+
+.error-container ul {
+    list-style-type: none;
 }
 
 .sign-up-container h1,
@@ -849,6 +854,9 @@ nav a:hover {
 @media screen and (min-width: 992px) and (min-width: 1200px) {
     .navbar-style-toggler {
         display: none;
+    }
+    .error-container {
+        max-width: 17rem;;
     }
     .home-text-content h2 {
         font-size: 1.6rem;
