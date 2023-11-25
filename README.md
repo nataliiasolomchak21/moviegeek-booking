@@ -542,12 +542,21 @@ Besides the features mentioned in [Won't Have For This Deployment](#wont-have-fo
 * [Google Fonts](https://fonts.google.com/) was used to add specific font family to the stylesheet.
 * [Adobe Color](https://color.adobe.com/create/color-wheel) was used to create a colour palette.
 * [VSCode](https://code.visualstudio.com/) was used to code the website.
-* [Bootstrap](https://getbootstrap.com/)
+* [Bootstrap](https://getbootstrap.com/) was used for styling certain elements on the page.
 * [W3C validation](https://validator.w3.org/) was used to check the markup validity of html file.
 * [Jigsaw](https://jigsaw.w3.org/css-validator/) was used to check the validity of css file.
-* [JSHint](https://jshint.com/) was used to check the validity of css file.
+* [JSHint](https://jshint.com/) was used to check the validity of js file.
+* [CI Python Linter](https://pep8ci.herokuapp.com/) was used to check the validity of python files.
 * [Am I Responsive](https://ui.dev/amiresponsive) was used to get a screenshot of a final look of the website on various devices.
 * [Github](https://github.com/) was used to store the code of the website.
+* [Django](https://www.djangoproject.com) used as the Python framework for the site.
+* [PostgreSQL](https://www.postgresql.org) used as the relational database management.
+* [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
+* [Heroku](https://www.heroku.com) used for hosting the deployed site.
+* [Cloudinary](https://cloudinary.com) used for online static file storage.
+* [Pillow](https://pypi.org/project/Pillow/) used for image processing
+* [Gunicorn](https://gunicorn.org/) used for WSGI server
+* [sycopg2](https://pypi.org/project/psycopg2/) used as a PostgreSQL database adapter
 * Chrome DevTools was used to check the responsiveness of the website as well as to debug it.
 * Chrome's Developer Tool Lighthouse was used to check the performance of the website.
 
