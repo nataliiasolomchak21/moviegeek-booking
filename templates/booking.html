@@ -28,7 +28,7 @@
                     <label for="date">Select Date</label>
                     <select id="date" name="date">
                         {% for date in dates %}
-                            <option value="{{ date }}">{{ date }}</option>
+                            <option value="{{ date }}">{{ date }}{{ date|date:"Y-m-d" }}</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -36,7 +36,7 @@
                     <label for="time">Select Time</label>
                     <select id="time" name="time">
                         {% for time in times %}
-                            <option value="{{ time }}">{{ time }}</option>
+                            <option value="{{ time }}">{{ time }}{{ time|time:"H:i" }}</option>
                         {% endfor %}
                     </select>
                 </div>

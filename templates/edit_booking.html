@@ -28,7 +28,9 @@
                     <label for="date">Select Date</label>
                     <select id="date" name="date">
                         {% for date in dates %}
-                            <option value="{{ date }}" {% if date == form.instance.date %}selected{% endif %}>{{ date }}</option>
+                            <option value="{{ date }}" {% if date == form.instance.date|date:"Y-m-d" %}selected{% endif %}>
+                                {{ date }}
+                            </option>
                         {% endfor %}
                     </select>
                 </div>
@@ -36,7 +38,7 @@
                     <label for="time">Select Time</label>
                     <select id="time" name="time">
                         {% for time in times %}
-                            <option value="{{ time }}" {% if time == form.instance.time %}selected{% endif %}>{{ time }}</option>
+                            <option value="{{ time }}" {% if time == form.instance.time|time:"H:i" %}selected{% endif %}>{{ time }}</option>
                         {% endfor %}
                     </select>
                 </div>

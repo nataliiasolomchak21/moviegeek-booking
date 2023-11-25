@@ -19,7 +19,7 @@
         {% if booking_info_list %}
         {% for booking_info in booking_info_list %}
         <div class="bookings-box">
-            <h3>{{ booking_info.date }}, {{ booking_info.time }}</h3>
+            <h3>{{ booking_info.date|date:"Y-m-d" }}, {{ booking_info.time|time:"H:i" }}</h3>
             <div class="booking-info" style="background-image: url('{% static booking_info.movie_image %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
                 <div class="overlay">
                     <h2>{{ booking_info.movie_title }}</h2>
