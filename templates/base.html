@@ -99,11 +99,14 @@
     </script>
     <!-- The code was taken from Code Institute's Django Blog project -->
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function () {
             let messages = document.getElementById('msg');
-            let alert = new bootstrap.Alert(messages);
-            alert.close();
+            if (messages) {
+                messages.remove();
+            }
         }, 2500);
+    });
     </script>
 </body>
 </html>
