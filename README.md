@@ -81,8 +81,8 @@ For this project I used Agile methodology. Agile methodology is a project manage
 
 ![Kanban Board](documentation/readme_files/kanban-board.png)
 
-This a visual representaion of my Kanban Board during the project. In addition to three essential columns, I created a column "Won't Have For This Project" for the user stories that I wasn't able to implement.
-My process is divided into 3 iterations (Milestones). Once the iteration is done, all of the user stories from that iteration are going to "Done" column. If any of the user stories from a particular iteration weren't implemented, they are going back to the Product Backlog.
+This a visual representation of my Kanban Board during the project. In addition to three essential columns, I created a column "Won't Have For This Project" later renamed into "Won't Have For This Deployment" for the user stories that I wasn't able to implement.
+My process was divided into 3 iterations (Milestones). Once the iteration is done, all of the user stories from that iteration were going to "Done" column. If any of the user stories from a particular iteration weren't implemented, they were going back to the Product Backlog.
 
 #### Iterations
 
@@ -519,7 +519,18 @@ The error page for when there is a problem on the server's side.
 
 ### Features Left to Implement
 
-See [here](https://github.com/nataliiasolomchak21/moviegeek-booking/milestone/1)
+Besides the features mentioned in [Won't Have For This Deployment](#wont-have-for-this-deployment), these are some other features I would like to implement in the future.
+
+* Search and Filter:
+    * Implement a search functionality for movies.
+    * Allow users to filter movies based on genre, release date, etc.
+* Notifications:
+    * Send email or in-app notifications for booking confirmations and updates.
+* User Reviews and Ratings:
+    * Allow users to leave reviews and ratings for movies.
+    * Display average ratings for each movie.
+* Social Features:
+    * Sign Up with Social Account (Google, Facebook)
 
 ## Technologies Used
 
