@@ -38,10 +38,10 @@
 | As a user I can view information about movies so that I can choose movie to book tickets to. | ![screenshot](documentation/readme_files/movies-home-page-user-story.png) |
 | As a user I can view my profile containing my details so that I can confirm my account information. | ![screenshot](documentation/readme_files/profile-with-bookings-feature.png) |
 | As a a logged in user I can log out so that I can securely end my session. | ![screenshot](documentation/readme_files/log-out-feature.png) |
-| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Create) | ![screenshot](documentation/readme_files/create-admin.png) |
-| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Read) | ![screenshot](documentation/readme_files/read-admin.png) |
-| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Update) | ![screenshot](documentation/readme_files/update-admin.png) |
-| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Delete) | ![screenshot](documentation/readme_files/delete-admin.png) |
+| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Create) | ![screenshot](documentation/testing_files/create-admin.png) |
+| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Read) | ![screenshot](documentation/testing_files/read-admin.png) |
+| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Update) | ![screenshot](documentation/testing_files/update-admin.png) |
+| As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Delete) | ![screenshot](documentation/testing_files/delete-admin.png) |
 
 ## Validator Testing
 
@@ -141,7 +141,7 @@ To test if the 404 page is working, I just typed in a non-existent url.
 
 Meta tags were included in a head of base.html file to tell the search engines and users more about the website and the information it contains.
 
-![SEO](documentation/readme_files/seo.png)
+![SEO](documentation/testing_files/seo.png)
 
 ### Accessibility
 
@@ -160,8 +160,27 @@ To ensure that the website was accessible to all users the following steps were 
 
 ### Solved
 
-* The information about the booking when click on "Edit" button was not displayed properly. I fixed by adding "date:"Y-m-d"" and "date:"H:i"" to form.instance.date and fomr.instance.time
+* The information about the booking when click on "Edit" button was not displayed properly. I fixed by adding `"date:"Y-m-d""` and `"date:"H:i""` to form.instance.date and fomr.instance.time
 
-![Bug](documentation/readme_files/seo.png)
+![Bug](documentation/testing_files/edit-booking-bug.png)
+
+* I changed `alert.close()` to `messages.remove()` in js code for Bootstrap alert messages as it was throwing an error in the console.
+
+![Bug](documentation/testing_files/error-messages-bug.png)
+
+* Bootstrap alert messages were also hidden under my header element and I fixed it by adding `z-index: 1000` to the container they are in.
+
+* In edit_booking.html where the user was manually entering the number of tickets, the `total-price` was showing `NaN` first if there is no numbers in the input. I fixed by adding `data-price="{{ movie.price }}"` to my template and modifying js code for that.
+
+```javascript
+// Update total price when movie or seats are changed
+  function updateTotalPrice() {
+      const selectedMovie = movieSelect.options[movieSelect.selectedIndex];
+      const moviePrice = selectedMovie.getAttribute('data-price');
+      const numSeats = seatsInput.value;
+      const totalPrice = (moviePrice * numSeats).toFixed(2);
+      totalPriceSpan.textContent = totalPrice;
+  }
+```
 
 ### Unsolved
