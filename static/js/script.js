@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
   if (movieSelect) {
     movieSelect.addEventListener('change', updateTotalPrice);
   }
-  seatsInput.addEventListener('input', updateTotalPrice);
+  if (seatsInput) {
+    seatsInput.addEventListener('input', updateTotalPrice);
+  }
   // Initial update of total price
   updateTotalPrice();
 });
