@@ -139,7 +139,16 @@ To test if the 404 page is working, I just typed in a non-existent url.
 
 ### SEO
 
+Meta tags were included in a head of base.html file to tell the search engines and users more about the website and the information it contains.
+
+![SEO](documentation/readme_files/seo.png)
+
 ### Accessibility
+
+To ensure that the website was accessible to all users the following steps were taken:
+
+* All the images has clear alt attribute that explains what it is about.
+* Aria-labels were included to all the internal and external links as well as buttons to provide the purpose for them for screen readers.
 
 #### Lighthouse
 
@@ -150,5 +159,9 @@ To test if the 404 page is working, I just typed in a non-existent url.
 ## Bugs
 
 ### Solved
+
+* The information about the booking when click on "Edit" button was not displayed properly. I fixed by adding "date:"Y-m-d"" and "date:"H:i"" to form.instance.date and fomr.instance.time
+
+![Bug](documentation/readme_files/seo.png)
 
 ### Unsolved
