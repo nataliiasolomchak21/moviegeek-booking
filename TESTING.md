@@ -184,3 +184,5 @@ To ensure that the website was accessible to all users the following steps were 
 ```
 
 ### Unsolved
+
+* I had a problem with navbar toggle still appearing on 1024x768 size, even with display: none for min-width: 992px, so I fixed it by adding min-width: 1024px to media queries. It still can be visible a little bit if you are testing sizez manually.
