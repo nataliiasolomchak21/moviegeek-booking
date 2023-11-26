@@ -50,6 +50,7 @@ section {
     min-height: 100vh;
 }
 
+/* Navbar */
 nav {
     background-color: #343356;
     z-index: 100;
@@ -63,20 +64,6 @@ nav a:hover {
     color: #fff !important;;
 }
 
-.container.messages {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.alert {
-    width: 30rem;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .navbar-brand,
 .navbar-nav a {
@@ -98,6 +85,23 @@ nav a:hover {
     background-color: transparent;
 }
 
+/* Bootstrap alert messages */
+.container.messages {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.alert {
+    width: 30rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Buttons styling */
 .sign-up-btn,
 .sign-up-btn a,
 .forgot-password-btn,
@@ -215,6 +219,7 @@ nav a:hover {
     top: 100px;
 }
 
+/* Styling for errors */
 .error-container {
     max-width: 18rem;
     font-size: .8rem;
@@ -227,6 +232,7 @@ nav a:hover {
     list-style-type: none;
 }
 
+/* Authorisation containers styling */
 .sign-up-container h1,
 .log-in-container h1,
 .pw-reset-container h1,
@@ -252,6 +258,7 @@ nav a:hover {
     color: #343356;
 }
 
+/* Forms styling */
 .sign-up-form,
 .log-in-form,
 .new-pw-form,
@@ -286,6 +293,7 @@ nav a:hover {
     font-size: .85rem;
 }
 
+/* Password rules styling */
 .dropdown {
     margin-bottom: 1rem;
 }
@@ -311,6 +319,7 @@ nav a:hover {
     padding: .5rem;
 }
 
+/* Password reset and log out styling */
 .pw-reset-container p,
 .pw-reset-confirm-container p {
     font-size: .9rem;
@@ -330,6 +339,7 @@ nav a:hover {
     margin-bottom: 1.5rem;
 }
 
+/* Home page */
 .home-box {
     position: relative;
     width: 100%;
@@ -365,6 +375,7 @@ nav a:hover {
     max-width: 20rem;
 }
 
+/* "My bookings" btn styling */
 .my-bookings-btn {
     width: 11rem;
     height: 2.2rem;
@@ -377,6 +388,7 @@ nav a:hover {
     color: #343356;
 }
 
+/* Styles all the  */
 .home-container {
     position: relative;
     padding: 2rem;
@@ -389,6 +401,7 @@ nav a:hover {
     color: #fff;
 }
 
+/* Movie container styling */
 .movie-box,
 .movie-info-box {
     display: flex;
@@ -433,6 +446,7 @@ nav a:hover {
     margin-left: .3rem;
 }
 
+/* Movie-box btns styling */
 .book-now-btn,
 .watch-trailer-btn {
     width: 7.5rem;
@@ -463,6 +477,7 @@ nav a:hover {
     margin-bottom: .5rem;
 }
 
+/* Footer styling */
 #social-media {
     position: fixed; 
     bottom: 0px;
@@ -511,17 +526,18 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
+/* Styles dropdown with movies */
 .movie-container select {
-    max-width: 15rem;
-    flex-wrap: wrap;
+    min-width: 19rem;
     height: 3rem;
-    font-size: 1rem;
+    font-size: .7rem;
     background-color: #000;
     border-radius: 0.625rem;
     color: #fff;
     padding: .7rem;
 }
 
+/* Styles set input, label and p element */
 .seats {
     display: flex;
     flex-direction: column;
@@ -550,6 +566,7 @@ nav a:hover {
     margin-top: 1rem;
 }
 
+/* Styles date and time dropdowns */
 .select-container {
     display: flex;
     justify-content: center;
@@ -587,6 +604,7 @@ nav a:hover {
     padding: .5rem;
 }
 
+/* Styles total-price and buttons */
 .total-text {
     display: flex;
     justify-content: center;
@@ -660,6 +678,7 @@ nav a:hover {
     font-weight: 600;
 }
 
+/* Styles bookings in the profile */
 .bookings-container {
     display: flex;
     flex-direction: column;
@@ -689,9 +708,10 @@ nav a:hover {
     flex-direction: column;
 }
 
+/* Adds overlay for contrast */
 .overlay {
     position: absolute;
-    background: rgba(0,0,0,0.65); /* overlay */
+    background: rgba(0,0,0,0.65); 
     padding: 1rem;
     width: 18.5rem;
     height: 10rem;
@@ -710,6 +730,7 @@ nav a:hover {
     color: #fff; 
 }
 
+/* Styles total price and buttons */
 .total-info {
     display: flex;
     flex-direction: row;
@@ -739,6 +760,7 @@ nav a:hover {
     font-weight: 700;
 }
 
+/* Styles "No bookings yet" container */
 .no-bookings {
     display: flex;
     flex-direction: column;
@@ -837,6 +859,11 @@ nav a:hover {
         font-size: .7rem;
     }
 
+    .movie-container select {
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+
     .profile-container img {
         width: 5rem;
     }
@@ -923,7 +950,7 @@ nav a:hover {
     }
 
     .movie-container select {
-        width: 40rem;
+        font-size: .9rem;
         margin-bottom: 1rem;
     }
 }
