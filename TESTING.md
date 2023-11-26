@@ -114,6 +114,26 @@ No errors.
 
 ### Coverage
 
+In order to run the tests, I ran the following command in the terminal each time:
+
+`python3 manage.py test name-of-app `
+
+To create the coverage report, I would then run the following commands:
+
+`coverage run --source=name-of-app manage.py test`
+
+`coverage report`
+
+To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following commands:
+
+`coverage html`
+
+`python3 -m http.server`
+
+#### Booking app
+
+![Coverage](documentation/testing_files/coverage.png)
+
 ## Error Handling
 
 ### Error Pages Testing
@@ -190,3 +210,6 @@ To ensure that the website was accessible to all users the following steps were 
 ### Unsolved
 
 * I had a problem with navbar toggle still appearing on 1024x768 size, even with `display: none` for `(min-width: 992px)`, so I fixed it by adding `(min-width: 1024px)` to media queries. It still can be visible a little bit if you are testing sizez manually.
+* The "Change Password" input and labels were suppose to go one after another but they are next to each other, and although I tried to modify it using different styles, it still doesn't work.
+
+![Bug](documentation/testing_files/password-reset-bug.png)
