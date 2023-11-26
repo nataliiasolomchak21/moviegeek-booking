@@ -47,7 +47,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-danger delete-button" data-booking-id="{{ booking_info.id }}" data-delete-url="{% url 'delete_booking' 0 %}">Delete</button>
+                                <button type="button" class="btn btn-danger" onclick="deleteBooking('{{ booking_info.id }}')">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -61,4 +61,12 @@
         {% endif %}
     </div>
 </section>
+{% block scripts %}
+<script>
+    function deleteBooking(bookingId) {
+        // Redirects to a delete view
+        window.location.href = "{% url 'delete_booking' 0 %}".replace('0', bookingId);
+    }
+</script>
+{% endblock %}
 {% endblock %}
