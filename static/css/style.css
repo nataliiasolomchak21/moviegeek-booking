@@ -851,12 +851,13 @@ nav a:hover {
     }
 }
 
-@media screen and (min-width: 992px) and (min-width: 1200px) {
+@media screen and (min-width: 992px) and (min-width: 1024px) {
     .navbar-style-toggler {
         display: none;
     }
+
     .error-container {
-        max-width: 17rem;;
+        max-width: 17rem;
     }
     .home-text-content h2 {
         font-size: 1.6rem;
