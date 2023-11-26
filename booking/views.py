@@ -48,13 +48,12 @@ def make_booking(request):
 
         return redirect(
             "booking_confirmation"
-        )  # Redirect to the booking page or any other page
+        )
 
-    return redirect("booking")  # Redirect to the booking page in case of a GET request
+    return redirect("booking")
 
 
 def profile(request):
-    # Retrieve all bookings for the user
     bookings = Booking.objects.filter(user=request.user).order_by("-id")
 
     booking_info_list = []
@@ -100,12 +99,10 @@ def edit_booking(request, booking_id):
     if request.method == "POST":
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
-            # Calculate total price based on the form data
             movie_price = form.cleaned_data["movie"].price
             num_seats = form.cleaned_data["num_seats"]
             total_price = movie_price * num_seats
 
-            # Update total price in the form instance and save the form
             form.instance.total_price = total_price
             form.save()
 

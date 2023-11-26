@@ -8,7 +8,7 @@ class TestViews(TestCase):
 
     def setUp(self):
         # Create a test user
-        self.user = User.objects.create_user(username='testuser', password='testpass')
+        self.user = User.objects.create_user(username='testuser', password='testpassword')
 
         # Create test movies
         self.movie = Movie.objects.create(title='Test Movie', price=10.0)
@@ -25,7 +25,7 @@ class TestViews(TestCase):
 
     def test_make_booking_view(self):
         # Log in the user
-        self.client.login(username='testuser', password='testpass')
+        self.client.login(username='testuser', password='testpassword')
 
         # Simulate a POST request to make a booking
         response = self.client.post(reverse('make_booking'), {
@@ -41,7 +41,7 @@ class TestViews(TestCase):
 
     def test_profile_view(self):
         # Log in the user
-        self.client.login(username='testuser', password='testpass')
+        self.client.login(username='testuser', password='testpassword')
 
         response = self.client.get(reverse('profile'))
         self.assertEqual(response.status_code, 200)
@@ -54,7 +54,7 @@ class TestViews(TestCase):
 
     def test_edit_booking_view(self):
         # Log in the user
-        self.client.login(username='testuser', password='testpass')
+        self.client.login(username='testuser', password='testpassword')
 
         # Create a test booking
         booking = Booking.objects.create(
@@ -72,7 +72,7 @@ class TestViews(TestCase):
 
     def test_delete_booking_view(self):
         # Log in the user
-        self.client.login(username='testuser', password='testpass')
+        self.client.login(username='testuser', password='testpassword')
 
         # Create a test booking
         booking = Booking.objects.create(
