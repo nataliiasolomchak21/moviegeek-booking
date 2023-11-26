@@ -213,3 +213,5 @@ To ensure that the website was accessible to all users the following steps were 
 * The "Change Password" input and labels were suppose to go one after another but they are next to each other, and although I tried to modify it using different styles, it still doesn't work.
 
 ![Bug](documentation/testing_files/password-reset-bug.png)
+
+* I have an issue with manual seats input after using up/down arrows. Users should be able to both use the up/down arrows to adjust the number and manually enter a specific number. I have experimented with different combinations of event listeners but was unsuccessful.
