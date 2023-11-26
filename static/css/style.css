@@ -889,6 +889,13 @@ nav a:hover {
         display: none;
     }
 
+    .new-pw-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
     .error-container {
         max-width: 17rem;
     }
