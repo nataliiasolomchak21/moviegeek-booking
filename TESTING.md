@@ -96,12 +96,22 @@ Back to [README](README.md)
 
 ### JavaScript
 
+[JSHint](https://jshint.com/) was used for validation.
+
 <details><summary><b>script.js</b></summary>
 
 ![JS](documentation/testing_files/script-js-file-validation.png)
 </details>
+<details><summary><b>base.js</b></summary>
 
-No errors.
+![JS](documentation/testing_files/base-js-validator.png)
+</details>
+<details><summary><b>booking.js</b></summary>
+
+![JS](documentation/testing_files/booking-js-validator.png)
+</details>
+
+No errors in all the files.
 
 ### Python
 
@@ -184,7 +194,7 @@ To ensure that the website was accessible to all users the following steps were 
 
 ### Solved
 
-* The information about the booking when click on "Edit" button was not displayed properly. I fixed by adding `"date:"Y-m-d""` and `"date:"H:i""` to form.instance.date and fomr.instance.time
+* The information about the booking when click on "Edit" button was not displayed properly. I fixed by adding `"date:"Y-m-d""` and `"date:"H:i""` to `form.instance.date` and `form.instance.time`
 
 ![Bug](documentation/testing_files/edit-booking-bug.png)
 
