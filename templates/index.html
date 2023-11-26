@@ -18,6 +18,7 @@
 <section class="home-section">
     <div class="home-container">
             <h2>Now Showing</h2>
+            <div class="movie-box">
         {% for movie in movies %}
     <div class="movie-info-box">
         <div class="movie-content">
@@ -42,6 +43,7 @@
         <p>{{ movie.description }}</p>
     </div>
 {% endfor %}
+    </div>
     </div>
 </section>
 {%endblock%}
