@@ -3,12 +3,12 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block head_title %}{% trans "Log In" %}{% endblock %}
 
 {% block content %}
 <section>
   <div class="log-in-container">
-      <h1>{% trans "Sign In" %}</h3>
+      <h1>{% trans "Log In" %}</h3>
       <h3>{% blocktrans %}Don’t have an account? <a class="link" href="{{ signup_url }}">Sign Up</a>{% endblocktrans %}</h3>
       <form class="login log-in-form" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
@@ -27,7 +27,7 @@
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
         {% endif %}
 
-        <button class="log-in-btn" type="submit">{% trans "Sign In" %}</button>
+        <button class="log-in-btn" type="submit">{% trans "Log In" %}</button>
     </form>
       <a href="{% url 'account_reset_password' %}" class="forgot-password-btn">{% trans "Forgot Password?" %}</a>
     </div>
