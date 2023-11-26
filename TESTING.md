@@ -98,8 +98,10 @@ Back to [README](README.md)
 
 <details><summary><b>script.js</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![JS](documentation/testing_files/script-js-file-validation.png)
 </details>
+
+No errors.
 
 ### Python
 

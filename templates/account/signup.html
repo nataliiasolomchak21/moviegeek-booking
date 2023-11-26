@@ -9,7 +9,7 @@
   <div class="sign-up-container">
       <h1>{% trans "Sign Up" %}</h1>
       <h3>{% blocktrans %}Already have an account? <a class="link"
-          href="{{ login_url }}">Log In</a>{% endblocktrans %}</h3>
+          href="{{ login_url }}">Sign In</a>{% endblocktrans %}</h3>
       <form class="signup sign-up-form" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
         {% if redirect_field_value %}
