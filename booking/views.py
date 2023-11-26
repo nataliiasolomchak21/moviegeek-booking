@@ -50,7 +50,7 @@ def make_booking(request):
 
 def profile(request):
     # Retrieve all bookings for the user 
-    bookings = Booking.objects.filter(user=request.user)
+    bookings = Booking.objects.filter(user=request.user).order_by('-id')
 
     booking_info_list = []
 
