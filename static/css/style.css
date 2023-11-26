@@ -267,7 +267,7 @@ nav a:hover {
 .sign-up-form,
 .log-in-form,
 .new-pw-form,
-.form-group
+.form-group,
 .pw-reset-form {
     display: flex;
     flex-direction: column;
