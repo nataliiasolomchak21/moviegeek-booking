@@ -184,33 +184,37 @@ After deploying to Heroku, the lighthouse for error pages is not loaded.
 
 ##### Mobile
 
-| Home | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-home.png) |
-| Profile | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-about.png) |
-| Booking | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-news.png) |
-| Edit booking | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-contact.png) |
-| Sign Up | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-base.png) |
-| Log In | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-detail.png) |
-| Log Out | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-form.png) |
-| Booking confirmation | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-confirm-delete.png) |
-| Password Reset | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-400.png) |
-| Password Reset Done | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-403.png) |
-| Password Reset From Key | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-404.png) |
-| Password Reset From Key Done | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-500.png) |
+| Page | Size | Screenshot |
+| ---  | ---  | --- |
+| Home | Mobile | ![screenshot](documentation/testing_files/home-page-lighthouse-mobile.png) |
+| Profile | Mobile | ![screenshot](documentation/testing_files/profile-lighthouse-mobile.png) |
+| Booking | Mobile | ![screenshot](documentation/testing_files/booking-lighthouse-mobile.png) |
+| Edit booking | Mobile | ![screenshot](documentation/testing_files/edit-booking-lighthouse-mobile.png) |
+| Sign Up | Mobile | ![screenshot](documentation/testing_files/signup-lighthouse-mobile.png) |
+| Log In | Mobile | ![screenshot](documentation/testing_files/login-lighthouse-mobile.png) |
+| Log Out | Mobile | ![screenshot](documentation/testing_files/logout-lighthouse-mobile.png) |
+| Booking confirmation | Mobile | ![screenshot](documentation/testing_files/booking-confirmation-lighthouse-mobile.png) |
+| Password Reset | Mobile | ![screenshot](documentation/testing_files/password-reset-lighthouse-mobile.png) |
+| Password Reset Done | Mobile | ![screenshot](documentation/testing_files/password-reset-done-lighthouse-mobile.png) |
+| Password Reset From Key | Mobile | ![screenshot](documentation/testing_files/password-reset-from-key-lighthouse-mobile.png) |
+| Password Reset From Key Done | Mobile | ![screenshot](documentation/testing_files/password-reset-from-key-lighthouse-mobile.png) |
 
 ##### Desktop
 
-| Home | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-home.png) |
-| Profile | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-about.png) |
-| Booking | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-news.png) |
-| Edit booking | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-contact.png) |
-| Sign Up | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-base.png) |
-| Log In | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-detail.png) |
-| Log Out | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-form.png) |
-| Booking confirmation | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-confirm-delete.png) |
-| Password Reset | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-400.png) |
-| Password Reset Done | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-403.png) |
-| Password Reset From Key | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-404.png) |
-| Password Reset From Key Done |Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-500.png) |
+| Page | Size | Screenshot |
+| ---  | ---  | --- |
+| Home | Desktop | ![screenshot](documentation/testing_files/home-page-lighthouse-desktop.png) |
+| Profile | Desktop | ![screenshot](documentation/testing_files/profile-lighthouse-desktop.png) |
+| Booking | Desktop | ![screenshot](documentation/testing_files/booking-lighthouse-desktop.png) |
+| Edit booking | Desktop | ![screenshot](documentation/testing_files/edit-booking-lighthouse-desktop.png) |
+| Sign Up | Desktop | ![screenshot](documentation/testing_files/signup-lighthouse-desktop.png) |
+| Log In | Desktop | ![screenshot](documentation/testing_files/login-lighthouse-desktop.png) |
+| Log Out | Desktop | ![screenshot](documentation/testing_files/logout-lighthouse-desktop.png) |
+| Booking confirmation | Desktop | ![screenshot](documentation/testing_files/booking-confirmation-lighthouse-desktop.png) |
+| Password Reset | Desktop | ![screenshot](documentation/testing_files/password-reset-lighthouse-desktop.png) |
+| Password Reset Done | Desktop | ![screenshot](documentation/testing_files/password-reset-done-lighthouse-desktop.png) |
+| Password Reset From Key | Desktop | ![screenshot](documentation/testing_files/password-reset-from-key-lighthouse-desktop.png) |
+| Password Reset From Key Done |Desktop | ![screenshot](documentation/testing_files/password-reset-from-key-done-lighthouse-desktop.png) |
 
 #### Responsiveness
 
