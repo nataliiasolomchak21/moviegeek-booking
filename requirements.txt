@@ -12,7 +12,6 @@ django-allauth==0.58.1
 django-cors-headers==4.3.0
 django-crispy-forms==1.14.0
 django-extensions==3.2.3
-django-summernote==0.8.20.0
 gunicorn==21.2.0
 idna==3.4
 packaging==23.2

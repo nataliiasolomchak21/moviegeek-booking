@@ -224,4 +224,6 @@ To ensure that the website was accessible to all users the following steps were 
 
 ![Bug](documentation/testing_files/password-reset-bug.png)
 
-* I have a problem with the number input in booking.html, although I put max and min value in the input when you manually. I have experimented with different combinations of event listeners but was unsuccessful.
+* I have a problem with the number input in booking.html, although I put max and min value in the input when you manually entering the numbers, you can enter any number you want. You can't book the seats as their is validation present.
+
+![Bug](documentation/testing_files/number-input-bug.png)
