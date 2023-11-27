@@ -104,7 +104,9 @@ nav a:hover {
 .log-in-btn,
 .see-my-bookings-btn,
 .edit-btn,
-.delete-btn {
+.delete-btn,
+.update-btn,
+.book-btn {
     display: inline-block;
     color: #fff;
     background: #343356;
@@ -120,8 +122,15 @@ nav a:hover {
     padding: .4rem;
 }
 
-.forgot-password-btn {
+.forgot-password-btn,
+.see-my-bookings-btn,
+.go-back-home-btn {
     padding: .5rem;
+}
+
+.see-my-bookings-btn {
+    color: #343356;
+    background-color: #fff;
 }
 
 .my-bookings-btn {
@@ -135,6 +144,7 @@ nav a:hover {
 .reset-btn:hover,
 .watch-trailer-btn:hover,
 .go-back-home-btn:hover,
+.see-my-bookings-btn:hover,
 .delete-btn:hover,
 .log-out-btn:hover,
 .my-bookings-btn:hover {
