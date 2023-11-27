@@ -22,16 +22,6 @@ h1 {
     font-weight: 700;
 }
 
-button {
-    width: 15.5rem;
-    height: 2.5rem;
-    flex-shrink: 0;
-    border-radius: 2.5rem;
-    text-align: center;
-    font-size: 0.9375rem;
-    font-weight: 700;
-}
-
 a {
     text-decoration: none;
 }
@@ -103,90 +93,54 @@ nav a:hover {
 
 /* Buttons styling */
 .sign-up-btn,
-.sign-up-btn a,
-.forgot-password-btn,
-.forgot-password-btn a,
 .reset-btn,
-.reset-btn a ,
 .watch-trailer-btn,
-.watch-trailer-btn a,
+.book-now-btn,
 .go-back-home-btn,
-.go-back-home-btn a,
-.edit-btn,
-.edit-btn a,
+.my-bookings-btn,
 .log-out-btn,
-.log-out-btn a,
-.pw-reset-input {
+.pw-reset-input,
+.forgot-password-btn,
+.log-in-btn,
+.see-my-bookings-btn,
+.edit-btn,
+.delete-btn {
+    display: inline-block;
     color: #fff;
     background: #343356;
     transition: .3s ease-in-out;
     margin-bottom: 1rem;
-}
-
-.forgot-password-btn {
     width: 15.5rem;
     height: 2.5rem;
+    flex-shrink: 0;
     border-radius: 2.5rem;
     text-align: center;
     font-size: 0.9375rem;
     font-weight: 700;
+    padding: .4rem;
+}
+
+.forgot-password-btn {
     padding: .5rem;
 }
 
-.pw-reset-input {
-    font-size: 0.9375rem;
-    font-weight: 700;
+.my-bookings-btn {
+    color: #343356;
+    background-color: #fff;
 }
 
 .sign-up-btn:hover,
+.log-in-btn:hover,
 .forgot-password-btn:hover,
 .reset-btn:hover,
 .watch-trailer-btn:hover,
 .go-back-home-btn:hover,
-.edit-btn:hover,
-.log-out-btn:hover {
+.delete-btn:hover,
+.log-out-btn:hover,
+.my-bookings-btn:hover {
     background-color: #fff;
     color: #343356;
     border: 2px solid #343356;
-}
-
-.sign-up-btn:hover > a,
-.forgot-password-btn:hover > a,
-.reset-btn:hover > a,
-.watch-trailer-btn:hover > a,
-.go-back-home-btn:hover > a,
-.edit-btn:hover > a,
-.log-out-btn:hover > a {
-    background-color: #fff;
-    color: #343356;
-}
-
-.log-in-btn,
-.see-my-bookings-btn,
-.delete-btn {
-    background-color: #fff;
-    color: #343356;
-    border: 2px solid #343356;
-    transition: .3s ease-in-out;
-    margin-bottom: 1rem;
-}
-
-.log-in-btn a,
-.see-my-bookings-btn a {
-    background-color: #fff;
-    color: #343356;
-    transition: .3s ease-in-out;
-}
-
-.log-in-btn:hover,
-.log-in-btn:hover > a,
-.my-bookings-btn:hover,
-.my-bookings-btn:hover > a,
-.see-my-bookings-btn:hover,
-.see-my-bookings-btn:hover > a,
-.delete-btn:hover{
-    color: #fff;
-    background: #343356;
 }
 
 /* Authorization pages */
@@ -390,10 +344,6 @@ nav a:hover {
     font-size: .9rem;
 }
 
-.my-bookings-btn a {
-    color: #343356;
-}
-
 /* Styles all the  */
 .home-container {
     position: relative;
@@ -462,22 +412,16 @@ nav a:hover {
 }
 
 .book-now-btn,
-.book-now-btn a,
 .book-btn,
-.book-btn a,
-.update-btn,
-.update-btn a{
+.update-btn {
     background-color: #4b49bd;
     color: #fff;
     margin-bottom: .5rem;
 }
 
 .book-now-btn:hover,
-.book-now-btn:hover > a,
 .book-btn:hover,
-.book-btn:hover > a,
-.update-btn:hover,
-.update-btn:hover > a {
+.update-btn:hover {
     color: #4b49bd;
     background-color: #fff;
     margin-bottom: .5rem;
@@ -766,6 +710,16 @@ nav a:hover {
     font-weight: 700;
 }
 
+.edit-btn {
+    background-color: #fff;
+    color: #343356;
+}
+
+.edit-btn:hover {
+    background-color: #343356;
+    color: #fff;
+}
+
 /* Styles "No bookings yet" container */
 .no-bookings {
     display: flex;
@@ -791,16 +745,7 @@ nav a:hover {
     font-weight: 600;
 }
 
-.book-movie-btn a {
-    color: #fff;
-    font-size: .8rem;
-    background-color: #4b49bd;
-    text-decoration: none;
-    transition: .3s ease-in-out;
-}
-
-.book-movie-btn:hover,
-.book-movie-btn:hover > a  {
+.book-movie-btn:hover  {
     color: #4b49bd;
     background-color: #fff;
 }

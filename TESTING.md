@@ -227,3 +227,7 @@ To ensure that the website was accessible to all users the following steps were 
 * I have a problem with the number input in booking.html, although I put max and min value in the input when you manually entering the numbers, you can enter any number you want. You can't book the seats as their is validation present.
 
 ![Bug](documentation/testing_files/number-input-bug.png)
+
+* To test if the 403 page is working, I logged in as a user Grace and click on "Edit" button on one of her bookings, then I copied that the link of that page, log out as Grace and log in as another user called Michael, then I pasted in the link that I copied before and see if the user "Michael" can edit booking of the user "Grace". It was showing me 403 error page, as it's forbidden access and one user can't edit the booking of another. But now it's showing me 404 error page or 500 error page if the user tries to paste in the link without being logged in and signed up.
+
+![Bug](documentation/testing_files/error-page-bug.png)

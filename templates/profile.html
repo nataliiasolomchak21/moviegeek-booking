@@ -27,7 +27,7 @@
                             <div class="total-info">
                                 <h3>${{ booking_info.total_price }}</h3>
                                 <div class="booking-btn-group">
-                                    <button class="edit-btn"><a href="{% url 'edit_booking' booking_info.id %}">Edit</a></button>
+                                    <a href="{% url 'edit_booking' booking_info.id %}" class="edit-btn">Edit</a>
                                     <button class="delete-btn" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal{{ booking_info.id }}">Delete</button>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
         {% else %}
             <div class="no-bookings">
                 <h4>No bookings yet.</h4>
-                <button class="book-movie-btn"><a href="{% url 'booking'%}">Book a movie</a></button>
+                <a href="{% url 'booking'%}" class="book-movie-btn">Book a movie</a>
             </div>
         {% endif %}
     </div>
