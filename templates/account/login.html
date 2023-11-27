@@ -19,9 +19,9 @@
             {% endfor %}
         </div>
         {% endif %}
-        <label for="id_username">{% trans "Username" %}</label>
+        <label for="username">{% trans "Username" %}</label>
         {{ form.login }}
-        <label for="id_password">{% trans "Password" %}</label>
+        <label for="password">{% trans "Password" %}</label>
         {{ form.password }}
         {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
