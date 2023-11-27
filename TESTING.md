@@ -49,42 +49,41 @@ Back to [README](README.md)
 
 ### HTML
 
-<details><summary><b>base.html</b></summary>
+<details><summary><b>Home page (base.html and index.html)</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Home page](documentation/testing_files/home-page-w3c-validator.png)
 </details>
+<details><summary><b>Profile page (profile.html)</b></summary>
 
-<details><summary><b>index.html</b></summary>
-
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Profile page](documentation/testing_files/profile-page-w3c-validator.png)
 </details>
-<details><summary><b>booking.html</b></summary>
+<details><summary><b>Booking (booking.html)</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Booking](documentation/testing_files/make-booking-w3c-validator.png)
 </details>
-<details><summary><b>booking_confirmation.html</b></summary>
+<details><summary><b>Edit booking (edit_booking.html)</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Edit booking](documentation/testing_files/edit-booking-w3c-validator.png)
 </details>
-<details><summary><b>edit_booking.html</b></summary>
+<details><summary><b>Booking confirmation (boooking_confirmation.html)</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Booking confirmation](documentation/testing_files/booking-confirmation-w3c-validator.png)
 </details>
-<details><summary><b>profile.html</b></summary>
+<details><summary><b>Password Reset (password_reset.html)</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Password Reset page](documentation/testing_files/password-reset-input-email-w3c-validator.png)
 </details>
-<details><summary><b>signup.html</b></summary>
+<details><summary><b>Password Reset Done(password_reset_done.html)</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Password Reset](documentation/testing_files/link-password-reset-sent-w3c-validator.png)
 </details>
-<details><summary><b>login.html</b></summary>
+<details><summary><b>Password Reset From Key (password_reset_from_key.html)</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Password Reset](documentation/testing_files/change-password-w3c-validator.png)
 </details>
-<details><summary><b>logout.html</b></summary>
+<details><summary><b>Password Reset From Key Done(password_reset_from_key_done.html)</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Password Reset](documentation/testing_files/password-is-changed-w3c-validator.png)
 </details>
 
 ### CSS
