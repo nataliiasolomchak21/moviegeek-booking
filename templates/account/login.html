@@ -9,7 +9,7 @@
 <section>
   <div class="log-in-container">
       <h1>{% trans "Log In" %}</h1>
-      <h3>{% blocktrans %}Don’t have an account? <a class="link" href="{{ signup_url }}">Sign Up</a>{% endblocktrans %}</h3>
+      <h2>{% blocktrans %}Don’t have an account? <a class="link" href="{{ signup_url }}">Sign Up</a>{% endblocktrans %}</h2>
       <form class="login log-in-form" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {% if form.non_field_errors %}

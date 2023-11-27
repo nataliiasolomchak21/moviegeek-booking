@@ -141,6 +141,8 @@ To see the HTML version of the reports, and find out whether some pieces of code
 
 #### Booking app
 
+12 tests were ran.
+
 ![Coverage](documentation/testing_files/coverage.png)
 
 ## Error Handling
@@ -174,9 +176,41 @@ Meta tags were included in a head of base.html file to tell the search engines a
 To ensure that the website was accessible to all users the following steps were taken:
 
 * All the images has clear alt attribute that explains what it is about.
-* Aria-labels were included to all the internal and external links as well as buttons to provide the purpose for them for screen readers.
+* Aria-labels were included to all the internal and external links to provide the purpose for them for screen readers.
 
 #### Lighthouse
+
+After deploying to Heroku, the lighthouse for error pages is not loaded.
+
+##### Mobile
+
+| Home | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-home.png) |
+| Profile | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-about.png) |
+| Booking | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-news.png) |
+| Edit booking | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-contact.png) |
+| Sign Up | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-base.png) |
+| Log In | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-detail.png) |
+| Log Out | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-form.png) |
+| Booking confirmation | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-confirm-delete.png) |
+| Password Reset | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-400.png) |
+| Password Reset Done | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-403.png) |
+| Password Reset From Key | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-404.png) |
+| Password Reset From Key Done | Mobile | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-500.png) |
+
+##### Desktop
+
+| Home | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-home.png) |
+| Profile | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-about.png) |
+| Booking | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-news.png) |
+| Edit booking | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-contact.png) |
+| Sign Up | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-base.png) |
+| Log In | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-detail.png) |
+| Log Out | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-form.png) |
+| Booking confirmation | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-post-confirm-delete.png) |
+| Password Reset | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-400.png) |
+| Password Reset Done | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-403.png) |
+| Password Reset From Key | Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-404.png) |
+| Password Reset From Key Done |Desktop | ![screenshot](documentation/lighthouse/website/mobile/website-mobile-500.png) |
 
 #### Responsiveness
 

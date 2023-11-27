@@ -210,18 +210,19 @@ nav a:hover {
     margin-bottom: 1.5rem;
 }
 
-.sign-up-container h3,
-.log-in-container h3,
-.pw-reset-container h3,
-.pw-reset-confirm-container h3 {
+.sign-up-container h2,
+.log-in-container h2,
+.pw-reset-container h2,
+.pw-reset-confirm-container h2,
+.log-out-container h1 {
     font-size: .9rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #343356;
 }
 
-.sign-up-container h3 a,
-.log-in-container h3 a{
+.sign-up-container h2 a,
+.log-in-container h2 a{
     text-decoration-line: underline;
     color: #343356;
 }
@@ -296,7 +297,7 @@ nav a:hover {
     margin-bottom: 1.7rem;
 }
 
-.log-out-container h3 {
+.log-out-container h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #343356;
