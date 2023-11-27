@@ -23,7 +23,7 @@ class TestModels(TestCase):
 
 class BookingModelTest(TestCase):
     def setUp(self):
-        user = User.objects.create(username="testuser", password="testpass")
+        user = User.objects.create(username="testuser", password="testpassword")
         movie = Movie.objects.create(
             title="Test Movie",
             price=10.99,

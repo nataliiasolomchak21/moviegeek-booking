@@ -7,7 +7,7 @@ from .forms import BookingForm
 class TestForms(TestCase):
 
     def setUp(self):
-        self.user = User.objects.create_user(username='testuser', password='testpass')
+        self.user = User.objects.create_user(username='testuser', password='testpassword')
 
         # Create a test movie
         self.movie = Movie.objects.create(
