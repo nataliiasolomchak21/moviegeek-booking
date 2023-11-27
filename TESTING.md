@@ -147,13 +147,6 @@ To see the HTML version of the reports, and find out whether some pieces of code
 
 ### Error Pages Testing
 
-<details><summary><b>403 Forbidden</b></summary>
-
-![Error page](documentation/readme_files/403-error-page.png)
-</details>
-
-To test if the 403 page is working, I logged in as a user Grace and click on "Edit" button on one of her bookings, then I copied that the link of that page, log out as Grace and log in as another user called Michael, then I pasted in the link that I copied before and see if the user "Michael" can edit booking of the user "Grace". It showed me 403 error page, as it's forbidden access and one user can't edit the booking of another.
-
 <details><summary><b>500 Internal Server Error</b></summary>
 
 ![Error page](documentation/readme_files/500-error-page.png)

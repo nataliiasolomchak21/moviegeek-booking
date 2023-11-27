@@ -497,10 +497,6 @@ The Log Out page gives the user the ability to log out from their account. After
 Each of the alert messages being displayed when the various actions such as Sign Up, Log In, Log Out, Create, Edit or Delete a booking is being done to give a visual feedback to the user. The user can close the message or it will dissapear in a few seconds.
 
 #### Error pages
-<details><summary><b>403 Forbidden</b></summary>
-
-![Error page](documentation/readme_files/403-error-page.png)
-</details>
 
 Th error page for when a user tries to access a resource or perform an action for which they don't have permissions.
 

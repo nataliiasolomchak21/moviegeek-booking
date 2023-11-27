@@ -94,7 +94,7 @@ def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
 
     if request.user != booking.user:
-        return HttpResponseForbidden(render(request, "403.html"))
+        return HttpResponseForbidden(render(request, "404.html"))
 
     if request.method == "POST":
         form = BookingForm(request.POST, instance=booking)
@@ -132,7 +132,7 @@ def delete_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
 
     if request.user != booking.user:
-        return HttpResponseForbidden(render(request, "403.html"))
+        return HttpResponseForbidden(render(request, "404.html"))
 
     booking.delete()
 
