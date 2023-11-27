@@ -224,4 +224,4 @@ To ensure that the website was accessible to all users the following steps were 
 
 ![Bug](documentation/testing_files/password-reset-bug.png)
 
-* I have an issue with manual seats input after using up/down arrows. Users should be able to both use the up/down arrows to adjust the number and manually enter a specific number. I have experimented with different combinations of event listeners but was unsuccessful.
+* I have a problem with the number input in booking.html, although I put max and min value in the input when you manually. I have experimented with different combinations of event listeners but was unsuccessful.
