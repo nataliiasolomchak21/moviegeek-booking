@@ -34,12 +34,15 @@ Back to [README](README.md)
 | As a user I can access main pages and features through the header and footer so that I can easily navigate the site (Footer) | ![screenshot](documentation/readme_files/footer-feature.png) |
 | As a new user, I can sign up with form validation so that I can create a new account to book movies. | ![screenshot](documentation/readme_files/sign-up-feature.png) |
 | As a user I can login so that I can access my account. | ![screenshot](documentation/readme_files/log-in-feature.png) |
+| As a user I can reset my password by entering my email so that I can recover access if forgotten. | ![screenshot](documentation/readme_files/password-reset-user-story.png) |
 | As a user I can select a movie, date, time, and up to 8 seats so that I can book tickets and see them in "My bookings". | ![screenshot](documentation/readme_files/booking-feature.png) |
 | As a user I can edit or delete my existing bookings on my profile so that I can manage my tickets. (Edit) | ![screenshot](documentation/readme_files/edit-booking-feature.png) |
 | As a user I can edit or delete my existing bookings on my profile so that I can manage my tickets. (Delete) | ![screenshot](documentation/readme_files/delete-booking-feature.png) |
 | As a user I can view information about movies so that I can choose movie to book tickets to. | ![screenshot](documentation/readme_files/movies-home-page-user-story.png) |
 | As a user I can view my profile containing my details so that I can confirm my account information. | ![screenshot](documentation/readme_files/profile-with-bookings-feature.png) |
 | As a a logged in user I can log out so that I can securely end my session. | ![screenshot](documentation/readme_files/log-out-feature.png) |
+| As a user, I can see customized and informative error pages for 404 and 500 errors so that I understand what happened and can take appropriate action. | ![screenshot](documentation/readme_files/404-error-page.png) |
+| As a user, I can see customized and informative error pages for 404 and 500 errors so that I understand what happened and can take appropriate action. | ![screenshot](documentation/readme_files/500-error-page.png) |
 | As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Create) | ![screenshot](documentation/testing_files/create-admin.png) |
 | As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Read) | ![screenshot](documentation/testing_files/read-admin.png) |
 | As a site owner/administrator I can create, read, update and delete movies so that I can manage showtime content. (Update) | ![screenshot](documentation/testing_files/update-admin.png) |
@@ -48,6 +51,8 @@ Back to [README](README.md)
 ## Validator Testing
 
 ### HTML
+
+[W3C validation](https://validator.w3.org/) was used to check the markup validity of html file.
 
 <details><summary><b>Home page (base.html and index.html)</b></summary>
 
@@ -90,6 +95,8 @@ The rest of the pages and folders that are in Github like: socialaccount, etc. w
 
 ### CSS
 
+[Jigsaw](https://jigsaw.w3.org/css-validator/) was used to check the validity of css file.
+
 <details><summary><b>style.css</b></summary>
 
 ![Css](documentation/testing_files/css-validator.png)
@@ -115,6 +122,8 @@ The rest of the pages and folders that are in Github like: socialaccount, etc. w
 No errors in all the files.
 
 ### Python
+
+[CI Python Linter](https://pep8ci.herokuapp.com/) was used to check the validity of python files.
 
 <details><summary><b>asgi.py</b></summary>
 
@@ -340,7 +349,7 @@ Responsiveness is tested on various devices such as:
 
 ### Unsolved
 
-* I had a problem with navbar toggle still appearing on 1024x768 size, even with `display: none` for `(min-width: 992px)`, so I fixed it by adding `(min-width: 1024px)` to media queries. It still can be visible a little bit if you are testing sizez manually.
+* I had a problem with navbar toggle still appearing on 1024x768 size, even with `display: none` for `(min-width: 992px)`, so I fixed it by adding `(min-width: 1024px)` to media queries. It still can be visible a little bit if you are testing sizes manually.
 * The "Change Password" input and labels were suppose to go one after another but they are next to each other, and although I tried to modify it using different styles, it still doesn't work.
 
 ![Bug](documentation/testing_files/password-reset-bug.png)

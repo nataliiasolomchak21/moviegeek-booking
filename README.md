@@ -72,7 +72,7 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 >
 > *"As a a logged in user I can log out so that I can securely end my session."*
 >
-> *"As a user, I can see customized and informative error pages for 404 and 500 errors ** so that ** I understand what happened and can take appropriate action."*
+> *"As a user, I can see customized and informative error pages for 404 and 500 errors so that I understand what happened and can take appropriate action."*
 
 #### Site-admin
 
@@ -391,6 +391,14 @@ The sign up page gives user ability to enter their information(username, email a
 </details>
 
 The log in page gives user ability to enter their information(username and password) in order to get access to their existing profile and give them ability to create, view, edit and delete their bookings.
+
+#### Password Reset
+<details><summary><b>Password Reset</b></summary>
+
+![Log In page](documentation/readme_files/password-reset-user-story.png)
+</details>
+
+The password reset page gives user ability to get back access to their account after resetting their password.
 
 #### Home page (Authenticated User)
 <details><summary><b>Home page (Authenticated User)</b></summary>
