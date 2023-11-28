@@ -215,6 +215,13 @@ To test if the 404 page is working, I just typed in a non-existent url.
 
 ## Manual Testing
 
+![Screenshot](documentation/testing_files/manual-testing-one.png)
+![Screenshot](documentation/testing_files/manual-testing-two.png)
+![Screenshot](documentation/testing_files/manual-testing-three.png)
+![Screenshot](documentation/testing_files/manual-testing-four.png)
+![Screenshot](documentation/testing_files/manual-testing-five.png)
+![Screenshot](documentation/testing_files/manual-testing-six.png)
+
 ### SEO
 
 Meta tags were included in a head of base.html file to tell the search engines and users more about the website and the information it contains.
