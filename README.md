@@ -14,7 +14,7 @@ View the live project [here](https://moviegeek-booking-1c00719de368.herokuapp.co
     - [User Stories](#user-stories)
     - [Agile Methodology](#agile-methodology)
 - [UI](#ui)
-    - [Initial Design](#design)
+    - [Initial Design](#initial-design)
     - [Colour Palette](#colour-palette)
     - [Typography](#typography)
 - [ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
@@ -46,7 +46,7 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 
 - Allow users to search for and view information about movies playing, including title, showtimes, ticket prices, and seat availability.
 - Provide users with a personal profile where they can view their past and current bookings.
-- Integrate a ticketing system that updates seat availability in real-time as tickets are booked.
+- Integrate a ticketing system.
 - Implement a seamless mobile-friendly booking flow for smartphone users.
 - Build an admin portal where staff can manage movie and showtime listings.
 
@@ -60,6 +60,8 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 >
 > *"As a user I can login so that I can access my account."*
 >
+> *"As a user I can reset my password by entering my email so that I can recover access if forgotten."*
+>
 > *"As a user I can select a movie, date, time, and up to 8 seats so that I can book tickets and see them in "My bookings."*
 >
 > *"As a user I can edit or delete my existing bookings on my profile so that I can manage my tickets."*
@@ -69,6 +71,8 @@ The primary audience is moviegoers and cinephiles looking to conveniently book t
 > *"As a user I can view my profile containing my details so that I can confirm my account information."*
 >
 > *"As a a logged in user I can log out so that I can securely end my session."*
+>
+> *"As a user, I can see customized and informative error pages for 404 and 500 errors ** so that ** I understand what happened and can take appropriate action."*
 
 #### Site-admin
 
@@ -204,7 +208,7 @@ Things I have changed: The header looks a little bit different as for the mobile
 ![Footer](documentation/readme_files/footer-design.png)
 </details>
 
-Things I have changed: I got rid of logo and added "Admin Only" button to the footer.
+Things I have changed: I got rid of logo.
 
 #### Sign Up page
 <details><summary><b>Sign Up page</b></summary>
@@ -231,7 +235,7 @@ Things I have changed: I also got rid of the image for the desktop size and chan
 #### Home page (Non-Authenticated User)
 <details><summary><b>Home page (Non-Authenticated User)</b></summary>
 
-![Home page (Non-Authenticated User)](documentation/readme_files/home-page-no-authenticated-user-design.png)
+![Home page (Non-Authenticated User)](documentation/readme_files/home-page-non-authenticated-user-design.png)
 </details>
 
 Nothing was changed here.
@@ -246,7 +250,7 @@ Nothing was changed here.
 ![Booking page](documentation/readme_files/booking-two-design.png)
 </details>
 
-Things I have changed: I wanted to created a real ciname experience by letting users choose the seats for the movie but because I wasn't able to implement that functionality, I stick to the number input (users can choose the number of seats they want to book). Also, for the date and time I did a dropdown menu.
+Things I have changed: I wanted to created a real cinema experience by letting users choose the seats for the movie but because I wasn't able to implement that functionality, I sticked to the number input (users can choose the number of seats they want to book). Also, for the date and time I did a dropdown menu.
 
 #### Booking Confirmation page
 <details><summary><b>Booking Confirmation page</b></summary>
@@ -278,7 +282,7 @@ Nothing was changed here.
 ![Log Out page](documentation/readme_files/log-out-design.png)
 </details>
 
-Things I have changed: I wanted to make the log out modal first but then stick to the html template for that.
+Things I have changed: I wanted to make the log out modal first but then sticked to the html template for that.
 
 #### Messages
 <details><summary><b>Sign Up</b></summary>
@@ -320,7 +324,7 @@ Things I have changed: Although I wanted to create my own modal, I used Bootstra
 
 ![Colour Palette](documentation/readme_files/colour-palette.png)
 
-For this project, I chose these colors to be presented in my colour palette as they have a positive affect on the user experince.
+For this project, I chose these colors to be presented in my colour palette as they have a positive affect on the user experience.
 
 ![Colour Palette](documentation/readme_files/colour-palette-two.png)
 
@@ -332,7 +336,7 @@ For this project I used Montserrat font family as I thought it was a readable fo
 
 ## ERD (Entity-Relationship Diagram)
 
-I've used Entity-Relationship Diagram(ERD) Entity-Relationship Diagram represent the relationships between entities, more specifically the relationships between my "Movie" and "Booking" models as well as Django built-in User model.
+I've used Entity-Relationship Diagram(ERD). Entity-Relationship Diagram represent the relationships between entities, more specifically the relationships between my "Movie" and "Booking" models as well as Django built-in User model.
 
 This ERD conveys that:
 
@@ -370,7 +374,7 @@ If the user is not authenticated, they will see Home, Sign Up and Log In links i
 ![Footer](documentation/readme_files/footer-feature.png)
 </details>
 
-The footer includes links to the social media that each opens in a new tab and "Admin Only" button which is available only to the superuser/admin of the website.
+The footer includes links to the social media that each opens in a new tab.
 
 #### Sign Up page
 <details><summary><b>Sign Up page</b></summary>
@@ -418,7 +422,7 @@ The booking page includes a dropdown with four movies to choose from, the number
 ![Booking Confirmation page)](documentation/readme_files/booking-confirmation-feature.png)
 </details>
 
-After the user did their booking, they will be redirected to the "Booking confirmation" page that confirm that their booking was successful. They also have an option to either see their newly creayed booking in their Profile page or go back to the Home page.
+After the user did their booking, they will be redirected to the "Booking confirmation" page that confirm that their booking was successful. They also have an option to either see their newly created booking in their Profile page or go back to the Home page.
 
 #### Profile page (with bookings) (View booking)
 <details><summary><b>Profile page (with bookings)</b></summary>
@@ -434,7 +438,7 @@ The Profile page with existing bookings includes information about the user (use
 ![Profile page (without bookings)](documentation/readme_files/profile-without-bookings-feature.png)
 </details>
 
-The Profile page without bookings includes the text with "No bookings yet" and "Book a Movie" button that gives the user an ability to book a movie.
+The Profile page without bookings includes the text with "No bookings yet" and "Book a Movie" button that gives the user the ability to book a movie.
 
 #### Edit booking
 <details><summary><b>Edit booking</b></summary>
@@ -450,7 +454,7 @@ User can edit their booking and will be presented with a page identical to the B
 ![Delete booking](documentation/readme_files/delete-booking-feature.png)
 </details>
 
-User can delet their booking and will be presented with a modal to confirm the delete process. The message about their booking being deleted is displayed.
+User can delete their booking and will be presented with a modal to confirm the delete process. The message about their booking being deleted is displayed.
 
 #### Admin panel
 <details><summary><b>Admin panel</b></summary>
@@ -483,6 +487,10 @@ The Log Out page gives the user the ability to log out from their account. After
 
 ![Messages](documentation/readme_files/updated-booking-message.png)
 </details>
+<details><summary><b>Password changed</b></summary>
+
+![Messages](documentation/readme_files/updated-booking-message.png)
+</details>
 
 <details><summary><b>Deleted booking</b></summary>
 
@@ -498,21 +506,19 @@ Each of the alert messages being displayed when the various actions such as Sign
 
 #### Error pages
 
-Th error page for when a user tries to access a resource or perform an action for which they don't have permissions.
-
 <details><summary><b>500 Internal Server Error</b></summary>
 
 ![Error page](documentation/readme_files/500-error-page.png)
 </details>
 
-Th error page for when a user tries to access a resource or pageon a website that cannot be found.
+The error page for when there is a problem on the server's side.
 
 <details><summary><b>404 Page Not Found</b></summary>
 
 ![Error page](documentation/readme_files/404-error-page.png)
 </details>
 
-The error page for when there is a problem on the server's side.
+The error page for when a user tries to access a resource or page on a website that cannot be found.
 
 ### Features Left to Implement
 
@@ -533,8 +539,8 @@ Besides the features mentioned in [Won't Have For This Deployment](#wont-have-fo
 
 * [Figma](https://www.figma.com/) was used to create the final design of a website.
 * [Font Awesome](https://fontawesome.com/) was used for social media icons in the footer.
-* [Iconify](https://iconify.design/) was used for Question Marl icon in the header.
-* [Favicon](https://favicon.io/) was used for favicons.
+* [Iconify](https://iconify.design/) was used for menu icon in the header.
+* [Favicon](https://favicon.io/) was used for favicon.
 * [LucidChart](https://lucid.co/) was used for creating ERD.
 * [Google Fonts](https://fonts.google.com/) was used to add specific font family to the stylesheet.
 * [Adobe Color](https://color.adobe.com/create/color-wheel) was used to create a colour palette.
@@ -542,7 +548,7 @@ Besides the features mentioned in [Won't Have For This Deployment](#wont-have-fo
 * [Bootstrap](https://getbootstrap.com/) was used for styling certain elements on the page.
 * [W3C validation](https://validator.w3.org/) was used to check the markup validity of html file.
 * [Jigsaw](https://jigsaw.w3.org/css-validator/) was used to check the validity of css file.
-* [JSHint](https://jshint.com/) was used to check the validity of js file.
+* [JSHint](https://jshint.com/) was used to check the validity of js files.
 * [CI Python Linter](https://pep8ci.herokuapp.com/) was used to check the validity of python files.
 * [Am I Responsive](https://ui.dev/amiresponsive) was used to get a screenshot of a final look of the website on various devices.
 * [Github](https://github.com/) was used to store the code of the website.
@@ -660,10 +666,10 @@ SECRET_KEY - This is your Django project secret key, generated by your Django pr
 * The hero image was taken from [here](https://www.pinterest.com.au/pin/589408669974067553/).
 * The favicon image was taken from [here](https://www.goodgoodgood.co/articles/positive-words-that-start-with-m).
 * Movies posters (in order):
-  1. [Spider-Man: Across The Spider-Verse](https://www.imdb.com/title/tt9362722/)
+  1. [Spider-Man: Across The Spider-Verse](https://www.imdb.com/title/tt9362722/mediaviewer/rm1009725185/?ref_=tt_ov_i)
   2. [Barbie](https://deadline.com/gallery/barbie-movie-posters/barbie-barbie_vert_tsr_w_talent_2764x4096_dom_rgb/)
-  3. [Mission Impossible: Dead Reckoning Part One](https://www.imdb.com/title/tt9603212/)
-  4. [Oppenheimer](https://www.imdb.com/title/tt15398776/)
+  3. [Mission Impossible: Dead Reckoning Part One](https://www.imdb.com/title/tt9603212/mediaviewer/rm462890241/?ref_=tt_ov_i)
+  4. [Oppenheimer](https://www.imdb.com/title/tt15398776/mediaviewer/rm2670601217/?ref_=tt_ov_i)
 * Booking images in profile page:
   1. [Spider-Man: Across The Spider-Verse](https://m.imdb.com/title/tt9362722/mediaviewer/rm4107081473)
   2. [Barbie](https://m.imdb.com/title/tt1517268/mediaviewer/rm976758785/)
