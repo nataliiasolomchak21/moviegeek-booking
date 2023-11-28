@@ -178,7 +178,7 @@ To ensure that the website was accessible to all users the following steps were 
 * All the images has clear alt attribute that explains what it is about.
 * Aria-labels were included to all the internal and external links to provide the purpose for them for screen readers.
 
-#### Lighthouse
+### Lighthouse
 
 After deploying to Heroku, the lighthouse for error pages is not loaded.
 
@@ -216,9 +216,43 @@ After deploying to Heroku, the lighthouse for error pages is not loaded.
 | Password Reset From Key | Desktop | ![screenshot](documentation/testing_files/password-reset-from-key-lighthouse-desktop.png) |
 | Password Reset From Key Done |Desktop | ![screenshot](documentation/testing_files/password-reset-from-key-done-lighthouse-desktop.png) |
 
-#### Responsiveness
+### Responsiveness
 
-#### Browser compatibility
+Responsiveness is tested on various devices such as:
+
+<details><summary><b>Samsung Galaxy S8+</b></summary>
+
+![Screenshot](documentation/testing_files/samsung-responsive.png)
+</details>
+<details><summary><b>Samsung Galaxy A34</b></summary>
+
+![Screenshot](documentation/testing_files/samsung-a34-responsive.jpg)
+</details>
+<details><summary><b>Oppo A12</b></summary>
+
+![Screenshot](documentation/testing_files/oppo-responsive.jpg)
+</details>
+<details><summary><b>Xiaomi 12T Pro</b></summary>
+
+![Screenshot](documentation/testing_files/xiaomi-responsive.jpg)
+</details>
+<details><summary><b>IPad</b></summary>
+
+![Screenshot](documentation/testing_files/ipad-responsive.png)
+</details>
+<details><summary><b>Acer Nitro</b></summary>
+
+![Screenshot](documentation/testing_files/chrome.png)
+</details>
+
+### Browser compatibility
+
+| Browser | Fail/Pass | Screenshot |
+| ---  | ---  | --- |
+| Chrome | Pass | ![screenshot](documentation/testing_files/chrome.png) |
+| Edge | Pass | ![screenshot](documentation/testing_files/edge.png) |
+| Opera | Pass | ![screenshot](documentation/testing_files/opera.png) |
+| Firefox | Pass | ![screenshot](documentation/testing_files/firefox.png) |
 
 ## Bugs
 
