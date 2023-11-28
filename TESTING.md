@@ -361,3 +361,5 @@ Responsiveness is tested on various devices such as:
 * To test if the 403 page is working, I logged in as a user Grace and click on "Edit" button on one of her bookings, then I copied that the link of that page, log out as Grace and log in as another user called Michael, then I pasted in the link that I copied before and see if the user "Michael" can edit booking of the user "Grace". It was showing me 403 error page, as it's forbidden access and one user can't edit the booking of another. But now it's showing me 404 error page or 500 error page if the user tries to paste in the link without being logged in and signed up.
 
 ![Bug](documentation/testing_files/error-page-bug.png)
+
+* When the user click on log in or log out and is logged in or looged out, the messages are displayes as "You are signed in as (user)" or "signed out as (user)". It's not bug, rather inconsistency in messages but I still decided to include it here.

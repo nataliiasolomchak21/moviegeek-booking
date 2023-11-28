@@ -510,7 +510,12 @@ The Log Out page gives the user the ability to log out from their account. After
 ![Messages](documentation/readme_files/signed-out-message.png)
 </details>
 
-Each of the alert messages being displayed when the various actions such as Sign Up, Log In, Log Out, Create, Edit or Delete a booking is being done to give a visual feedback to the user. The user can close the message or it will dissapear in a few seconds.
+<details><summary><b>Password Changed</b></summary>
+
+![Messages](documentation/readme_files/password-changed-message-feature.png)
+</details>
+
+Each of the alert messages being displayed when the various actions such as Sign Up, Log In, Log Out, Password Changed, Create, Edit or Delete a booking is being done to give a visual feedback to the user. The user can close the message or it will dissapear in a few seconds.
 
 #### Error pages
 
