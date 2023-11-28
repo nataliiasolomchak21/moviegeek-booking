@@ -45,6 +45,11 @@ nav {
     z-index: 100;
 }
 
+nav a.active {
+    text-decoration: underline;
+    color: #fff !important;;
+}
+
 nav a:hover {
     color: #fff !important;;
 }

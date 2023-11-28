@@ -90,7 +90,7 @@ Back to [README](README.md)
 
 <details><summary><b>style.css</b></summary>
 
-![Iteration One](documentation/readme_files/iteration-one.png)
+![Css](documentation/testing_files/css-validator.png)
 </details>
 
 ### JavaScript
