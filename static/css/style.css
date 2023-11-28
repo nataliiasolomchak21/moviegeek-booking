@@ -105,7 +105,8 @@ nav a:hover {
 .edit-btn,
 .delete-btn,
 .update-btn,
-.book-btn {
+.book-btn,
+.book-movie-btn {
     display: inline-block;
     color: #fff;
     background: #343356;
