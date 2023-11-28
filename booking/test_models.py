@@ -4,8 +4,14 @@ from .models import Movie, Booking
 
 
 class TestModels(TestCase):
+    """
+    Test cases for models in the application.
+    """
 
     def setUp(self):
+        """
+        Set up necessary data for testing.
+        """
         Movie.objects.create(
             title="Test Movie",
             price=10.99,
@@ -18,12 +24,26 @@ class TestModels(TestCase):
         )
 
     def test_movie_str_method(self):
+        """
+        Test the __str__ method of the Movie model.
+        """
         movie = Movie.objects.get(title="Test Movie")
         self.assertEqual(str(movie), "Test Movie")
 
+
 class BookingModelTest(TestCase):
+    """
+    Test cases for the Booking model in the application.
+    """
+
     def setUp(self):
-        user = User.objects.create(username="testuser", password="testpassword")
+        """
+        Set up necessary data for testing.
+        """
+        user = User.objects.create(
+            username="testuser",
+            password="testpassword"
+        )
         movie = Movie.objects.create(
             title="Test Movie",
             price=10.99,
@@ -44,8 +64,9 @@ class BookingModelTest(TestCase):
         )
 
     def test_booking_str_method(self):
+        """
+        Test the __str__ method of the Booking model.
+        """
         booking = Booking.objects.get(date="2024-01-24")
         expected_str = "Test Movie - 2024-01-24 12:00:00"
         self.assertEqual(str(booking), expected_str)
-
-

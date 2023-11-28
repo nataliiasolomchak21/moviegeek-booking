@@ -45,14 +45,9 @@ nav {
     z-index: 100;
 }
 
-nav a.active {
-    text-decoration: underline;
-    color: #fff !important;;
-}
 nav a:hover {
     color: #fff !important;;
 }
-
 
 .navbar-brand,
 .navbar-nav a {
@@ -231,7 +226,6 @@ nav a:hover {
 .sign-up-form,
 .log-in-form,
 .new-pw-form,
-.form-group,
 .pw-reset-form {
     display: flex;
     flex-direction: column;
@@ -355,7 +349,11 @@ nav a:hover {
     font-size: .9rem;
 }
 
-/* Styles all the  */
+/* Container with movies and h2 element styling */
+.home-section {
+    background-color: #000;
+}
+
 .home-container {
     position: relative;
     padding: 2rem;

@@ -7,11 +7,17 @@ from .forms import BookingForm
 
 
 def index(request):
+    """
+    Renders the index page with a list of all movies.
+    """
     movies = Movie.objects.all()
     return render(request, "index.html", {"movies": movies})
 
 
 def booking(request):
+    """
+    Renders the booking page with a list of movies, dates, and times.
+    """
     movies = Movie.objects.all()
     dates = ["2024-01-24", "2024-01-26", "2024-01-30"]
     times = ["12:00", "15:00", "19:00"]
@@ -27,6 +33,12 @@ def booking(request):
 
 @login_required
 def make_booking(request):
+    """
+    Handles the creation of a new booking.
+    Redirects to the user's profile page on successful edit,
+    or renders the edit booking page with the form if the request
+    method is not POST.
+    """
     if request.method == "POST":
         movie_id = request.POST.get("movie")
         num_seats = request.POST.get("seats")
@@ -46,14 +58,16 @@ def make_booking(request):
             total_price=total_price,
         )
 
-        return redirect(
-            "booking_confirmation"
-        )
+        return redirect("booking_confirmation")
 
     return redirect("booking")
 
 
 def profile(request):
+    """
+    Renders the user's profile page with a list of their bookings.
+    Returns rendered HTML template with the user's booking information.
+    """
     bookings = Booking.objects.filter(user=request.user).order_by("-id")
 
     booking_info_list = []
@@ -87,10 +101,18 @@ def profile(request):
 
 
 def booking_confirmation(request):
+    """
+    Renders the booking confirmation page.
+    """
     return render(request, "booking_confirmation.html")
 
 
 def edit_booking(request, booking_id):
+    """
+    Handles editing of a booking.
+    Redirects to the user's profile page on successful edit,
+    or renders the edit booking page with the form if the request method is not POST.
+    """
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
 
     if request.user != booking.user:
@@ -129,6 +151,10 @@ def edit_booking(request, booking_id):
 
 
 def delete_booking(request, booking_id):
+    """
+    Handles the deletion of a booking.
+    Redirects to the user's profile page on successful deletion.
+    """
     booking = get_object_or_404(Booking, id=booking_id)
 
     if request.user != booking.user:
