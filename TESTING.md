@@ -86,6 +86,8 @@ Back to [README](README.md)
 ![Password Reset](documentation/testing_files/password-is-changed-w3c-validator.png)
 </details>
 
+The rest of the pages and folders that are in Github like: socialaccount, etc. weren't used by me and thus weren't validated.
+
 ### CSS
 
 <details><summary><b>style.css</b></summary>
