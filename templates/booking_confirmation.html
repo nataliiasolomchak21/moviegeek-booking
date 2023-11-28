@@ -3,12 +3,12 @@
 {% load static %}
 
 {% block content %}
-
-    <section class="successful_booking">
-        <div class="booking-confirm">
-            <h1>Your tickets were booked <br> <span>successfully!</span></h1>
-            <a href="{% url 'profile' %}" class="see-my-bookings-btn">See in My bookings</a>
-            <a href="{% url 'index' %}" class="go-back-home-btn">Go Back to Home</a>
-        </div>
-    </section>
+<!-- Text content and buttons -->
+<section class="successful_booking">
+    <div class="booking-confirm">
+        <h1>Your tickets were booked <br> <span>successfully!</span></h1>
+        <a href="{% url 'profile' %}" class="see-my-bookings-btn">See in My bookings</a>
+        <a href="{% url 'index' %}" class="go-back-home-btn">Go Back to Home</a>
+    </div>
+</section>
 {% endblock %}

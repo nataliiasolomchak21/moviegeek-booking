@@ -1,35 +1,35 @@
-{% extends "base.html" %}
-
-{% load i18n %}
-{% load account socialaccount %}
-
-{% block head_title %}{% trans "Log In" %}{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load i18n %} {% load account socialaccount %} {%
+block head_title %}{% trans "Log In" %}{% endblock %} {% block content %}
 <section>
-  <div class="log-in-container">
-      <h1>{% trans "Log In" %}</h1>
-      <h2>{% blocktrans %}Don’t have an account? <a class="link" href="{{ signup_url }}">Sign Up</a>{% endblocktrans %}</h2>
-      <form class="login log-in-form" method="POST" action="{% url 'account_login' %}">
-        {% csrf_token %}
-        {% if form.non_field_errors %}
-        <div class="error-container">
-            {% for error in form.non_field_errors %}
+    <!-- Log In -->
+    <div class="log-in-container">
+        <h1>{% trans "Log In" %}</h1>
+        <h2>
+            {% blocktrans %}Don&#44;t have an account?
+            <!-- Link to Sign Up page -->
+            <a class="link" href="{{ signup_url }}">Sign Up</a>{% endblocktrans %}
+        </h2>
+        <form class="login log-in-form" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %} {% if form.non_field_errors %}
+            <!-- Errors -->
+            <div class="error-container">
+                {% for error in form.non_field_errors %}
                 <p>{{ error }}</p>
-            {% endfor %}
-        </div>
-        {% endif %}
-        <label for="id_login">{% trans "Username" %}</label>
-        {{ form.login }}
-        <label for="id_password">{% trans "Password" %}</label>
-        {{ form.password }}
-        {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
-        {% endif %}
-
-        <button class="log-in-btn" type="submit">{% trans "Log In" %}</button>
-    </form>
-      <a href="{% url 'account_reset_password' %}" class="forgot-password-btn">{% trans "Forgot Password?" %}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <label for="id_login">{% trans "Username" %}</label>
+            {{ form.login }}
+            <label for="id_password">{% trans "Password" %}</label>
+            {{ form.password }} {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button class="log-in-btn" type="submit">
+                {% trans "Log In" %}
+            </button>
+        </form>
+        <!-- Forgot Password button -->
+        <a href="{% url 'account_reset_password' %}" class="forgot-password-btn">{% trans "Forgot Password?" %}</a>
     </div>
 </section>
 {% endblock %}

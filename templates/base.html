@@ -8,8 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tags for search engines -->
-    <meta name="description" content="Find and book movie tickets for all of the latest film releases. Browse through our up-to-date cinema showtimes and schedules to check out new movie trailers and find the perfect showtime.">
-    <meta name="keywords" content="movie tickets, buy movie tickets, purchase movie tickets, movie showtimes, movie schedules, cinema showtimes">
+    <meta name="description"
+        content="Find and book movie tickets for all of the latest film releases. Browse through our up-to-date cinema showtimes and schedules to check out new movie trailers and find the perfect showtime.">
+    <meta name="keywords"
+        content="movie tickets, buy movie tickets, purchase movie tickets, movie showtimes, movie schedules, cinema showtimes">
     <meta name="author" content="Nataliia Solomchak">
     <!-- Title -->
     <title>MovieGeek Booking</title>
@@ -18,17 +20,22 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <div class="nav-display">
                 <a class="navbar-brand logo-link" href="{% url 'index' %}" aria-label="MovieGeek logo">MovieGeek</a>
-                <button class="navbar-style-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-style-toggler-icon"><iconify-icon icon="charm:menu-hamburger" style="color: white;" width="30" height="30"></iconify-icon></span>
+                <button class="navbar-style-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-style-toggler-icon"><iconify-icon icon="charm:menu-hamburger"
+                            style="color: white;" width="30" height="30"></iconify-icon></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,19 +57,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_login' %}">Log In</a>
                     </li>
-                    {% endif %} 
+                    {% endif %}
                 </ul>
             </div>
         </div>
+        <!-- Alert messages -->
         <div class="container mt-3 messages">
             {% for message in messages %}
-                <div class="alert alert-{{ message.tags }} alert-dismissible show" role="alert" id="msg">
-                    {{ message | safe }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
+            <div class="alert alert-{{ message.tags }} alert-dismissible show" role="alert" id="msg">
+                {{ message | safe }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             {% endfor %}
         </div>
     </nav>
+    <!-- Main content -->
     <main>
         {% block content %}
         <!-- Content Goes here -->
@@ -72,9 +81,15 @@
     <footer>
         <!-- The code for social media icons is taken from Code Institute's Love Running Project -->
         <ul id="social-media">
-            <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page(open in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page(open in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page(open in a new tab)"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page(open in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page(open in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page(open in a new tab)"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
         </ul>
     </footer>
     <!-- Iconify kit -->
@@ -82,9 +97,12 @@
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/c5425afe05.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- JavaScript -->
     <script src="{% static 'js/base.js' %}"></script>
 </body>
-</html>
 
+</html>

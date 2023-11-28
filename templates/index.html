@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-
+<!-- Home text content -->
 <div class="home-box">
     <div class="home-text-content">
         {% if user.is_authenticated %}
@@ -17,27 +17,29 @@
 </div>
 <section class="home-section">
     <div class="home-container">
-            <h2>Now Showing</h2>
-            <div class="movie-box">
-        {% for movie in movies %}
-    <div class="movie-info-box">
-        <div class="movie-content">
-            <img src="{{ movie.image.url }}" alt="{{ movie.title }} movie poster">
-            <div class="movie-text-content">
-                <h2>{{ movie.title }}</h2>
-                <h3>{{ movie.rating }} | {{ movie.genre }} | {{ movie.year }}</h3>
-                {% if user.is_authenticated %}
+        <h2>Now Showing</h2>
+        <div class="movie-box">
+            {% for movie in movies %}
+            <div class="movie-info-box">
+                <!-- Movies content -->
+                <div class="movie-content">
+                    <img src="{{ movie.image.url }}" alt="{{ movie.title }} movie poster">
+                    <div class="movie-text-content">
+                        <h2>{{ movie.title }}</h2>
+                        <h3>{{ movie.rating }} | {{ movie.genre }} | {{ movie.year }}</h3>
+                        {% if user.is_authenticated %}
                         <a href="{% url 'booking' %}?movie_title={{ movie.title }}" class="book-now-btn">Book Now</a>
-                {% else %}
+                        {% else %}
                         <a href="{% url 'account_login' %}" class="book-now-btn">Book Now</a>
-                {% endif %}
-                    <a href="{{ movie.trailer_url }}" class="watch-trailer-btn" target="_blank" rel="noopener" aria-label="Watch {{ movie.title }} trailer (open in a new tab)">Watch Trailer</a>
+                        {% endif %}
+                        <a href="{{ movie.trailer_url }}" class="watch-trailer-btn" target="_blank" rel="noopener"
+                            aria-label="Watch {{ movie.title }} trailer (open in a new tab)">Watch Trailer</a>
+                    </div>
+                </div>
+                <p>{{ movie.description }}</p>
             </div>
+            {% endfor %}
         </div>
-        <p>{{ movie.description }}</p>
-    </div>
-{% endfor %}
-    </div>
     </div>
 </section>
 {%endblock%}

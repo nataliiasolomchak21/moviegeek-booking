@@ -1,58 +1,57 @@
-{% extends "base.html" %}
-
-{% load i18n %}
-
-{% block head_title %}{% trans "Signup" %}{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load i18n %} {% block head_title %}{% trans
+"Signup" %}{% endblock %} {% block content %}
 <section class="sign-up-section">
   <div class="sign-up-container">
-      <h1>{% trans "Sign Up" %}</h1>
-      <h2>{% blocktrans %}Already have an account? <a class="link"
-          href="{{ login_url }}">Log In</a>{% endblocktrans %}</h2>
-      <form class="signup sign-up-form" id="signup_form" method="post" action="{% url 'account_signup' %}">
-        {% csrf_token %}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <label for="id_username"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
-          Username</label>
-          {{ form.username }}
-          <div class="error-container">
-            {{ form.username.errors }} 
-          </div>
-          <label for="id_email"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
-            Email address</label>
-            {{ form.email }}
-            <div class="error-container">
-              {{ form.email.errors }} 
-            </div>
-            <label for="id_password1"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
-              Password</label>
-              {{ form.password1 }}
-              <div class="error-container">
-                {{ form.password1.errors }}
-              </div>
-              <!-- Password rules button -->
-              <div class="dropdown">
-                <button type="button" class="password-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span>Password Rules</span>
-                </button>
-                <ul class="dropdown-menu password-rules">
-                  <li>Your password can&#44;t be too similar to your other personal information</li>
-                  <li>Your password must contain at least 8 characters.</li>
-                  <li>Your password can&#44;t be a commonly used password.</li>
-                  <li>Your password can&#44;t be entirely numeric.</li>
-                </ul>
-              </div>
-              <label for="id_password2"><iconify-icon icon="material-symbols:asterisk" style="color: red;" width="12" height="12"></iconify-icon>
-                Confirm password</label>
-                {{ form.password2 }}
-                <div class="error-container">
-                  {{ form.password2.errors }}
-                </div>
-          <button class="sign-up-btn" type="submit">{% trans "Sign Up" %} &raquo;</button>
-      </form>
-    </div>
+    <!-- Sign Up -->
+    <h1>{% trans "Sign Up" %}</h1>
+    <!-- Link to Log In page -->
+    <h2>
+      {% blocktrans %}Already have an account?
+      <a class="link" href="{{ login_url }}">Log In</a>{% endblocktrans %}
+    </h2>
+    <form class="signup sign-up-form" id="signup_form" method="post" action="{% url 'account_signup' %}">
+      {% csrf_token %} {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+      <label for="id_username"><iconify-icon icon="material-symbols:asterisk" style="color: red" width="12"
+          height="12"></iconify-icon>
+        Username</label>
+      {{ form.username }}
+      <div class="error-container">{{ form.username.errors }}</div>
+      <label for="id_email"><iconify-icon icon="material-symbols:asterisk" style="color: red" width="12"
+          height="12"></iconify-icon>
+        Email address</label>
+      {{ form.email }}
+      <div class="error-container">{{ form.email.errors }}</div>
+      <label for="id_password1"><iconify-icon icon="material-symbols:asterisk" style="color: red" width="12"
+          height="12"></iconify-icon>
+        Password</label>
+      {{ form.password1 }}
+      <div class="error-container">{{ form.password1.errors }}</div>
+      <!-- Password rules button -->
+      <div class="dropdown">
+        <button type="button" class="password-button dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <span>Password Rules</span>
+        </button>
+        <ul class="dropdown-menu password-rules">
+          <li>
+            Your password can&#44;t be too similar to your other personal
+            information
+          </li>
+          <li>Your password must contain at least 8 characters.</li>
+          <li>Your password can&#44;t be a commonly used password.</li>
+          <li>Your password can&#44;t be entirely numeric.</li>
+        </ul>
+      </div>
+      <label for="id_password2"><iconify-icon icon="material-symbols:asterisk" style="color: red" width="12"
+          height="12"></iconify-icon>
+        Confirm password</label>
+      {{ form.password2 }}
+      <div class="error-container">{{ form.password2.errors }}</div>
+      <button class="sign-up-btn" type="submit">
+        {% trans "Sign Up" %} &raquo;
+      </button>
+    </form>
+  </div>
 </section>
 {% endblock %}

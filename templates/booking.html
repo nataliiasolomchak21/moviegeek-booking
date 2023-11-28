@@ -10,14 +10,16 @@
         <form id="booking-form" method="post" action="{% url 'make_booking' %}">
             {% csrf_token %}
             {{ form.errors }}
+            <!-- Container with movies to select from -->
             <div class="movie-container">
                 <label for="movie">Choose a movie:</label>
                 <select id="movie" name="movie">
                     {% for movie in movies %}
-                        <option value="{{ movie.id }}" data-price="{{ movie.price }}">{{ movie.title }}</option>
+                    <option value="{{ movie.id }}" data-price="{{ movie.price }}">{{ movie.title }}</option>
                     {% endfor %}
                 </select>
             </div>
+            <!-- Seats input div -->
             <div class="seats">
                 <label for="seats">Choose a number of seats:</label>
                 <input type="number" name="seats" id="seats" min="1" max="8" required>
@@ -25,22 +27,25 @@
             </div>
             <div class="select-container">
                 <div class="select-box">
+                    <!-- Dates -->
                     <label for="date">Select Date</label>
                     <select id="date" name="date">
                         {% for date in dates %}
-                            <option value="{{ date }}">{{ date }}{{ date|date:"Y-m-d" }}</option>
+                        <option value="{{ date }}">{{ date }}{{ date|date:"Y-m-d" }}</option>
                         {% endfor %}
                     </select>
                 </div>
+                <!-- Times -->
                 <div class="select-box">
                     <label for="time">Select Time</label>
                     <select id="time" name="time">
                         {% for time in times %}
-                            <option value="{{ time }}">{{ time }}{{ time|time:"H:i" }}</option>
+                        <option value="{{ time }}">{{ time }}{{ time|time:"H:i" }}</option>
                         {% endfor %}
                     </select>
                 </div>
             </div>
+            <!-- Price -->
             <div class="total-text">
                 <h2>$ <span id="total-price">0.00</span></h2>
                 <button class="book-btn" type="submit">Book</button>
@@ -48,6 +53,7 @@
         </form>
     </div>
 </section>
+<!-- JavaScript -->
 {% block scripts %}
 <script src="{% static 'js/booking.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
