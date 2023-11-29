@@ -495,10 +495,6 @@ The Log Out page gives the user the ability to log out from their account. After
 
 ![Messages](documentation/readme_files/updated-booking-message.png)
 </details>
-<details><summary><b>Password changed</b></summary>
-
-![Messages](documentation/readme_files/updated-booking-message.png)
-</details>
 
 <details><summary><b>Deleted booking</b></summary>
 
