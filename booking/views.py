@@ -75,7 +75,7 @@ def profile(request):
     movie_images_dict = {
         "Barbie": "images/barbie-booking.jpg",
         "Oppenheimer": "images/oppenheimer-booking.jpg",
-        "Mission Impossible: Dead Reckoning Part One": "images/mission-impossible-booking.jpg",
+        "Mission Impossible: Dead Reckoning Part One": "images/mi-booking.jpg",
         "Spider-Man: Across The Spiderverse": "images/spiderman-booking.jpg",
     }
 
@@ -111,7 +111,8 @@ def edit_booking(request, booking_id):
     """
     Handles editing of a booking.
     Redirects to the user's profile page on successful edit,
-    or renders the edit booking page with the form if the request method is not POST.
+    or renders the edit booking page with the form
+    if the request method is not POST.
     """
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
 
@@ -131,7 +132,9 @@ def edit_booking(request, booking_id):
             messages.success(request, "Booking updated successfully.")
             return redirect("profile")
         else:
-            messages.error(request, "Error updating booking. Please check the form.")
+            messages.error(
+                request, "Error updating booking. Please check the form."
+            )
     else:
         form = BookingForm(instance=booking)
 
