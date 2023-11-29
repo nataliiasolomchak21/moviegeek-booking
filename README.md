@@ -597,8 +597,8 @@ os.environ["DATABASE_URL"] = "postgres://yourdatabaseURL"
 
 ### Cloudinary
 
-1. Navigate to https://cloudinary.com/ and log in to your account.
-2. Navigate to dashboard/console https://console.cloudinary.com/console/ and copy API Enviroment variable starting with "cloudinary://".
+1. Navigate to https://cloudinary.com/ and log in to your account.
+2. Navigate to dashboard/console https://console.cloudinary.com/console/  copy API Enviroment variable starting with "cloudinary://".
 3. Paste copied url into env.py file as CLOUDINARY_URL value and save the file.
 
 ```
