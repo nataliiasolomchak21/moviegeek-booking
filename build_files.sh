@@ -1,12 +1,10 @@
 #!/bin/bash
-# Install system dependencies
-apt-get update && apt-get install -y libcairo2-dev
 
-# Install Python dependencies
-pip install -r requirements.txt
+# Ensure pip3 is available (install pip if needed)
+python3 -m ensurepip --upgrade
 
-# Apply database migrations
-python3 manage.py migrate
+# Install dependencies from requirements.txt
+pip3 install -r requirements.txt
 
-# Collect static files
+# Run collectstatic to gather static files
 python3 manage.py collectstatic --noinput
