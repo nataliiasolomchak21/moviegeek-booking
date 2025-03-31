@@ -595,7 +595,7 @@ Right after finishing the Django setup, the app was deployed to Heroku for the f
 os.environ["DATABASE_URL"] = "postgres://yourdatabaseURL"
 ```
 
-### Cloudinary
+### Cloudinary Set Up 
 
 1. Navigate to https://cloudinary.com/ and log in to your account.
 2. Navigate to dashboard/console https://console.cloudinary.com/console/  copy API Enviroment variable starting with "cloudinary://".
