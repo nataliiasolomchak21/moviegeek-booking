@@ -2,7 +2,7 @@
 
 MovieGeek Booking Website is a full-stack application created using HTML, CSS, JS, Python, Django and Bootstrap. It is a movie ticket booking web application that allows users to view showtimes and book tickets for 4 featured new release movies. Customers can select a movie, showtime, number of seats, and complete booking checkout. The site provides an easy way to reserve seats and books tickets online.
 
-View the live project [here](https://moviegeek-booking-1c00719de368.herokuapp.com/)
+View the live project [here](https://moviegeek-booking.vercel.app/)
 
 ![Am I Responsive](documentation/readme_files/am-i-responsive.png)
 
